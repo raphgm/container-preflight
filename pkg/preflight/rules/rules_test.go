@@ -397,3 +397,29 @@ func TestEnv(t *testing.T) {
 		t.Errorf("want exactly 2 findings:\n%s", titles(fs))
 	}
 }
+
+func TestHostDisk(t *testing.T) {
+	p := load(t, map[string]string{"compose.yaml": "services:\n  a: {image: alpine}\n"})
+	h := armDesktop()
+	h.ClientDiskFree = 118 << 20
+	expect(t, run(t, hostDiskRule, p, h, nil), fact.Error, "Docker's VM cannot start or grow")
+	h.ClientDiskFree = 5 << 30
+	expect(t, run(t, hostDiskRule, p, h, nil), fact.Warning, "only 5.0 GiB free")
+	h.ClientDiskFree = 50 << 30
+	expectNone(t, run(t, hostDiskRule, p, h, nil))
+
+	linux := oldLinux()
+	linux.ClientDiskFree = 100 << 20
+	expectNone(t, run(t, hostDiskRule, p, linux, nil))
+}
+
+func TestDiskUsesSmallerOfVMAndHost(t *testing.T) {
+	p := load(t, map[string]string{"compose.yaml": "services:\n  a: {image: big}\n"})
+	h := armDesktop()
+	h.DiskFree, h.DiskExact, h.ClientDiskFree = 90<<30, true, 1<<30
+	fs := run(t, diskRule, p, h, fakeRegistry{"big": multiArch})
+	expect(t, fs, fact.Error, "not enough disk space")
+	if !strings.Contains(strings.Join(fs[0].Evidence, " "), "this machine only") {
+		t.Errorf("evidence = %v", fs[0].Evidence)
+	}
+}

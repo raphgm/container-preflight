@@ -65,7 +65,8 @@ container-doctor preflight examples/broken-shop --host examples/hosts/ubuntu-leg
 | `compose.version` | Compose features newer than the installed Compose |
 | `compose.env` | unset variables, required `${VAR:?}` without a value |
 | `resources.memory` | known image minimums and total limits vs Docker's memory |
-| `resources.disk` | image download size ×2.5 vs free disk |
+| `resources.disk` | image download size ×2.5 vs free disk (the smaller of the VM disk and the host volume it lives on) |
+| `host.disk` | too little space on this machine for Docker Desktop/Colima/OrbStack to start or grow their VM |
 | `resources.gpu` | GPU requests without the NVIDIA runtime, or on macOS |
 | `kernel.sysctl` | `vm.max_map_count` for Elasticsearch/OpenSearch/SonarQube |
 | `ports.conflict` | two services, or several replicas, on one host port |

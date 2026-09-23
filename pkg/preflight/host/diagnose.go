@@ -27,6 +27,10 @@ type daemonClues struct {
 	Err       string
 	Installed []engine
 	Running   []engine
+
+	// DiskFree is free space on this machine; VM engines cannot start
+	// without room for their disk image.
+	DiskFree int64
 }
 
 // diagnoseDaemon turns "cannot connect" into the specific reason: the
@@ -85,6 +89,10 @@ func diagnoseDaemon(c daemonClues) fact.Failure {
 		if e.Context != "" && e.Context != ctxName {
 			f.Fix += fmt.Sprintf(", then `docker context use %s`", e.Context)
 		}
+		if c.DiskFree > 0 && c.DiskFree < 2<<30 && e.Name != "Docker Engine" {
+			f.Fix = fmt.Sprintf("Free disk space first: only %d MiB free, and %s needs a few GiB for its VM. Then: %s",
+				c.DiskFree>>20, e.Name, strings.TrimPrefix(f.Fix, "Start "+e.Name+": "))
+		}
 		if len(c.Installed) > 1 {
 			var others []string
 			for _, o := range c.Installed[1:] {
@@ -112,8 +120,8 @@ func socketOwner(socket string) string {
 
 // gatherClues looks for local engines: installed apps and binaries, and the
 // sockets of those that are running.
-func gatherClues(ctxName, endpoint, errText string) daemonClues {
-	c := daemonClues{Context: ctxName, Endpoint: endpoint, Err: errText}
+func gatherClues(ctxName, endpoint, errText string, diskFree int64) daemonClues {
+	c := daemonClues{Context: ctxName, Endpoint: endpoint, Err: errText, DiskFree: diskFree}
 	home, _ := os.UserHomeDir()
 
 	candidates := []struct {

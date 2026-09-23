@@ -61,3 +61,15 @@ func TestDiagnoseInstalledButStopped(t *testing.T) {
 		t.Errorf("fix = %q", f.Fix)
 	}
 }
+
+func TestDiagnoseFullDiskBlocksVMStart(t *testing.T) {
+	f := diagnoseDaemon(daemonClues{
+		Context:   "desktop-linux",
+		Endpoint:  "unix:///nonexistent/.docker/run/docker.sock",
+		Installed: []engine{colima},
+		DiskFree:  118 << 20,
+	})
+	if !strings.HasPrefix(f.Fix, "Free disk space first: only 118 MiB free") || !strings.Contains(f.Fix, "colima start") {
+		t.Errorf("fix = %q", f.Fix)
+	}
+}

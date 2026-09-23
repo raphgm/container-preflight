@@ -173,6 +173,37 @@ var memoryRule = rule{
 // 2–3× larger.
 const unpackFactor = 2.5
 
+// VM engines need room on the host to boot and to grow their disk image.
+const (
+	vmMinFree  = 2 << 30
+	vmWarnFree = 10 << 30
+)
+
+var hostDiskRule = rule{
+	id:    "host.disk",
+	title: "This machine has room for Docker's VM",
+	needs: []fact.ID{fact.LocalDaemon},
+	check: func(_ context.Context, env *Env) []Finding {
+		h := env.Host
+		if !h.UsesVM() || h.ClientDiskFree == 0 || h.ClientDiskFree >= vmWarnFree {
+			return nil
+		}
+		f := Finding{
+			Rule:     "host.disk",
+			Severity: fact.Warning,
+			Title:    fmt.Sprintf("only %s free on this machine; Docker's VM disk grows here", humanBytes(h.ClientDiskFree)),
+			Evidence: []string{"host: " + humanBytes(h.ClientDiskFree) + " free on the home volume"},
+			Fix:      "Free disk space (caches, old simulators, `docker system prune`). Keep at least 10 GiB free.",
+		}
+		if h.ClientDiskFree < vmMinFree {
+			f.Severity = fact.Error
+			f.Title = fmt.Sprintf("only %s free on this machine; Docker's VM cannot start or grow", humanBytes(h.ClientDiskFree))
+			f.Predicts = "no space left on device / VM fails to start"
+		}
+		return []Finding{f}
+	},
+}
+
 var diskRule = rule{
 	id:    "resources.disk",
 	title: "Enough disk for the images to pull",
@@ -198,8 +229,15 @@ var diskRule = rule{
 			}
 		}
 		need := int64(float64(compressed) * unpackFactor)
-		where := fmt.Sprintf("host: %s free", humanBytes(h.DiskFree))
-		if !h.DiskExact {
+		free := h.DiskFree
+		where := fmt.Sprintf("host: %s free", humanBytes(free))
+		// A VM disk is a sparse file on this machine: it can only grow as
+		// far as the host volume allows.
+		if h.UsesVM() && h.ClientDiskFree > 0 && h.ClientDiskFree < free {
+			free = h.ClientDiskFree
+			where = fmt.Sprintf("host: VM disk has %s free, but this machine only %s", humanBytes(h.DiskFree), humanBytes(free))
+		}
+		if !h.DiskExact && free == h.DiskFree {
 			where += " on this machine (Docker's VM disk may have less)"
 		}
 		evidence := []string{where, fmt.Sprintf("registry: %s to download, ≈%s unpacked", humanBytes(compressed), humanBytes(need))}
@@ -207,7 +245,7 @@ var diskRule = rule{
 			evidence = append(evidence, "largest: "+strings.Join(biggest, ", "))
 		}
 		switch {
-		case need > h.DiskFree:
+		case need > free:
 			return []Finding{{
 				Rule:     "resources.disk",
 				Severity: fact.Error,
@@ -216,7 +254,7 @@ var diskRule = rule{
 				Fix:      "Free space (`docker system prune`) or enlarge Docker's disk.",
 				Predicts: "no space left on device",
 			}}
-		case h.DiskExact && need > h.DiskFree*9/10:
+		case h.DiskExact && need > free*9/10:
 			return []Finding{{
 				Rule:     "resources.disk",
 				Severity: fact.Warning,

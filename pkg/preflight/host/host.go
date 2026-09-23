@@ -32,6 +32,10 @@ type Profile struct {
 	ClientArch string
 	ClientMem  int64
 
+	// ClientDiskFree is free space on this machine's home volume, where
+	// Docker Desktop, Colima and OrbStack keep their VM disks.
+	ClientDiskFree int64
+
 	// Platform is the daemon's native platform, e.g. linux/arm64.
 	Platform        string
 	OperatingSystem string
@@ -93,6 +97,12 @@ type Container struct {
 	ComposeProject string
 }
 
+// UsesVM reports whether the daemon runs in a VM whose disk image lives on
+// this machine and grows as images are pulled.
+func (p *Profile) UsesVM() bool {
+	return p.Local && (p.ClientOS == "darwin" || p.ClientOS == "windows" || p.IsDesktop() || strings.Contains(p.Endpoint, "/.colima/"))
+}
+
 // IsDesktop reports whether the daemon runs inside Docker Desktop's VM.
 func (p *Profile) IsDesktop() bool {
 	return strings.Contains(p.OperatingSystem, "Docker Desktop")
@@ -141,6 +151,11 @@ func Probe(ctx context.Context, run executor.Runner, facts *fact.Set) *Profile {
 	if vm, err := mem.VirtualMemoryWithContext(ctx); err == nil {
 		p.ClientMem = int64(vm.Total)
 	}
+	if home, err := os.UserHomeDir(); err == nil {
+		if u, err := disk.UsageWithContext(ctx, home); err == nil {
+			p.ClientDiskFree = int64(u.Free)
+		}
+	}
 	p.BuildKitDisabled = os.Getenv("DOCKER_BUILDKIT") == "0"
 
 	if _, err := run.Run(ctx, "docker", "--version"); err != nil {
@@ -176,7 +191,7 @@ func (p *Profile) probeDaemon(ctx context.Context, run executor.Runner, facts *f
 	}
 	if err != nil {
 		ctxName, _ := run.Run(ctx, "docker", "context", "show")
-		facts.Fail(diagnoseDaemon(gatherClues(ctxName, p.Endpoint, errText(err))))
+		facts.Fail(diagnoseDaemon(gatherClues(ctxName, p.Endpoint, errText(err), p.ClientDiskFree)))
 		return
 	}
 
