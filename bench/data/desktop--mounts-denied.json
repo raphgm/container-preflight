@@ -1,0 +1,280 @@
+{
+ "category": "desktop: mounts denied",
+ "rule": "mounts.sharing",
+ "query": "\"Mounts denied\" \"is not shared from the host\" is:issue created:>=2021-01-01",
+ "total": 153,
+ "sample": [
+  {
+   "url": "https://github.com/docker/for-mac/issues/6759",
+   "title": "Error response from daemon: Mounts denied:  The path **** is not shared from the host and is not known to Docker.",
+   "repo": "docker/for-mac",
+   "created": "2023-03-09T20:28:17Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/top-bettercode/docker-wechat/issues/55",
+   "title": "docker: Error response from daemon: Mounts denied",
+   "repo": "top-bettercode/docker-wechat",
+   "created": "2023-02-14T21:49:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ahoone/ahoonepi-proxypi/issues/14",
+   "title": "Mount volume denied on fresh installation",
+   "repo": "ahoone/ahoonepi-proxypi",
+   "created": "2026-07-07T10:27:35Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-mac/issues/7589",
+   "title": "v4.38.0 Pro - Mounts denied - /mutagen-file-shares/fshr_553e66d098fc19abc8fb8c715ad7666d3898cac7000/root is not shared from the host and is not known to Docker",
+   "repo": "docker/for-mac",
+   "created": "2025-02-12T05:04:39Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/wizeline/docker-wordpress-minimal/issues/2",
+   "title": "Error on Mac OSX",
+   "repo": "wizeline/docker-wordpress-minimal",
+   "created": "2021-08-03T18:22:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/passivedns/pdns-docker/issues/1",
+   "title": "Prod environment not working properly on macos",
+   "repo": "passivedns/pdns-docker",
+   "created": "2024-07-03T14:16:21Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/spinframework/otel-plugin/issues/37",
+   "title": "issue running `spin otel setup`",
+   "repo": "spinframework/otel-plugin",
+   "created": "2026-04-02T22:25:04Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AudreyBeard/compressure/issues/47",
+   "title": "Make Build Failing",
+   "repo": "AudreyBeard/compressure",
+   "created": "2023-09-01T04:02:34Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/KatharaFramework/Kathara/issues/388",
+   "title": "macOS Docker Desktop shared mount path issue when running Kathara inside a container",
+   "repo": "KatharaFramework/Kathara",
+   "created": "2026-05-11T22:17:17Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Azure-Samples/azure-postgres-pgvector-python/issues/35",
+   "title": "Workspace path error when using Docker Desktop for Mac with VSCode devcontainers extension",
+   "repo": "Azure-Samples/azure-postgres-pgvector-python",
+   "created": "2024-11-21T19:07:39Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/RADIUSdesk/rdcore/issues/39",
+   "title": "Doesnt Work",
+   "repo": "RADIUSdesk/rdcore",
+   "created": "2023-06-18T12:37:03Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sickcodes/Docker-OSX/issues/673",
+   "title": "Error running Docker-OSX on Fedora",
+   "repo": "sickcodes/Docker-OSX",
+   "created": "2023-06-28T08:14:53Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tsukasaI/serverless_with_go/issues/1",
+   "title": "provided.al2 not running",
+   "repo": "tsukasaI/serverless_with_go",
+   "created": "2023-11-09T05:17:50Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/microsoft/vscode-remote-release/issues/5388",
+   "title": "Clone repository in container volume with Docker Compose fails due to permissions for non-existant folder",
+   "repo": "microsoft/vscode-remote-release",
+   "created": "2021-07-27T18:57:15Z",
+   "state": "open",
+   "comments": 16,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/athombv/homey-apps-sdk-issues/issues/303",
+   "title": "SDK Docs - Please add Docker fileshare guide ",
+   "repo": "athombv/homey-apps-sdk-issues",
+   "created": "2023-07-10T07:57:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/eliasgranderubio/dagda/issues/103",
+   "title": "docker-compose.yaml unfriendly to macos version of docker?",
+   "repo": "eliasgranderubio/dagda",
+   "created": "2022-04-07T18:33:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ansible/ansible-navigator/issues/1286",
+   "title": "Unable to extract collection json from stdout, when listing collections through navigator",
+   "repo": "ansible/ansible-navigator",
+   "created": "2022-09-08T17:00:59Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/CIDARLAB/homework1-template/issues/1",
+   "title": "RuntimeError: Unable to find logic.csv using poetry",
+   "repo": "CIDARLAB/homework1-template",
+   "created": "2021-03-29T04:11:20Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ozee/vm-workspace/issues/1",
+   "title": "Failed tasks when running the application",
+   "repo": "ozee/vm-workspace",
+   "created": "2023-06-14T19:59:51Z",
+   "state": "open",
+   "comments": 27,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-mac/issues/7105",
+   "title": "Trying to mount directories in Docker",
+   "repo": "docker/for-mac",
+   "created": "2023-12-08T19:47:43Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/php-actions/composer/issues/97",
+   "title": "Exit code 125 and .gitconfig error ",
+   "repo": "php-actions/composer",
+   "created": "2023-02-12T14:49:50Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/RADIUSdesk/rdcore/issues/41",
+   "title": "Unable to create Docker image ",
+   "repo": "RADIUSdesk/rdcore",
+   "created": "2023-07-24T20:43:01Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tabledog/datasette-stripe/issues/1",
+   "title": "Suggestion for \"Docker Run\" section of README",
+   "repo": "tabledog/datasette-stripe",
+   "created": "2022-07-21T02:15:28Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lando/lando/issues/3472",
+   "title": "Docker warnings \u201cYou have opted to share your home directory with a container\u201d",
+   "repo": "lando/lando",
+   "created": "2022-11-22T22:44:36Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/testcontainers/testcontainers-python/issues/621",
+   "title": "todo - run tests against docker desktop on linux",
+   "repo": "testcontainers/testcontainers-python",
+   "created": "2024-06-28T03:03:34Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Part-DB/Part-DB-server/issues/437",
+   "title": "Help needed installing Part-DB on MacOS in Docker",
+   "repo": "Part-DB/Part-DB-server",
+   "created": "2023-11-24T08:36:59Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DataTalksClub/faq/issues/291",
+   "title": "[FAQ] Kestra does not run because of Docker error \"mounts denied: The path /tmp/... is not shared from the host\"",
+   "repo": "DataTalksClub/faq",
+   "created": "2026-07-01T10:14:46Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-mac/issues/7478",
+   "title": "Docker run doesn't exit on macOS in case of wrong mount",
+   "repo": "docker/for-mac",
+   "created": "2024-11-07T09:20:46Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-mac/issues/7519",
+   "title": "Not able to add paths to latest Docker Desktop File Sharing on MacOS Monterey",
+   "repo": "docker/for-mac",
+   "created": "2025-01-05T12:36:26Z",
+   "state": "open",
+   "comments": 22,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-mac/issues/7514",
+   "title": "Synchronized file shares can not mount a single file",
+   "repo": "docker/for-mac",
+   "created": "2024-12-28T05:18:27Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 153
+}

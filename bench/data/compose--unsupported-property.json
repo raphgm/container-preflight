@@ -1,0 +1,280 @@
+{
+ "category": "compose: unsupported property",
+ "rule": "compose.version",
+ "query": "\"additional property\" \"is not allowed\" compose is:issue created:>=2021-01-01",
+ "total": 486,
+ "sample": [
+  {
+   "url": "https://github.com/xebialabs-community/community-release-llm-integration/issues/10",
+   "title": "docker compose Additional property models is not allowed",
+   "repo": "xebialabs-community/community-release-llm-integration",
+   "created": "2026-03-10T08:39:29Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/langchain-ai/langchain-extract/issues/16",
+   "title": "Additional property name is not allowed",
+   "repo": "langchain-ai/langchain-extract",
+   "created": "2024-03-07T13:34:16Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shahinism/docker-stealth-openvpn/issues/4",
+   "title": "Additional property openvpn is not allowed",
+   "repo": "shahinism/docker-stealth-openvpn",
+   "created": "2023-05-03T12:28:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tombstoneghost/TIWAP/issues/4",
+   "title": "Additional property app is not allowed",
+   "repo": "tombstoneghost/TIWAP",
+   "created": "2022-09-14T06:04:07Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/multica-ai/multica/issues/1401",
+   "title": "[Bug]: Installation fails with message: (root) Additional property name is not allowed",
+   "repo": "multica-ai/multica",
+   "created": "2026-04-20T16:28:49Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dunglas/docker-private-composer-packages/issues/2",
+   "title": "OSX - build Additional property secrets is not allowed",
+   "repo": "dunglas/docker-private-composer-packages",
+   "created": "2022-09-20T22:26:08Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/UbikZ/docker-uo/issues/1",
+   "title": "(root) Additional property nginx is not allowed",
+   "repo": "UbikZ/docker-uo",
+   "created": "2021-09-11T03:40:35Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/containers/podman-compose/issues/1549",
+   "title": "Unclear error when `networks`/`volumes` are accidentally indented under `services`",
+   "repo": "containers/podman-compose",
+   "created": "2026-08-31T14:05:42Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/redTreeOnWall/memorains/issues/2",
+   "title": "services.reno_note_nginx Additional property proxy_pass is not allowed",
+   "repo": "redTreeOnWall/memorains",
+   "created": "2025-06-18T01:29:55Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/multi-container-app/issues/22",
+   "title": "- ERROR: services.todo-app Additional property develop is not allowed",
+   "repo": "docker/multi-container-app",
+   "created": "2024-03-28T21:30:12Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bigbluebutton/docker/issues/318",
+   "title": "Received Error 'services.webrtc-sfu.build Additional property additional_contexts is not allowed'",
+   "repo": "bigbluebutton/docker",
+   "created": "2024-02-15T16:57:08Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/matchory/docker-swarm-deployment-action/issues/183",
+   "title": "Support newer stack schemas for versionless Compose files",
+   "repo": "matchory/docker-swarm-deployment-action",
+   "created": "2026-08-04T14:03:22Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ensdomains/ens-test-env/issues/12",
+   "title": "Running `docker compose up` does not run with error \"Additional property start_interval is not allowed\"",
+   "repo": "ensdomains/ens-test-env",
+   "created": "2025-10-02T17:09:02Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/multi-container-app/issues/9",
+   "title": "Validating docker_tutorial/multi-container-app/compose.yaml: services.todo-app Additional property develop is not allowed",
+   "repo": "docker/multi-container-app",
+   "created": "2023-11-19T05:42:34Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jcnewell/ergast-f1-api/issues/11",
+   "title": "Getting (root) Additional property ergast-db is not allowed when running docker-compose up --build -d --remove-orphans",
+   "repo": "jcnewell/ergast-f1-api",
+   "created": "2023-07-25T16:06:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AbsaOSS/spline-getting-started/issues/47",
+   "title": "docker-compose up ERROR ",
+   "repo": "AbsaOSS/spline-getting-started",
+   "created": "2023-06-13T02:14:14Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/multi-container-app/issues/11",
+   "title": "Docker compose up -d does not launch app, give error: '/multi-container-app/compose.yaml: services.todo-app Additional property develop is not allowed'",
+   "repo": "docker/multi-container-app",
+   "created": "2023-12-13T18:20:05Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/UKHomeOffice/docker-landscaper-server/issues/8",
+   "title": "docker compose build error",
+   "repo": "UKHomeOffice/docker-landscaper-server",
+   "created": "2024-12-05T16:30:28Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker-archive-public/docker.labs/issues/596",
+   "title": "wrong compose syntax",
+   "repo": "docker-archive-public/docker.labs",
+   "created": "2023-07-14T17:16:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/eip-work/kuboard-press/issues/602",
+   "title": "docker compose\u6267\u884c\u5931\u8d25",
+   "repo": "eip-work/kuboard-press",
+   "created": "2025-10-15T04:13:39Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cer/event-sourcing-examples/issues/47",
+   "title": "Docker compose failure",
+   "repo": "cer/event-sourcing-examples",
+   "created": "2021-12-30T11:59:17Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/abhirockzz/oracle-nosql-jersey-dockercompose-sample/issues/1",
+   "title": "docker-compose up not working",
+   "repo": "abhirockzz/oracle-nosql-jersey-dockercompose-sample",
+   "created": "2023-01-31T14:15:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/codebygina/mediumish-theme-jekyll/issues/184",
+   "title": "Docker Compose file has invlaid syntax",
+   "repo": "codebygina/mediumish-theme-jekyll",
+   "created": "2021-09-16T20:39:22Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/knrew/decune/issues/406",
+   "title": "Compose v2.24.4\u5411\u3051integration gate\u3092\u8ffd\u52a0\u3057ports.name fixture\u3092\u5206\u96e2\u3059\u308b",
+   "repo": "knrew/decune",
+   "created": "2026-07-13T16:15:17Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jmb12686/docker-multiarch-glusterfs-plugin/issues/1",
+   "title": "Error using compose file",
+   "repo": "jmb12686/docker-multiarch-glusterfs-plugin",
+   "created": "2021-03-06T00:09:21Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Juniper/open-nti/issues/279",
+   "title": "Error: \"Docker-Compose Make\"",
+   "repo": "Juniper/open-nti",
+   "created": "2022-09-13T23:00:18Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/askz/mikrotik-for-doprax/issues/1",
+   "title": "error at doprax ",
+   "repo": "askz/mikrotik-for-doprax",
+   "created": "2024-07-03T09:52:44Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DanielDent/docker-nginx-ssl-proxy/issues/35",
+   "title": "Documentation: fix docker-compose.yml",
+   "repo": "DanielDent/docker-nginx-ssl-proxy",
+   "created": "2022-10-06T05:19:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/cli/issues/4740",
+   "title": "docker stack up on compose with include not supported",
+   "repo": "docker/cli",
+   "created": "2023-12-23T02:14:31Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/cli/issues/6542",
+   "title": "docker swarm - support for platform property in compose",
+   "repo": "docker/cli",
+   "created": "2025-10-08T05:41:14Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 486
+}

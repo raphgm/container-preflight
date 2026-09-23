@@ -1,0 +1,280 @@
+{
+ "category": "rootless privileged port",
+ "rule": "ports.host",
+ "query": "\"cannot expose privileged port\" is:issue created:>=2021-01-01",
+ "total": 39,
+ "sample": [
+  {
+   "url": "https://github.com/faramirezs/voice-chef/issues/227",
+   "title": "[Integration/Network] cannot expose privileged port 80",
+   "repo": "faramirezs/voice-chef",
+   "created": "2026-05-07T13:43:27Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/gutmensch/docker-dmarc-report/issues/66",
+   "title": "rootlessport cannot expose privileged port 80",
+   "repo": "gutmensch/docker-dmarc-report",
+   "created": "2025-01-13T00:10:56Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/abdo2048/Ask-Brave-Chat-Exporter/issues/3",
+   "title": "Export error",
+   "repo": "abdo2048/Ask-Brave-Chat-Exporter",
+   "created": "2026-08-19T06:51:54Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/docker/awesome-compose/issues/324",
+   "title": "wordpress-mysql - port mapping issue",
+   "repo": "docker/awesome-compose",
+   "created": "2023-02-06T07:49:49Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ublue-os/forge/issues/28",
+   "title": "Prerequisites check on forge.sh heat-up",
+   "repo": "ublue-os/forge",
+   "created": "2024-05-02T06:16:37Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/yuzu-juice/ft_transcendence/issues/129",
+   "title": "[bug] failed to set up container networking",
+   "repo": "yuzu-juice/ft_transcendence",
+   "created": "2026-09-10T08:38:42Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tim-daria/poolaki/issues/78",
+   "title": "Clarify Docker rootless mode and privileged ports (80/443)",
+   "repo": "tim-daria/poolaki",
+   "created": "2026-07-23T05:40:01Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cvoya-com/spring-voyage/issues/2926",
+   "title": "dispatcher-smoke-full.yml: prep unprivileged-port floor before `deploy.sh up`",
+   "repo": "cvoya-com/spring-voyage",
+   "created": "2026-05-30T01:41:37Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/devobagmbh/talos-platform-apps/issues/168",
+   "title": "docs(AGENTS+build-CONVENTIONS): reconcile stale \"no live cluster\" claim with the local Talos cluster",
+   "repo": "devobagmbh/talos-platform-apps",
+   "created": "2026-06-14T13:46:04Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Blackhole-Megalaser/transcendence/issues/49",
+   "title": "chat seems broken, cannot connect to redis",
+   "repo": "Blackhole-Megalaser/transcendence",
+   "created": "2026-05-08T13:02:44Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/LibreBooking/docker/issues/139",
+   "title": "podman: rootlessport cannot expose privileged port 80",
+   "repo": "LibreBooking/docker",
+   "created": "2026-01-23T08:59:48Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cvoya-com/spring-voyage/issues/2924",
+   "title": "install.sh: rootless Podman can't bind 80/443 \u2014 pre-flight checks availability, not bindability",
+   "repo": "cvoya-com/spring-voyage",
+   "created": "2026-05-30T01:23:06Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/knative-extensions/kn-plugin-quickstart/issues/542",
+   "title": "Using port 80 causes a fail on kind with rootless podman",
+   "repo": "knative-extensions/kn-plugin-quickstart",
+   "created": "2024-10-08T13:42:13Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bbvch-ai/aihub-core/issues/1364",
+   "title": "web image healthcheck targets port 80 but nginx listens on 8080",
+   "repo": "bbvch-ai/aihub-core",
+   "created": "2026-05-27T09:58:51Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/ddev/ddev/issues/8382",
+   "title": "\"linux\" missing from OSTYPE options",
+   "repo": "ddev/ddev",
+   "created": "2026-05-03T13:57:06Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/podman-desktop/podman-desktop/issues/1219",
+   "title": "Warn user when the pod cannot be started ",
+   "repo": "podman-desktop/podman-desktop",
+   "created": "2023-01-23T09:45:40Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/podman-desktop/podman-desktop/issues/2305",
+   "title": "Provide an option to configure the podman-machine to be rootless or rootful",
+   "repo": "podman-desktop/podman-desktop",
+   "created": "2023-05-02T14:31:39Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/markshust/docker-magento/issues/1370",
+   "title": "Neither the automated setup nor the manual setup are able to install docker-magento in Ubuntu with Docker Rootless mode",
+   "repo": "markshust/docker-magento",
+   "created": "2025-08-23T17:08:28Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mikesvoboda/nemotron-v3-home-security-intelligence/issues/3050",
+   "title": "Fix FRONTEND_HTTPS_PORT default causing privileged port bind error",
+   "repo": "mikesvoboda/nemotron-v3-home-security-intelligence",
+   "created": "2026-01-14T21:28:44Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/CanastaWiki/Canasta-CLI/issues/555",
+   "title": "create fails",
+   "repo": "CanastaWiki/Canasta-CLI",
+   "created": "2026-05-11T00:04:24Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/appwrite/appwrite/issues/2463",
+   "title": "\ud83d\ude80 Feature: running in Podman - a writeup how to go about it",
+   "repo": "appwrite/appwrite",
+   "created": "2021-12-06T10:14:50Z",
+   "state": "closed",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ft-trans/ft-transcendence/issues/147",
+   "title": "\u6821\u820e\u74b0\u5883\u3067\u306f\u6a29\u9650\u4e0d\u8db3\u306e\u305f\u30811024\u4ee5\u4e0b\u306e\u30dd\u30fc\u30c8\u304c\u4f7f\u7528\u3067\u304d\u306a\u3044",
+   "repo": "ft-trans/ft-transcendence",
+   "created": "2025-10-18T03:26:41Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/yyamasak02/ft_transcendence/issues/35",
+   "title": "\u3010\u30d0\u30b0\u3011\u6821\u820e\u74b0\u5883\u3067\u30d3\u30eb\u30c9\uff06\u5b9f\u884c\u3067\u304d\u306a\u3044",
+   "repo": "yyamasak02/ft_transcendence",
+   "created": "2025-11-06T06:11:52Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DRYTRIX/TimeTracker/issues/104",
+   "title": "Recommended Install not working",
+   "repo": "DRYTRIX/TimeTracker",
+   "created": "2025-10-21T09:58:30Z",
+   "state": "closed",
+   "comments": 13,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Blue-Dots-Economy/signals-dpg/issues/539",
+   "title": "[Sec-Audit][A4] Migrate container base images to Docker Hardened Images (all repos)",
+   "repo": "Blue-Dots-Economy/signals-dpg",
+   "created": "2026-08-12T11:49:52Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/onyx-dot-app/onyx/issues/5560",
+   "title": "Change port from 80 for rootless podman",
+   "repo": "onyx-dot-app/onyx",
+   "created": "2025-10-01T10:32:15Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Blue-Dots-Economy/bluedots-automation/issues/136",
+   "title": "Migrate all org container images to Docker Hardened Images (DHI)",
+   "repo": "Blue-Dots-Economy/bluedots-automation",
+   "created": "2026-08-12T11:56:58Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/fosrl/pangolin/issues/1428",
+   "title": "Unable to start traefik container due to \"Error: statfs /home/ubuntu/config/traefik/logs: no such file or directory\"",
+   "repo": "fosrl/pangolin",
+   "created": "2025-09-07T14:54:54Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/masaruo/transcendence/issues/53",
+   "title": "\u672c\u756a\u74b0\u5883\uff1a\u6821\u820e\u306ePC\u3067\u5b9f\u884c",
+   "repo": "masaruo/transcendence",
+   "created": "2025-05-27T11:25:28Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Scrybbling-together/scrybble-site/issues/5",
+   "title": "Change port",
+   "repo": "Scrybbling-together/scrybble-site",
+   "created": "2024-01-13T13:06:27Z",
+   "state": "closed",
+   "comments": 8,
+   "verified": true
+  }
+ ],
+ "precision": 0.8666666666666667,
+ "adjusted": 34
+}

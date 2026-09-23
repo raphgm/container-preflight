@@ -1,0 +1,280 @@
+{
+ "category": "daemon: cannot connect",
+ "rule": "(root cause)",
+ "query": "\"Cannot connect to the Docker daemon\" is:issue created:>=2021-01-01",
+ "total": 2712,
+ "sample": [
+  {
+   "url": "https://github.com/PerryRylance/docker-dns-proxy/issues/1",
+   "title": "Cannot connect to the Docker daemon",
+   "repo": "PerryRylance/docker-dns-proxy",
+   "created": "2026-08-27T06:28:00Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/soumyanilain/handson-l3-SoumyanilAin/issues/2",
+   "title": "Cannot connect to the Docker daemon at npipe:////./pipe/docker_engine",
+   "repo": "soumyanilain/handson-l3-SoumyanilAin",
+   "created": "2026-09-01T21:13:42Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/linuxserver/docker-kasm/issues/110",
+   "title": "[BUG] Kasm does not start after an unclean shutdown when the stale containerd pid belongs to another process",
+   "repo": "linuxserver/docker-kasm",
+   "created": "2026-09-23T13:12:29Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/sbx-releases/issues/157",
+   "title": "sandboxd v0.30.0 on Windows: in-process moby backend cannot self-connect to its own `docker.sock` (\"Cannot connect to the Docker daemon at unix://...docker.sock\")",
+   "repo": "docker/sbx-releases",
+   "created": "2026-05-19T15:56:15Z",
+   "state": "open",
+   "comments": 15,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/addnab/docker-run-action/issues/50",
+   "title": "Cannot connect to the Docker daemon",
+   "repo": "addnab/docker-run-action",
+   "created": "2024-01-26T09:49:59Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nbx0/NGS_training/issues/2",
+   "title": "cannot connect to the docker daemon",
+   "repo": "nbx0/NGS_training",
+   "created": "2022-11-23T14:11:00Z",
+   "state": "open",
+   "comments": 15,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sickcodes/Docker-OSX/issues/660",
+   "title": "Cannot connect to the Docker daemon at",
+   "repo": "sickcodes/Docker-OSX",
+   "created": "2023-05-17T19:07:17Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/erkylima/react-microfront/issues/1",
+   "title": "`version` is obsolete and \"Cannot connect to the Docker daemon\"",
+   "repo": "erkylima/react-microfront",
+   "created": "2024-05-31T06:35:08Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/microcks/microcks-cli/issues/537",
+   "title": "macOS: honor the active Docker context when /var/run/docker.sock is unavailable",
+   "repo": "microcks/microcks-cli",
+   "created": "2026-09-22T04:44:06Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bountybench/bountytasks/issues/285",
+   "title": "`./run_ci_local` Cannot connect to the Docker daemon",
+   "repo": "bountybench/bountytasks",
+   "created": "2025-02-22T07:18:15Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/deviceplane/agent/issues/3",
+   "title": "Cannot connect to the Docker daemon, every 3 seconds",
+   "repo": "deviceplane/agent",
+   "created": "2022-01-11T08:43:31Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AleksandrJelohhin/flaketriage/issues/2",
+   "title": "Infra signatures: Docker daemon unreachable and HTTP 429 rate limiting",
+   "repo": "AleksandrJelohhin/flaketriage",
+   "created": "2026-09-11T20:06:36Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Osmantic/ODS/issues/3823",
+   "title": "ods status / restart / start hide the real Docker error when the daemon is unreachable (\"no configuration file provided\", \"rootless ownership is not ready\")",
+   "repo": "Osmantic/ODS",
+   "created": "2026-09-07T19:06:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/belal-i/docksible/issues/16",
+   "title": "\"Cannot connect to the Docker daemon\" on some local environments",
+   "repo": "belal-i/docksible",
+   "created": "2025-02-18T21:54:07Z",
+   "state": "open",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/containrrr/watchtower/issues/2023",
+   "title": "Cannot connect to the Docker daemon after Docker daemon update",
+   "repo": "containrrr/watchtower",
+   "created": "2024-09-16T09:35:35Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/devcontainers/features/issues/977",
+   "title": "Codespaces: \"Cannot connect to the Docker daemon\" occurs randomly (postCreateCommand)",
+   "repo": "devcontainers/features",
+   "created": "2024-05-18T08:50:20Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/drone-plugins/drone-docker/issues/414",
+   "title": "Cannot connect to the Docker daemon at unix:///var/run/docker.sock.",
+   "repo": "drone-plugins/drone-docker",
+   "created": "2023-10-25T11:00:02Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/githedgehog/fabricator/issues/1642",
+   "title": "VLAB ERROR: Cannot connect to the Docker daemon at unix:///run/docker/docker.sock",
+   "repo": "githedgehog/fabricator",
+   "created": "2026-04-08T12:17:35Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cherishman2005/nginx-modules/issues/57",
+   "title": "[docker]Cannot connect to the Docker daemon at unix:///var/run/docker.sock.",
+   "repo": "cherishman2005/nginx-modules",
+   "created": "2023-03-30T05:05:53Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/desktop-linux/issues/20",
+   "title": "Cannot connect to the Docker daemon after installing docker desktop on Linux",
+   "repo": "docker/desktop-linux",
+   "created": "2022-05-13T21:37:46Z",
+   "state": "open",
+   "comments": 32,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lil5/lazypodman/issues/2",
+   "title": "Looking for docker?",
+   "repo": "lil5/lazypodman",
+   "created": "2026-09-12T17:58:32Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-win/issues/14759",
+   "title": "Cannot connect to the Docker daemon at unix:///var/run/docker.sock.",
+   "repo": "docker/for-win",
+   "created": "2025-05-05T16:07:49Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/actions/actions-runner-controller/issues/3794",
+   "title": "Intermittently getting \"Cannot connect to the Docker daemon at unix:///var/run/docker.sock\"",
+   "repo": "actions/actions-runner-controller",
+   "created": "2024-11-05T11:21:43Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nektos/act/issues/5836",
+   "title": "`Cannot connect to the Docker daemon` when calling `docker run` inside a local action",
+   "repo": "nektos/act",
+   "created": "2025-06-24T17:46:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/EinSpi/scripts/issues/24",
+   "title": "docker\u91cd\u542f\u5931\u8d25\u62a5\u9519",
+   "repo": "EinSpi/scripts",
+   "created": "2026-08-20T06:57:49Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/solutionforest/ephemeral-action-runner/issues/51",
+   "title": "Windows Docker Sandboxes startup blocked by sbx internal image API failure",
+   "repo": "solutionforest/ephemeral-action-runner",
+   "created": "2026-09-23T06:02:07Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/pagopa/github-self-hosted-runner-azure/issues/16",
+   "title": "Pipleine fail: Cannot connect to the Docker daemon at unix:///var/run/docker.sock",
+   "repo": "pagopa/github-self-hosted-runner-azure",
+   "created": "2023-11-28T22:07:56Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cnrancher/autok3s/issues/524",
+   "title": "[BUG] docker-compose - windows - Cannot connect to the Docker daemon at unix:///var/run/docker.sock",
+   "repo": "cnrancher/autok3s",
+   "created": "2022-11-14T11:31:09Z",
+   "state": "open",
+   "comments": 17,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-win/issues/14910",
+   "title": "Virtualization support not detected",
+   "repo": "docker/for-win",
+   "created": "2025-08-18T07:15:41Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/keploy/keploy/issues/3109",
+   "title": "[bug]: If the current docker context is not default then use the correct context",
+   "repo": "keploy/keploy",
+   "created": "2025-10-09T13:36:36Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 2712
+}

@@ -1,0 +1,280 @@
+{
+ "category": "volume permission denied",
+ "rule": "",
+ "query": "docker volume \"permission denied\" container is:issue created:>=2021-01-01",
+ "total": 6073,
+ "sample": [
+  {
+   "url": "https://github.com/Dodoooh/brother_ql_app/issues/50",
+   "title": "permission denied on container start",
+   "repo": "Dodoooh/brother_ql_app",
+   "created": "2026-09-11T17:09:35Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kavix/why/issues/8",
+   "title": "[Adapter] Docker Diagnostic Adapter: why docker compose up",
+   "repo": "kavix/why",
+   "created": "2026-09-20T03:39:16Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dvd-dev/hilo/issues/1028",
+   "title": "[Bug] [Errno 13] Permission denied on /run/s6-rc in Docker / Unraid environments",
+   "repo": "dvd-dev/hilo",
+   "created": "2026-09-03T02:00:20Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AppDaemon/appdaemon/issues/2642",
+   "title": "requirements.txt not installed on container startup: permission denied",
+   "repo": "AppDaemon/appdaemon",
+   "created": "2026-06-16T09:43:25Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Part-DB/Part-DB-server/issues/1412",
+   "title": "[Docker] Permission denied on manual backups when mounting persistent backup volume",
+   "repo": "Part-DB/Part-DB-server",
+   "created": "2026-06-15T08:04:52Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/headroomlabs-ai/headroom/issues/3534",
+   "title": "Docker wrapper: wrap opencode broken - missing .config mount, unbound variable, empty OPENCODE_CONFIG_CONTENT",
+   "repo": "headroomlabs-ai/headroom",
+   "created": "2026-09-10T17:27:00Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/microsoft/mssql-docker/issues/940",
+   "title": "SQL Server 2025-latest container fails to start",
+   "repo": "microsoft/mssql-docker",
+   "created": "2025-08-07T18:22:55Z",
+   "state": "open",
+   "comments": 17,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/algorandfoundation/intermezzo/issues/34",
+   "title": "EACCES Permission Denied on `/opt/app/node_modules`",
+   "repo": "algorandfoundation/intermezzo",
+   "created": "2026-06-02T11:16:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/officialjaware/focalboard-reborn/issues/36",
+   "title": "[issue#5011] permission denied",
+   "repo": "officialjaware/focalboard-reborn",
+   "created": "2026-04-08T17:20:41Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mathieu-keller/anki-sync-server/issues/78",
+   "title": "Permission denied when creating SYNC_BASE inside Docker container",
+   "repo": "mathieu-keller/anki-sync-server",
+   "created": "2026-05-25T22:26:30Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dave0875/fitness-pals.com/issues/170",
+   "title": "Prevent production deploys from colliding with legacy Compose containers",
+   "repo": "dave0875/fitness-pals.com",
+   "created": "2026-09-08T12:26:59Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Dispatcharr/Dispatcharr/issues/1742",
+   "title": "[Bug]: Installed plugins become unreadable (Errno 13) after container recreate on SELinux hosts \u2014 installer copies SELinux labels via cross-filesystem shutil.move",
+   "repo": "Dispatcharr/Dispatcharr",
+   "created": "2026-09-23T18:19:56Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/taso-labs/freeciv-llm/issues/7",
+   "title": "Fresh Docker Compose setup cannot write service logs",
+   "repo": "taso-labs/freeciv-llm",
+   "created": "2026-09-09T19:54:31Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/testcontainers/testcontainers-go/issues/3157",
+   "title": "[Bug]: Permission denied reading redpanda.yaml stopping container from proper start",
+   "repo": "testcontainers/testcontainers-go",
+   "created": "2025-05-07T09:07:22Z",
+   "state": "open",
+   "comments": 10,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/zarf-dev/zarf/issues/4669",
+   "title": "\"filesystem: mkdir /var/lib/registry/docker: permission denied\" during zarf init",
+   "repo": "zarf-dev/zarf",
+   "created": "2026-03-03T09:35:28Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rmcrackan/Libation/issues/2061",
+   "title": "Docker duplicate not persisting permissions on Synology NAS",
+   "repo": "rmcrackan/Libation",
+   "created": "2026-09-14T03:11:05Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Finsys/dockhand/issues/1076",
+   "title": "[BUG] Trivy and Grype scans fail on Hawser with rootless Podman during container update",
+   "repo": "Finsys/dockhand",
+   "created": "2026-05-20T19:05:43Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Dadoum/anisette-v3-server/issues/8",
+   "title": "Permission denied error",
+   "repo": "Dadoum/anisette-v3-server",
+   "created": "2023-11-20T10:19:40Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mutcherlarahulkumar/leetcode-clone/issues/3",
+   "title": "Add sandboxed code execution for submissions",
+   "repo": "mutcherlarahulkumar/leetcode-clone",
+   "created": "2026-09-09T18:00:45Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/zvchei/docker-seed/issues/29",
+   "title": "Root-stage mkdirs under $HOME break the user-stage volume mkdirs",
+   "repo": "zvchei/docker-seed",
+   "created": "2026-09-02T09:01:56Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/radius-project/ai-extensions/issues/752",
+   "title": "containers: no way to set fsGroup, so non-root images cannot write to a mounted persistentVolume",
+   "repo": "radius-project/ai-extensions",
+   "created": "2026-09-03T21:47:39Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/azerothcore/azerothcore-wotlk/issues/27362",
+   "title": "Docker, fresh install fails to start due to ac-client-data-init",
+   "repo": "azerothcore/azerothcore-wotlk",
+   "created": "2026-08-28T08:28:11Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/elicify-ai/omnipus/issues/655",
+   "title": "docker/Dockerfile.heavy: image cannot boot with a Docker-managed volume \u2014 .omnipus is created root-owned",
+   "repo": "elicify-ai/omnipus",
+   "created": "2026-08-28T03:47:16Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/RijksICTGilde/hackathon-claude-code/issues/82",
+   "title": "userns-remap: container-naar-container-netwerken en container-root loskoppelen van host-root",
+   "repo": "RijksICTGilde/hackathon-claude-code",
+   "created": "2026-08-03T11:04:40Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/t0mer/skryol/issues/2",
+   "title": "Settings save fails with 'permission denied' in the official Docker image (cwd is unwritable)",
+   "repo": "t0mer/skryol",
+   "created": "2026-07-12T19:06:38Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kestra-io/kestra/issues/19626",
+   "title": "Podman Compose rootless deployment mounts Docker socket instead of the Podman socket",
+   "repo": "kestra-io/kestra",
+   "created": "2026-09-19T12:14:08Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/heuwels/lector/issues/606",
+   "title": "Linux bind-mount ./data is unusable on first boot (EACCES)",
+   "repo": "heuwels/lector",
+   "created": "2026-09-02T23:58:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/joecarl/mularr/issues/35",
+   "title": "Appdata folder issue",
+   "repo": "joecarl/mularr",
+   "created": "2026-09-05T06:10:04Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/internetarchive/openlibrary/issues/13586",
+   "title": "Linux Docker Issues: Fresh clone does not boot: web exits 3 writing _testing-prs.json into a bind mount it cannot write",
+   "repo": "internetarchive/openlibrary",
+   "created": "2026-09-08T01:35:48Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/codidact/qpixel/issues/2070",
+   "title": "`mysqld: File './binlog.index' not found (OS errno 13 - Permission denied)`",
+   "repo": "codidact/qpixel",
+   "created": "2026-06-18T14:26:43Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 6073
+}

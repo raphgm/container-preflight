@@ -1,0 +1,280 @@
+{
+ "category": "kernel: vm.max_map_count",
+ "rule": "kernel.sysctl",
+ "query": "\"vm.max_map_count\" \"is too low\" is:issue created:>=2021-01-01",
+ "total": 369,
+ "sample": [
+  {
+   "url": "https://github.com/memgraph/memgraph/issues/3881",
+   "title": "v3.8.x hard-exits when vm.max_map_count < 262144 in IN_MEMORY_ANALYTICAL mode",
+   "repo": "memgraph/memgraph",
+   "created": "2026-03-10T04:06:02Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/isejalabs/homelab/issues/134",
+   "title": "Mongo startup message `vm.max_map_count is too low`",
+   "repo": "isejalabs/homelab",
+   "created": "2024-12-27T11:28:02Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/seonwoojh/TIL/issues/4",
+   "title": "[elasticsearch] max virtual memory areas vm.max_map_count [65530] is too low",
+   "repo": "seonwoojh/TIL",
+   "created": "2022-07-07T00:59:59Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/elastic/elasticsearch/issues/86634",
+   "title": "Max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]",
+   "repo": "elastic/elasticsearch",
+   "created": "2022-05-10T18:22:04Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/wazuh/wazuh-docker/issues/2403",
+   "title": "Issues docker compose multi node possible solutions",
+   "repo": "wazuh/wazuh-docker",
+   "created": "2026-05-18T06:10:46Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/questdb/documentation/issues/370",
+   "title": "Update /deployment/docker",
+   "repo": "questdb/documentation",
+   "created": "2026-02-18T11:33:29Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rancher-sandbox/rancher-desktop/issues/3450",
+   "title": "[BUG] `/proc/sys/vm/max_map_count` from host is not leveraged for running containers",
+   "repo": "rancher-sandbox/rancher-desktop",
+   "created": "2022-11-23T18:13:25Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MarquezProject/marquez/issues/3025",
+   "title": "Docker - OpenSearch Installation Documentation",
+   "repo": "MarquezProject/marquez",
+   "created": "2025-01-30T03:41:12Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/opensearch-project/OpenSearch/issues/6925",
+   "title": "TroubleShooting Guide for students, later to transfer for DEVELOPER.md as single source of truth ",
+   "repo": "opensearch-project/OpenSearch",
+   "created": "2023-04-01T07:09:52Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/memgraph/memgraph/issues/3607",
+   "title": "Data persistence issue when deploying Memgraph with Docker on Railway - seeking backup/restore solutions",
+   "repo": "memgraph/memgraph",
+   "created": "2026-01-04T21:52:09Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aprenderdevops/docker-sonarqube/issues/1",
+   "title": "Sonarqube container error",
+   "repo": "aprenderdevops/docker-sonarqube",
+   "created": "2022-05-03T15:05:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Enigma-IIITS/enigma-site/issues/7",
+   "title": "explore and try to fix Mongo db startup warnings in Digital Ocean VM",
+   "repo": "Enigma-IIITS/enigma-site",
+   "created": "2024-02-24T10:57:22Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/opensearch-project/project-website/issues/354",
+   "title": "[BUG] Suggested docker-compose.yml doesn't work with Docker Desktop for Windows, WSL2 mode",
+   "repo": "opensearch-project/project-website",
+   "created": "2021-10-01T14:42:54Z",
+   "state": "open",
+   "comments": 17,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Tae4an/Smart-Office/issues/28",
+   "title": "ELK Stack \ud658\uacbd \uc124\uc815 \ubc0f \uc77c\ubc18\uc801\uc778 \ubb38\uc81c \ud574\uacb0 \uac00\uc774\ub4dc",
+   "repo": "Tae4an/Smart-Office",
+   "created": "2024-11-20T13:39:44Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ddev/ddev-elasticsearch/issues/11",
+   "title": "[question]: Elastic Enterprise Search",
+   "repo": "ddev/ddev-elasticsearch",
+   "created": "2023-07-18T01:58:34Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bryanlittlefield/TUGBOAT/issues/82",
+   "title": "Add Elastic Search Container + Configs",
+   "repo": "bryanlittlefield/TUGBOAT",
+   "created": "2022-06-09T16:22:17Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/opensearch-project/OpenSearch-Dashboards/issues/3759",
+   "title": "TroubleShooting Guide for students, later to transfer for DEVELOPER Guide.md as single source of truth",
+   "repo": "opensearch-project/OpenSearch-Dashboards",
+   "created": "2023-03-31T21:51:44Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/r-universe-org/help/issues/509",
+   "title": "MongoDB 8 server warnings",
+   "repo": "r-universe-org/help",
+   "created": "2024-10-10T13:15:45Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rkaehdaos/docker-elk/issues/14",
+   "title": "fix error",
+   "repo": "rkaehdaos/docker-elk",
+   "created": "2022-03-24T01:55:51Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/arangodb/kube-arangodb/issues/1303",
+   "title": "Setup initContainer for recommended sysctls",
+   "repo": "arangodb/kube-arangodb",
+   "created": "2023-04-28T12:25:52Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/elastic/elasticsearch/issues/101401",
+   "title": "Fix docker compose default \"Getting Started\"",
+   "repo": "elastic/elasticsearch",
+   "created": "2023-10-26T18:48:34Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rancher-sandbox/rancher-desktop/issues/713",
+   "title": "Increase open file limit in the VM / inside containers",
+   "repo": "rancher-sandbox/rancher-desktop",
+   "created": "2021-10-01T16:12:18Z",
+   "state": "open",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/anaer/blog/issues/169",
+   "title": "elasticsearch-7.6.2\u5b89\u88c5",
+   "repo": "anaer/blog",
+   "created": "2025-11-11T07:59:21Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/soon530/data-study/issues/31",
+   "title": "MongoDB \u4e92\u52d5\u4e00\u4e0b",
+   "repo": "soon530/data-study",
+   "created": "2022-11-04T09:04:34Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/UW-COSMOS/Cosmos/issues/167",
+   "title": "Elasticsearch virtual memory error",
+   "repo": "UW-COSMOS/Cosmos",
+   "created": "2022-08-12T08:20:37Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/community-scripts/ProxmoxVED/issues/2139",
+   "title": "Elasticsearch",
+   "repo": "community-scripts/ProxmoxVED",
+   "created": "2026-08-04T06:36:37Z",
+   "state": "closed",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aws/containers-roadmap/issues/1452",
+   "title": "[Fargate] [request]: EKS Fargate not allowing to set system limits on mmap counts require to run Elasticsearch",
+   "repo": "aws/containers-roadmap",
+   "created": "2021-07-27T12:36:36Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Mininglamp-OSS/octo-deployment/issues/179",
+   "title": "feat: add vm.max_map_count preflight check before starting search profile (OpenSearch)",
+   "repo": "Mininglamp-OSS/octo-deployment",
+   "created": "2026-08-13T08:09:48Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nestybox/sysbox/issues/351",
+   "title": "EPERM during setrlimit() execution prevents apps from initializing",
+   "repo": "nestybox/sysbox",
+   "created": "2021-07-14T23:50:47Z",
+   "state": "open",
+   "comments": 10,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/agentscope-ai/AgentTeams/issues/888",
+   "title": "v1.1.2 ERROR: Higress Gateway not ready after 120s",
+   "repo": "agentscope-ai/AgentTeams",
+   "created": "2026-05-30T18:52:00Z",
+   "state": "open",
+   "comments": 11,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 369
+}

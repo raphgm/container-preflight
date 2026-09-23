@@ -1,0 +1,280 @@
+{
+ "category": "gpu: no device driver",
+ "rule": "resources.gpu",
+ "query": "\"could not select device driver\" \"capabilities: [[gpu]]\" is:issue created:>=2021-01-01",
+ "total": 457,
+ "sample": [
+  {
+   "url": "https://github.com/dev-it-with-me/RagUltimateAdvisor/issues/3",
+   "title": "Could not select device driver \"nvidia\" with capabilities: [[gpu]]",
+   "repo": "dev-it-with-me/RagUltimateAdvisor",
+   "created": "2026-04-01T07:56:55Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/xserrat/docker-facebook-demucs/issues/47",
+   "title": "[Bug]: could not select device driver with capabilities [[gpu]]",
+   "repo": "xserrat/docker-facebook-demucs",
+   "created": "2026-02-28T15:07:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kinu-garage/hut_10sqft/issues/818",
+   "title": "p16s: rocker fails: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "kinu-garage/hut_10sqft",
+   "created": "2023-04-04T13:49:18Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/LinkSoul-AI/Chinese-Llama-2-7b/issues/32",
+   "title": "could not select device driver \"\" with capabilities: [[gpu]]",
+   "repo": "LinkSoul-AI/Chinese-Llama-2-7b",
+   "created": "2023-07-27T06:33:52Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/basujindal/stable-diffusion/issues/217",
+   "title": "could not select device driver \"nvidia\" with capabilities [[gpu]]",
+   "repo": "basujindal/stable-diffusion",
+   "created": "2022-11-03T05:33:59Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jianchang512/ChatTTS-ui/issues/212",
+   "title": "could not select device driver \"nvidia\" with capabilities: [[gpu]]",
+   "repo": "jianchang512/ChatTTS-ui",
+   "created": "2024-08-07T04:22:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/openads-project/openads-project.github.io/issues/16",
+   "title": "nvidia-ctk missing from requirements",
+   "repo": "openads-project/openads-project.github.io",
+   "created": "2026-08-14T13:56:45Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/n0k0m3/pyspark-notebook-deltalake-docker/issues/8",
+   "title": "Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]]",
+   "repo": "n0k0m3/pyspark-notebook-deltalake-docker",
+   "created": "2023-10-01T19:55:59Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tyson-swetnam/cloudcompare-docker/issues/3",
+   "title": "could not select device driver - Kubuntu 22.04",
+   "repo": "tyson-swetnam/cloudcompare-docker",
+   "created": "2024-05-26T20:09:59Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Neo-Diamons/Docker-AI-Webui/issues/1",
+   "title": "Error response from daemon: could not select device driver \"nvidia\"",
+   "repo": "Neo-Diamons/Docker-AI-Webui",
+   "created": "2024-04-28T20:24:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/devnen/Chatterbox-TTS-Server/issues/15",
+   "title": "Error response from daemon: could not select device driver \"nvidia\" with capabilities: [[gpu]]",
+   "repo": "devnen/Chatterbox-TTS-Server",
+   "created": "2025-06-07T10:20:03Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lkwq007/stablediffusion-infinity/issues/25",
+   "title": "Error response from daemon: could not select device driver \"nvidia\" with capabilities: [[gpu]]",
+   "repo": "lkwq007/stablediffusion-infinity",
+   "created": "2022-09-25T04:40:06Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/automateyournetwork/packet_buddy/issues/9",
+   "title": "Error response from daemon: could not select device driver \"nvidia\" with capabilities: [[gpu]]",
+   "repo": "automateyournetwork/packet_buddy",
+   "created": "2025-03-23T18:05:45Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/FMXExpress/AI-Translate/issues/1",
+   "title": "docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "FMXExpress/AI-Translate",
+   "created": "2024-01-10T13:30:31Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AIR-DISCOVER/ICRA-RM-Sim2Real/issues/20",
+   "title": "docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "AIR-DISCOVER/ICRA-RM-Sim2Real",
+   "created": "2022-02-20T14:00:15Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Huanshere/VideoLingo/issues/442",
+   "title": "(HTTP code 500) server error - could not select device driver \"\" with capabilities: [[gpu]]",
+   "repo": "Huanshere/VideoLingo",
+   "created": "2025-04-29T09:39:18Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/SortAnon/ControllableTalkNet/issues/31",
+   "title": "docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "SortAnon/ControllableTalkNet",
+   "created": "2023-02-04T20:01:14Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/danchitnis/sycl-container/issues/1",
+   "title": "docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "danchitnis/sycl-container",
+   "created": "2023-01-10T20:28:57Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/getumbrel/llama-gpt/issues/150",
+   "title": "Can't use GPU: could not select device driver \"nvidia\" with capabilities: [[gpu]]",
+   "repo": "getumbrel/llama-gpt",
+   "created": "2024-02-24T14:44:53Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/soulteary/docker-llama2-chat/issues/22",
+   "title": "docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "soulteary/docker-llama2-chat",
+   "created": "2023-09-12T09:41:53Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NVlabs/stylegan2-ada-pytorch/issues/227",
+   "title": "docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "NVlabs/stylegan2-ada-pytorch",
+   "created": "2022-03-26T10:17:41Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/FoundationVision/ByteTrack/issues/302",
+   "title": "Docker-Error: could not select device driver with GPU capabilities",
+   "repo": "FoundationVision/ByteTrack",
+   "created": "2023-01-02T09:32:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/netease-youdao/QAnything/issues/93",
+   "title": "[BUG] <Error response from daemon: could not select device driver \"nvidia\" with capabilities: [[gpu]]>",
+   "repo": "netease-youdao/QAnything",
+   "created": "2024-01-31T16:43:39Z",
+   "state": "open",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kineticsystem/find-me-a-freaking-job/issues/3",
+   "title": "Compose requires the NVIDIA runtime and host networking even when the model server runs outside the container",
+   "repo": "kineticsystem/find-me-a-freaking-job",
+   "created": "2026-09-20T16:03:03Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jianchang512/ChatTTS-ui/issues/68",
+   "title": "\u62a5\u9519\u89e3\u51b3\u65b9\u6848\uff1acould not select device driver \"nvidia\" with capabilities: [[gpu]]",
+   "repo": "jianchang512/ChatTTS-ui",
+   "created": "2024-06-03T13:16:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/qixuema/envs/issues/25",
+   "title": "Error response from daemon: Cannot restart container xxx: could not select device driver \"\" with capabilities: [[gpu]]",
+   "repo": "qixuema/envs",
+   "created": "2024-07-05T12:25:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nikmcfly/MiroFish-Offline/issues/24",
+   "title": "Does it work on mac book pro?",
+   "repo": "nikmcfly/MiroFish-Offline",
+   "created": "2026-04-01T18:22:55Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/wilicc/gpu-burn/issues/93",
+   "title": "Docker run fails: docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]]",
+   "repo": "wilicc/gpu-burn",
+   "created": "2023-12-02T10:56:58Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/huan/docker-wechat/issues/173",
+   "title": "3.3.0.115 docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "huan/docker-wechat",
+   "created": "2022-05-06T20:33:29Z",
+   "state": "open",
+   "comments": 13,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/replicate/cog-stable-diffusion/issues/12",
+   "title": "AMD GPU on Ubuntu - docker: Error response from daemon: could not select device driver \"\" with capabilities: [[gpu]].",
+   "repo": "replicate/cog-stable-diffusion",
+   "created": "2022-08-31T13:47:41Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 457
+}

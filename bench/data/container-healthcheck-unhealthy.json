@@ -1,0 +1,280 @@
+{
+ "category": "container healthcheck unhealthy",
+ "rule": "",
+ "query": "\"is unhealthy\" \"dependency failed to start\" is:issue created:>=2021-01-01",
+ "total": 1155,
+ "sample": [
+  {
+   "url": "https://github.com/magenx/Magento-2-docker-configuration/issues/262",
+   "title": "dependency failed to start: container mariadb is unhealthy",
+   "repo": "magenx/Magento-2-docker-configuration",
+   "created": "2026-06-25T18:47:18Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DadsMmoLab/dads-mmo-lab/issues/77",
+   "title": "Container vanilla-db is unhealthy",
+   "repo": "DadsMmoLab/dads-mmo-lab",
+   "created": "2026-08-15T10:14:51Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/xtreme1-io/xtreme1/issues/311",
+   "title": "dependency failed to start: container xtreme1-v091-backend-1 is unhealthy",
+   "repo": "xtreme1-io/xtreme1",
+   "created": "2025-01-15T13:00:12Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/angolo40/mikrocata2selks/issues/46",
+   "title": "dependency failed to start: container config-opensearch",
+   "repo": "angolo40/mikrocata2selks",
+   "created": "2025-11-27T18:19:38Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coze-dev/coze-studio/issues/2299",
+   "title": "dependency failed to start: container coze-elasticsearch is unhealthy",
+   "repo": "coze-dev/coze-studio",
+   "created": "2025-09-30T06:23:05Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/overleaf/toolkit/issues/215",
+   "title": "dependency failed to start: container mongo is unhealthy",
+   "repo": "overleaf/toolkit",
+   "created": "2024-02-05T17:25:07Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coze-dev/coze-studio/issues/2174",
+   "title": "`dependency failed to start: container coze-etcd is unhealthy`",
+   "repo": "coze-dev/coze-studio",
+   "created": "2025-09-15T10:24:49Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dockersamples/example-voting-app/issues/361",
+   "title": "Dependency failed to start",
+   "repo": "dockersamples/example-voting-app",
+   "created": "2024-07-23T08:17:23Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/truefoundry/cognita/issues/421",
+   "title": "dependency failed to start: container cognita-postgres is unhealthy",
+   "repo": "truefoundry/cognita",
+   "created": "2025-01-16T11:26:23Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Superflows-AI/superflows/issues/284",
+   "title": "dependency failed to start: container supabase-analytics is unhealthy",
+   "repo": "Superflows-AI/superflows",
+   "created": "2024-11-07T14:26:30Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/StamusNetworks/Clear-NDR-ISO/issues/484",
+   "title": "dependency failed to start: container selks-db-1 is unhealthy",
+   "repo": "StamusNetworks/Clear-NDR-ISO",
+   "created": "2024-12-03T08:46:19Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/frappe/bench/issues/1548",
+   "title": "dependency failed to start: container frappe-db-1 is unhealthy",
+   "repo": "frappe/bench",
+   "created": "2024-03-27T10:32:45Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ben-2357/Torrentio-sh-Setup-Guide/issues/3",
+   "title": "dependency failed to start: container torrentio-selfhostio-mongodb-1 is unhealthy",
+   "repo": "ben-2357/Torrentio-sh-Setup-Guide",
+   "created": "2024-02-04T04:28:34Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/muratalioglu/spring-microservices/issues/1",
+   "title": "Bug: dependency failed to start: container docker-configserver-1 is unhealthy",
+   "repo": "muratalioglu/spring-microservices",
+   "created": "2025-09-06T17:37:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/apache/gravitino-playground/issues/112",
+   "title": "Playground fails to start with error dependency failed to start: container playground-ranger is unhealthy",
+   "repo": "apache/gravitino-playground",
+   "created": "2024-12-19T21:18:55Z",
+   "state": "open",
+   "comments": 31,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tencentmusic/supersonic/issues/1488",
+   "title": "[Bug] dependency failed to start: container supersonic_mysql is unhealthy ",
+   "repo": "tencentmusic/supersonic",
+   "created": "2024-07-30T09:28:24Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/genai-stack/issues/142",
+   "title": "dependency failed to start: container genai-stack-api-1 is unhealthy",
+   "repo": "docker/genai-stack",
+   "created": "2024-03-13T22:09:51Z",
+   "state": "open",
+   "comments": 12,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coollabsio/coolify/issues/11695",
+   "title": "[Bug]: Manual Installation Fails on Alpine on Podroid",
+   "repo": "coollabsio/coolify",
+   "created": "2026-09-09T01:43:46Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/elastic/beats/issues/53131",
+   "title": "[Flaky-Test] Integration tests fail to start Elasticsearch container: ` Container libbeat_9_6_0_b05e54ada1-snapshot-elasticsearch-1  Error`",
+   "repo": "elastic/beats",
+   "created": "2026-09-09T21:43:38Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/o19s/chorus-opensearch-edition/issues/180",
+   "title": "Bug: opensearch-mcp-server-py fails healthcheck with 401 Unauthorized during ./quickstart.sh",
+   "repo": "o19s/chorus-opensearch-edition",
+   "created": "2026-09-07T19:28:46Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/apache/gravitino-playground/issues/20",
+   "title": "Playground fails to start with error dependency failed to start: container playground-gravitino is unhealthy",
+   "repo": "apache/gravitino-playground",
+   "created": "2024-01-16T01:15:24Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/geekau/mediastack/issues/64",
+   "title": "PostgreSQL is unhealthy",
+   "repo": "geekau/mediastack",
+   "created": "2026-01-05T14:41:49Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sourmash-bio/branchwater/issues/133",
+   "title": "SRA scale search problem/question - healthcheck port impacted local testing deployment",
+   "repo": "sourmash-bio/branchwater",
+   "created": "2026-09-17T18:28:13Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shorin-nikita/lisa/issues/2",
+   "title": "[BUG] \u041e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0435 Container supabase-db  Error dependency failed to start: container supabase-db is unhealthy",
+   "repo": "shorin-nikita/lisa",
+   "created": "2026-02-02T11:13:27Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Shaunwei/RealChar/issues/515",
+   "title": "docker start from new\uff1adependency failed to start: container realchar-backend-1 is unhealthy",
+   "repo": "Shaunwei/RealChar",
+   "created": "2024-05-20T03:12:12Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/overleaf/toolkit/issues/431",
+   "title": "Container mongo Started - Error response from daemon on kernel 7.0.13",
+   "repo": "overleaf/toolkit",
+   "created": "2026-06-29T15:32:10Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/onecli/onecli/issues/489",
+   "title": "exec /usr/local/bin/docker-entrypoint.sh: exec format error",
+   "repo": "onecli/onecli",
+   "created": "2026-08-11T13:07:20Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Sorcha-Platform/Sorcha/issues/1652",
+   "title": "infra: mongo:8 now resolves to 8.3.x, which refuses to start on Linux kernel >= 6.19 (SERVER-121912)",
+   "repo": "Sorcha-Platform/Sorcha",
+   "created": "2026-09-15T17:46:47Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/getsentry/self-hosted/issues/4321",
+   "title": "Sentry Unstable and not being started",
+   "repo": "getsentry/self-hosted",
+   "created": "2026-05-10T03:11:48Z",
+   "state": "open",
+   "comments": 15,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coze-dev/coze-studio/issues/2627",
+   "title": "Docker Compose deployment fails: coze-mysql is unhealthy and blocks service startup",
+   "repo": "coze-dev/coze-studio",
+   "created": "2026-03-04T14:10:47Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 1155
+}

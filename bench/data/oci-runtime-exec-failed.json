@@ -1,0 +1,280 @@
+{
+ "category": "OCI runtime exec failed",
+ "rule": "",
+ "query": "\"OCI runtime exec failed\" is:issue created:>=2021-01-01",
+ "total": 3479,
+ "sample": [
+  {
+   "url": "https://github.com/mdubourg001/glci/issues/14",
+   "title": "OCI runtime exec failed",
+   "repo": "mdubourg001/glci",
+   "created": "2021-02-24T21:58:28Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lockc-project/lockc/issues/184",
+   "title": "OCI runtime exec failed",
+   "repo": "lockc-project/lockc",
+   "created": "2022-02-24T14:17:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shimataro/ssh-key-action/issues/196",
+   "title": "OCI runtime exec failed",
+   "repo": "shimataro/ssh-key-action",
+   "created": "2021-11-30T13:40:48Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Finsys/dockhand/issues/1519",
+   "title": "[BUG] Exec/shell fails with exec: \"/app/dockhand\": on direct-connections",
+   "repo": "Finsys/dockhand",
+   "created": "2026-09-04T01:35:49Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Twinki14/palworld-server-chart/issues/38",
+   "title": "Enabling TCP health check breaks daily reboot cronjob",
+   "repo": "Twinki14/palworld-server-chart",
+   "created": "2026-08-20T23:32:55Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/opf/openproject-docker-compose/issues/150",
+   "title": "Healthcheck for web container fails!",
+   "repo": "opf/openproject-docker-compose",
+   "created": "2026-03-11T14:40:21Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NinjaMonkeyGames/palette-controller-professional/issues/3",
+   "title": "Unit Tests on CI is Broken",
+   "repo": "NinjaMonkeyGames/palette-controller-professional",
+   "created": "2026-08-27T00:39:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Datura-ai/lium-io/issues/190",
+   "title": "Adding an Executor",
+   "repo": "Datura-ai/lium-io",
+   "created": "2025-01-15T06:31:14Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ResearchDataCom/actions/issues/9",
+   "title": "Linting fails when run via Act due to missing commands",
+   "repo": "ResearchDataCom/actions",
+   "created": "2026-07-29T22:26:57Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/CLOUDIS-log-analysis/lets-reproduce-logs/issues/2",
+   "title": "\uc7ac\ud604 \uae30\ub85d",
+   "repo": "CLOUDIS-log-analysis/lets-reproduce-logs",
+   "created": "2026-08-15T09:27:31Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tbmobb813/WireAssist/issues/180",
+   "title": "DEPLOYMENT.md's debug command doesn't work \u2014 wget isn't in the runtime image",
+   "repo": "tbmobb813/WireAssist",
+   "created": "2026-08-24T08:17:36Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Minsolimbu/dokploy/issues/7",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "Minsolimbu/dokploy",
+   "created": "2025-10-05T20:38:08Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Muhammad7839/dokploy/issues/3",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "Muhammad7839/dokploy",
+   "created": "2025-09-30T02:07:22Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/timothy1ee/dokploy/issues/3",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "timothy1ee/dokploy",
+   "created": "2025-09-30T01:38:09Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/JanteZhou/dokploy/issues/5",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "JanteZhou/dokploy",
+   "created": "2025-09-30T01:31:27Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aliasofsyn/dokploy/issues/4",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "aliasofsyn/dokploy",
+   "created": "2025-09-30T00:45:23Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docksal/docksal/issues/1856",
+   "title": "fin db create broken with MariaDB 11.4",
+   "repo": "docksal/docksal",
+   "created": "2026-07-20T10:16:48Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/williamyang10/dokploy/issues/7",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "williamyang10/dokploy",
+   "created": "2025-10-12T23:30:11Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/zenocross/dokploy/issues/5",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "zenocross/dokploy",
+   "created": "2025-12-10T09:07:03Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/davidfmajek/dokploy/issues/3",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "davidfmajek/dokploy",
+   "created": "2025-09-30T03:51:57Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nathanz19/dokploy/issues/1",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "nathanz19/dokploy",
+   "created": "2025-09-30T03:28:19Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Thenewgirl04/dokploy/issues/3",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "Thenewgirl04/dokploy",
+   "created": "2025-09-30T01:43:20Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nehaask/dokploy/issues/3",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "nehaask/dokploy",
+   "created": "2025-09-30T01:08:01Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Praise-creator/dokploy/issues/5",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "Praise-creator/dokploy",
+   "created": "2025-09-30T00:17:33Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ishs-cloud-computing/eks-study/issues/34",
+   "title": "[PART-2] module-07: distroless \ucee8\ud14c\uc774\ub108\uc5d0\uc11c JWT \ud1a0\ud070 \ud30c\uc77c \uc811\uadfc \ubd88\uac00",
+   "repo": "ishs-cloud-computing/eks-study",
+   "created": "2026-05-31T05:58:16Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/seunshix/dokploy/issues/7",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "seunshix/dokploy",
+   "created": "2025-10-10T15:32:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nwang10/dokploy/issues/7",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "nwang10/dokploy",
+   "created": "2025-10-11T14:30:01Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ArmaghanAb/dokploy/issues/3",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "ArmaghanAb/dokploy",
+   "created": "2025-09-30T03:45:16Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AbdoulayeSedego/dokploy/issues/3",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "AbdoulayeSedego/dokploy",
+   "created": "2025-09-30T03:44:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/funny1dog/dokploy/issues/4",
+   "title": "Issue #5 - [BUG] Docker Compose volume mount causes OCI runtime exec failed error",
+   "repo": "funny1dog/dokploy",
+   "created": "2025-09-30T00:29:47Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 3479
+}

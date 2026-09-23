@@ -1,0 +1,280 @@
+{
+ "category": "emulation: qemu crash",
+ "rule": "image.platform",
+ "query": "\"qemu: uncaught target signal\" is:issue created:>=2021-01-01",
+ "total": 1301,
+ "sample": [
+  {
+   "url": "https://github.com/llvm/llvm-project/issues/223314",
+   "title": "[libcxx][test] qemu: uncaught target signal 4 (Illegal instruction) - core dumped",
+   "repo": "llvm/llvm-project",
+   "created": "2026-09-14T06:58:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/2moe/tmoe/issues/273",
+   "title": "qemu: uncaught target signal 11",
+   "repo": "2moe/tmoe",
+   "created": "2023-02-25T15:17:11Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/askdba/myvector/issues/138",
+   "title": "docker-publish.yml: emulated arm64 apt install crashed with QEMU segfault (flaky)",
+   "repo": "askdba/myvector",
+   "created": "2026-09-22T06:32:22Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/montimage-projects/mmt-dpi/issues/421",
+   "title": "ci: emulated ldconfig intermittently segfaults on ubuntu-22.04 arm64 package job",
+   "repo": "montimage-projects/mmt-dpi",
+   "created": "2026-09-23T05:15:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/RPi-Distro/pi-gen/issues/656",
+   "title": "Error: qemu: uncaught target signal 11, Segmentation fault",
+   "repo": "RPi-Distro/pi-gen",
+   "created": "2022-12-07T15:25:47Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/redis/redis/issues/10794",
+   "title": "[BUG] qemu: uncaught target signal 11 (Segmentation fault)",
+   "repo": "redis/redis",
+   "created": "2022-05-29T13:11:48Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/evilmartians/fullstaq-ruby-docker/issues/17",
+   "title": "qemu: uncaught target signal 6 (Aborted) - core dumped",
+   "repo": "evilmartians/fullstaq-ruby-docker",
+   "created": "2022-08-23T09:54:55Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dullage/eyelign/issues/21",
+   "title": "qemu: uncaught target signal 4 (Illegal instruction) - core dumped",
+   "repo": "dullage/eyelign",
+   "created": "2023-08-19T00:52:25Z",
+   "state": "open",
+   "comments": 10,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/travisgoodspeed/md380tools/issues/953",
+   "title": "qemu: uncaught target signal 11 (Segmentation fault) - core dumped",
+   "repo": "travisgoodspeed/md380tools",
+   "created": "2024-07-14T21:10:03Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/gtrll/gpmp2/issues/52",
+   "title": "qemu: uncaught target signal 11 (Segmentation fault) - core dumped",
+   "repo": "gtrll/gpmp2",
+   "created": "2021-08-29T03:05:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/openswoole/ext-openswoole/issues/332",
+   "title": "qemu: uncaught target signal 11 (Segmentation fault) - core dumped",
+   "repo": "openswoole/ext-openswoole",
+   "created": "2023-10-01T01:38:16Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lmnr-ai/lmnr/issues/913",
+   "title": "Self Hosted version does not work",
+   "repo": "lmnr-ai/lmnr",
+   "created": "2025-09-28T21:33:57Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/exadel-inc/CompreFace/issues/673",
+   "title": "\"qemu: uncaught target signal 6 (Aborted) - core dumped\" on m1 Mac",
+   "repo": "exadel-inc/CompreFace",
+   "created": "2021-12-07T23:19:44Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/isopen-io/meeshy/issues/6439",
+   "title": "La construction multi-architecture de Release rougit main une fois sur deux sans d\u00e9faut de code \u2014 \u00e9mulation arm64 et extraction bun instables",
+   "repo": "isopen-io/meeshy",
+   "created": "2026-09-14T01:45:21Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/big-data-europe/docker-hive/issues/43",
+   "title": "Getting qemu: uncaught target signal 11 (Segmentation fault) - core dumped Segmentation fault",
+   "repo": "big-data-europe/docker-hive",
+   "created": "2021-05-07T04:23:19Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/gingrspacecadet/coda/issues/4",
+   "title": "Compiled programs segfault when an if statement prints and then doesn't return",
+   "repo": "gingrspacecadet/coda",
+   "created": "2026-07-13T13:36:35Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tjakobsson/brain/issues/27",
+   "title": "Candidate image build hangs after QEMU SIGILL in arm64 npm ci (v1.6.0 release blocked)",
+   "repo": "tjakobsson/brain",
+   "created": "2026-09-03T05:30:49Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/softcite/software-mentions/issues/29",
+   "title": "server crashes with \"qemu: uncaught target signal 6\" on Mac M1 silicon",
+   "repo": "softcite/software-mentions",
+   "created": "2023-07-31T18:38:54Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tonistiigi/binfmt/issues/298",
+   "title": "Segfault on libc-bin",
+   "repo": "tonistiigi/binfmt",
+   "created": "2026-02-18T10:09:11Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hatchet-dev/hatchet-python-quickstart/issues/1",
+   "title": "Migration container failing with `qemu: uncaught target signal 11 (Segmentation fault) - core dumped`",
+   "repo": "hatchet-dev/hatchet-python-quickstart",
+   "created": "2024-02-22T19:49:09Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/storaged-project/udisks/issues/1525",
+   "title": "spawned_job/abnormal_termination test fails when cross-testing arm64 under qemu-user",
+   "repo": "storaged-project/udisks",
+   "created": "2026-06-17T14:34:20Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/doemefu/homelab-device-service/issues/73",
+   "title": "ci: add timeout-minutes guards to the multi-arch build job (same hang class as furchert-ch#41)",
+   "repo": "doemefu/homelab-device-service",
+   "created": "2026-09-04T03:21:00Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-mac/issues/7884",
+   "title": "Embedded BuildKit builder segfaults on linux/amd64 emulated rustc (QEMU signal 11), independent of Rosetta / Docker VMM",
+   "repo": "docker/for-mac",
+   "created": "2026-09-15T16:06:56Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/doemefu/homelab-auth-service/issues/87",
+   "title": "ci: add timeout-minutes guards to the multi-arch build job (same hang class as furchert-ch#41)",
+   "repo": "doemefu/homelab-auth-service",
+   "created": "2026-09-04T03:20:56Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ziglang/zig/issues/17430",
+   "title": "-fno-PIC targeting glibc should be legal",
+   "repo": "ziglang/zig",
+   "created": "2023-10-07T14:38:17Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/chivay/shellcodez/issues/1",
+   "title": "Larger payloads cause segmentation faults",
+   "repo": "chivay/shellcodez",
+   "created": "2026-08-14T05:37:44Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bun913/go_lambda_functions/issues/3",
+   "title": "Apple Slicon\u3067 sam-cli\u306e\u30ed\u30fc\u30ab\u30eb\u5b9f\u884c\u304c\u3067\u304d\u306a\u3044\u554f\u984c\u3092Issue\u306b\u6295\u7a3f\u3059\u308b",
+   "repo": "bun913/go_lambda_functions",
+   "created": "2022-05-02T20:37:06Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/k8gb-io/k8gb/issues/2527",
+   "title": "[BUG] Local playground serves no DNS on arm64: edge BIND image is amd64-only and segfaults under emulation",
+   "repo": "k8gb-io/k8gb",
+   "created": "2026-09-08T13:35:08Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/xiangsx/gpt4free-ts/issues/46",
+   "title": "mac m1\u82af\u7247\u8fd0\u884camd64\u7248\u672c\u955c\u50cf\u62a5\u9519\uff0c\u65e0\u6cd5\u542f\u52a8\u6d4f\u89c8\u5668",
+   "repo": "xiangsx/gpt4free-ts",
+   "created": "2023-06-08T01:25:15Z",
+   "state": "open",
+   "comments": 10,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/apache/iceberg/issues/15943",
+   "title": "Build 'iceberg-rest-fixture' Docker Image random failure",
+   "repo": "apache/iceberg",
+   "created": "2026-04-11T16:52:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 1301
+}

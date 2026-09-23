@@ -1,0 +1,280 @@
+{
+ "category": "build: COPY source not found",
+ "rule": "build.context",
+ "query": "\"failed to compute cache key\" \"not found\" is:issue created:>=2021-01-01",
+ "total": 1421,
+ "sample": [
+  {
+   "url": "https://github.com/earthly/earthly/issues/1614",
+   "title": " failed to compute cache key",
+   "repo": "earthly/earthly",
+   "created": "2022-01-26T20:51:07Z",
+   "state": "open",
+   "comments": 15,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/InterviewReady/joy-of-system-design/issues/5",
+   "title": "failed to solve: failed to compute cache key: \"/yarn.lock\" not found: not found",
+   "repo": "InterviewReady/joy-of-system-design",
+   "created": "2023-01-19T08:54:32Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/allofphysicsgraph/ui_v8_website_flask_neo4j/issues/204",
+   "title": "github action to build container fails due to files needed by Dockerfile but not in git repo",
+   "repo": "allofphysicsgraph/ui_v8_website_flask_neo4j",
+   "created": "2026-09-12T17:31:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/loblab/noip-renew/issues/79",
+   "title": "failed to compute cache key: \"/noip-renew.py\" not found: not found",
+   "repo": "loblab/noip-renew",
+   "created": "2021-08-10T20:42:01Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/spliit-app/spliit/issues/235",
+   "title": "ERROR: failed to solve: failed to compute cache key: \"/next.config.js\": not found",
+   "repo": "spliit-app/spliit",
+   "created": "2024-10-03T05:47:08Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sagostin/gofaxserver/issues/3",
+   "title": "Dockerfile can't build: COPY go.mod go.sum fails, repo has no go.sum (vendored deps)",
+   "repo": "sagostin/gofaxserver",
+   "created": "2026-08-31T22:39:26Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/edusense/edusense/issues/42",
+   "title": "failed to compute cache key: \"/app/build/examples/edusense/edusense.bin\" not found: not found",
+   "repo": "edusense/edusense",
+   "created": "2023-02-03T02:40:02Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moby/buildkit/issues/4128",
+   "title": "failed to solve: failed to compute cache key: failed to calculate checksum of ref",
+   "repo": "moby/buildkit",
+   "created": "2023-08-09T08:06:59Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/guge199205-byte/QuantMind-oss/issues/3",
+   "title": "docker compose up \u542f\u52a8\u5931\u8d25",
+   "repo": "guge199205-byte/QuantMind-oss",
+   "created": "2026-08-05T10:06:45Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/weka/export/issues/53",
+   "title": "Docker build fails with the following: failed to compute cache key: \"/tarball/export/export\" not found: not found",
+   "repo": "weka/export",
+   "created": "2023-06-07T19:33:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/analogdevicesinc/microcontroller-hackathon/issues/1",
+   "title": "Docker container build fail",
+   "repo": "analogdevicesinc/microcontroller-hackathon",
+   "created": "2026-08-07T09:13:34Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/PlaiPin/rosclaw/issues/3",
+   "title": "Packages not found",
+   "repo": "PlaiPin/rosclaw",
+   "created": "2026-03-03T06:55:22Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/vuongnguyenbinh/ZaloCRM/issues/4",
+   "title": "\"/app/backend/prisma.config.ts\": not found",
+   "repo": "vuongnguyenbinh/ZaloCRM",
+   "created": "2026-03-28T15:45:00Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/openremote/openremote/issues/3025",
+   "title": "Manager Docker build sometimes fails to compute cache key",
+   "repo": "openremote/openremote",
+   "created": "2026-07-14T14:47:22Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/fyrlove/r0re/issues/1",
+   "title": "The Docker build fails because container-android/AGENTS.md is missing",
+   "repo": "fyrlove/r0re",
+   "created": "2026-08-11T10:42:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Vynx-Velvet/Flyx-main/issues/20",
+   "title": "/app/pow_wasm.js missing",
+   "repo": "Vynx-Velvet/Flyx-main",
+   "created": "2026-07-19T18:33:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/crossplane-contrib/provider-palette/issues/115",
+   "title": "Docker image build fails: terraform-provider-spectrocloud zip not found in build context (linux_arm64)",
+   "repo": "crossplane-contrib/provider-palette",
+   "created": "2026-09-01T07:22:00Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coleschaffer/Gabagool/issues/3",
+   "title": "failed to solve: failed to compute cache key: failed to calculate checksum of ref 686290d4-7997-43f4-8fd3-a67552da50d3::78wd65fbco1b74i7qffzq6jhr: \"/app/public\": not found",
+   "repo": "coleschaffer/Gabagool",
+   "created": "2025-12-26T06:25:59Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/pyflink/playgrounds/issues/22",
+   "title": "failed to compute cache key: \"/flink-sql-connector-kafka_2.11-1.13.0.jar\" not found: not found",
+   "repo": "pyflink/playgrounds",
+   "created": "2022-06-16T07:03:22Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/anmonteiro/aws-lambda-ocaml-runtime/issues/70",
+   "title": "How to resolve failed to compute cache key: \"/esy.lock\" not found: not found error when running build.sh",
+   "repo": "anmonteiro/aws-lambda-ocaml-runtime",
+   "created": "2023-04-23T22:55:44Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Hochfrequenz/ahb-tabellen/issues/395",
+   "title": "docs are oudated?: cannot start local server: failed to compute cache key / azure-mock not found",
+   "repo": "Hochfrequenz/ahb-tabellen",
+   "created": "2025-01-25T09:31:31Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ClawixAI/clawix/issues/58",
+   "title": "**Bug: `egress-firewall.sh` path mismatch in python-runner Dockerfile**",
+   "repo": "ClawixAI/clawix",
+   "created": "2026-08-08T06:42:08Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/onyx-dot-app/onyx/issues/14177",
+   "title": "backend/Dockerfile: chown -R onyx:onyx /app runs before /app exists (introduced in #6390), fails every fresh build",
+   "repo": "onyx-dot-app/onyx",
+   "created": "2026-08-23T08:37:36Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kieranroneill/q-rewrite/issues/9",
+   "title": "Feedback Julian",
+   "repo": "kieranroneill/q-rewrite",
+   "created": "2026-08-21T09:38:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/paolorechia/open-code-gen-api/issues/1",
+   "title": "Models not found",
+   "repo": "paolorechia/open-code-gen-api",
+   "created": "2023-01-09T10:48:04Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Aaronhrndz/antigravity-cli-addon/issues/2",
+   "title": "Build fails for version 1.8.8 on aarch64: \"/run_agy.sh\": not found",
+   "repo": "Aaronhrndz/antigravity-cli-addon",
+   "created": "2026-06-19T10:03:09Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/VisionRush/DeepFakeDefenders/issues/4",
+   "title": "ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref 338532d9-772c-451b-ba3d-c9fd060590f3::bivmsdw8vm9wgmzzrffunihup: \"/pre_model\": not found",
+   "repo": "VisionRush/DeepFakeDefenders",
+   "created": "2024-09-04T02:05:33Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/GitDakky/mitsubishi-ae200-hass/issues/2",
+   "title": "Installation Failure issue: \"/pymelans\": not found on Home Assistant OS and kills integration",
+   "repo": "GitDakky/mitsubishi-ae200-hass",
+   "created": "2026-07-17T01:34:20Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Goblin-Airdrops/allora-coin-prediction-node-goblin/issues/1",
+   "title": ".pth model ERROR not found",
+   "repo": "Goblin-Airdrops/allora-coin-prediction-node-goblin",
+   "created": "2024-09-22T18:32:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/biobricks-ai/toxtransformer/issues/3",
+   "title": "selfies_property_val_tokenizer not found",
+   "repo": "biobricks-ai/toxtransformer",
+   "created": "2025-10-14T07:52:40Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 1421
+}

@@ -1,0 +1,280 @@
+{
+ "category": "disk: no space left",
+ "rule": "resources.disk,host.disk",
+ "query": "\"no space left on device\" docker pull is:issue created:>=2021-01-01",
+ "total": 1241,
+ "sample": [
+  {
+   "url": "https://github.com/TonyTromp/tidal-connect-docker/issues/13",
+   "title": "docker pull --> no space left on device",
+   "repo": "TonyTromp/tidal-connect-docker",
+   "created": "2022-03-08T09:11:42Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/SCUTlihaoyu/open-chat-video-editor/issues/14",
+   "title": "no space left on device",
+   "repo": "SCUTlihaoyu/open-chat-video-editor",
+   "created": "2023-05-11T14:41:48Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Dispatcharr/Dispatcharr/issues/692",
+   "title": "[Bug-Fix]: No space left on device (Postgres-issue)",
+   "repo": "Dispatcharr/Dispatcharr",
+   "created": "2025-11-27T22:01:05Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/awslabs/genomics-secondary-analysis-using-aws-step-functions-and-aws-batch/issues/9",
+   "title": "No Space left on device",
+   "repo": "awslabs/genomics-secondary-analysis-using-aws-step-functions-and-aws-batch",
+   "created": "2021-11-01T19:10:47Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/openpredictionmarkets/socialpredict/issues/374",
+   "title": "No Space Left on Device Error",
+   "repo": "openpredictionmarkets/socialpredict",
+   "created": "2024-10-26T16:55:02Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/david-coincodex/pm/issues/110",
+   "title": "Production deploy never prunes old images \u2014 inode exhaustion took Postgres down for ~9h",
+   "repo": "david-coincodex/pm",
+   "created": "2026-09-21T09:11:21Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/vmware-archive/vctl-docs/issues/48",
+   "title": "no space left on device when `vctl pull`",
+   "repo": "vmware-archive/vctl-docs",
+   "created": "2021-06-23T17:11:58Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/y-taka-23/wasm-pandoc/issues/3",
+   "title": "no space left on device",
+   "repo": "y-taka-23/wasm-pandoc",
+   "created": "2022-03-13T08:02:54Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tlc-pack/tlcpack/issues/186",
+   "title": "[CI] [Conda] [Cuda] No space left on device",
+   "repo": "tlc-pack/tlcpack",
+   "created": "2023-08-03T14:57:53Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/vectordotdev/vector/issues/22288",
+   "title": "Vector keeps reading from a log file that has been deleted when no space left on device",
+   "repo": "vectordotdev/vector",
+   "created": "2025-01-23T03:28:10Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/asyncapi/cli/issues/1966",
+   "title": "linux/arm64 Docker build fails with \"No space left on device\" during chown",
+   "repo": "asyncapi/cli",
+   "created": "2026-01-08T14:11:38Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/autowarefoundation/autoware/issues/5840",
+   "title": "No space left on device for docker-build workflow",
+   "repo": "autowarefoundation/autoware",
+   "created": "2025-03-05T04:01:23Z",
+   "state": "open",
+   "comments": 14,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ROCm/ROCm-docker/issues/92",
+   "title": "Pulling docker image uses too many inodes (no space left on device)",
+   "repo": "ROCm/ROCm-docker",
+   "created": "2022-06-13T22:03:06Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tektoncd/catalog/issues/1305",
+   "title": "Tekton Buildah Task failed No Space left On device",
+   "repo": "tektoncd/catalog",
+   "created": "2024-10-02T09:28:49Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/driftless-star/driftless-star/issues/92",
+   "title": "fix: Apptainer GPU builds fail with \"no space left on device\" during SIF creation",
+   "repo": "driftless-star/driftless-star",
+   "created": "2026-06-18T20:48:23Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tinaudio/synth-setter/issues/2351",
+   "title": "fix(ci-automation): prevent VST runner disk exhaustion during image pulls",
+   "repo": "tinaudio/synth-setter",
+   "created": "2026-07-23T18:09:06Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nf-core/viralrecon/issues/497",
+   "title": "MAKE_VARIANTS_LONG_TABLE fails in CI build due to no space left on device",
+   "repo": "nf-core/viralrecon",
+   "created": "2025-04-30T17:24:11Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jonohill/docker-openvpn-proxy/issues/14",
+   "title": "No space left on device: many files created.",
+   "repo": "jonohill/docker-openvpn-proxy",
+   "created": "2024-01-18T09:32:20Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/leanprover-community/docgen-action/issues/16",
+   "title": "Error:  `docker: failed to register layer: write [...] no space left on device`",
+   "repo": "leanprover-community/docgen-action",
+   "created": "2025-12-29T20:36:43Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/isopen-io/meeshy/issues/6556",
+   "title": "Le disque de l'h\u00f4te de staging est plein : \u00ab Deploy to staging \u00bb \u00e9choue au `docker pull`, et staging sert une version p\u00e9rim\u00e9e en silence",
+   "repo": "isopen-io/meeshy",
+   "created": "2026-09-14T17:14:36Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jonaswinkler/paperless-ng/issues/1171",
+   "title": "[BUG] Error during installation: \"[Errno 28] No space left on device\"",
+   "repo": "jonaswinkler/paperless-ng",
+   "created": "2021-07-15T13:23:47Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/airbytehq/airbyte/issues/71134",
+   "title": "[abctl] fills up /tmp directory causing \"no space left on device\" errors",
+   "repo": "airbytehq/airbyte",
+   "created": "2026-01-06T12:41:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ollama/ollama/issues/1731",
+   "title": "`pulling manifest  Error: EOF` when pulling after disk is full",
+   "repo": "ollama/ollama",
+   "created": "2023-12-28T00:32:29Z",
+   "state": "open",
+   "comments": 12,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/appotry/docker-hexo/issues/42",
+   "title": "no space left on device \u4f46\u6211U\u76d8\u670920G\u5bb9\u91cf",
+   "repo": "appotry/docker-hexo",
+   "created": "2026-09-16T06:57:39Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sheynkman-lab/LRP2/issues/144",
+   "title": "Investigate optimizing Apptainer and Singularity caching setup",
+   "repo": "sheynkman-lab/LRP2",
+   "created": "2026-07-30T18:42:24Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/podman-container-tools/buildah/issues/4423",
+   "title": "No space left on device while building 3.26Gb image with 11Gb space available",
+   "repo": "podman-container-tools/buildah",
+   "created": "2022-11-18T09:15:05Z",
+   "state": "open",
+   "comments": 33,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/soflyy/katalystwp/issues/84",
+   "title": "Docker disk exhaustion: orphan images, layer generations, and health reporting the wrong volume",
+   "repo": "soflyy/katalystwp",
+   "created": "2026-09-20T04:09:04Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MinaProtocol/mina/issues/19374",
+   "title": "Verify mina-toolchain cache job never finishes: it validates every tag ever cached, not the build's",
+   "repo": "MinaProtocol/mina",
+   "created": "2026-09-06T03:05:13Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tektoncd/pipeline/issues/9052",
+   "title": "Alpha e2e tests fail often",
+   "repo": "tektoncd/pipeline",
+   "created": "2025-10-01T08:53:10Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/QuantumNous/new-api/issues/5878",
+   "title": "ARMv7 / \u73a9\u5ba2\u4e91 \u73af\u5883\u4e0b\u9ed8\u8ba4 Docker \u6784\u5efa\u94fe\u8def\u517c\u5bb9\u6027\u8f83\u5dee",
+   "repo": "QuantumNous/new-api",
+   "created": "2026-07-03T10:31:16Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 1241
+}

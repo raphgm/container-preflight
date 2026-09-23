@@ -1,0 +1,280 @@
+{
+ "category": "build: BuildKit required",
+ "rule": "build.buildkit",
+ "query": "\"requires BuildKit\" is:issue created:>=2021-01-01",
+ "total": 443,
+ "sample": [
+  {
+   "url": "https://github.com/gonuit/heroku-docker-deploy/issues/16",
+   "title": "Docker requires BuildKit",
+   "repo": "gonuit/heroku-docker-deploy",
+   "created": "2021-10-03T05:55:30Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/crazy-goat/go-mesi/issues/442",
+   "title": "[tests] servers/test-server image unbuildable without the buildx component \u2014 COPY --chmod requires BuildKit (docker build, DOCKER_BUILDKIT=1 and docker compose all fail locally)",
+   "repo": "crazy-goat/go-mesi",
+   "created": "2026-09-22T11:49:33Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/compose/issues/13695",
+   "title": "[BUG] Confusing error messages when Bake mode requires BuildKit but it's not enabled",
+   "repo": "docker/compose",
+   "created": "2026-04-01T07:18:21Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/devspace-sh/devspace/issues/3293",
+   "title": "Support buildkit backend for local builds",
+   "repo": "devspace-sh/devspace",
+   "created": "2026-08-10T09:09:03Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/airvzxf/ftp-deployment-action/issues/210",
+   "title": "[EPIC] Dockerfile/Makefile hardening audit (F2 round)",
+   "repo": "airvzxf/ftp-deployment-action",
+   "created": "2026-09-03T20:31:37Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NVIDIA/NemoClaw/issues/9921",
+   "title": "Hermes Portable image build uses a BuildKit-only COPY option",
+   "repo": "NVIDIA/NemoClaw",
+   "created": "2026-08-21T20:02:18Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/airvzxf/ftp-deployment-action/issues/222",
+   "title": "[EPIC] workflows hardening audit (F2 round)",
+   "repo": "airvzxf/ftp-deployment-action",
+   "created": "2026-09-03T20:32:55Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ScottRBK/eval-harness/issues/5",
+   "title": "Build eval-owned Docker images with BuildKit",
+   "repo": "ScottRBK/eval-harness",
+   "created": "2026-08-09T09:13:23Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dromara/Jpom/issues/49",
+   "title": "\u4fee\u6539docker demon\u914d\u7f6e\u540e\uff0cdocker\u6784\u5efa\u6ca1\u6709\u4f7f\u7528\u65b0\u914d\u7f6e",
+   "repo": "dromara/Jpom",
+   "created": "2023-06-14T12:53:44Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NVIDIA/workbench-example-onboarding-project/issues/21",
+   "title": "Building JupyterLab failed",
+   "repo": "NVIDIA/workbench-example-onboarding-project",
+   "created": "2025-10-15T12:24:49Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/portainer/portainer/issues/10482",
+   "title": "Build Image throws BuildKit error for --chmod",
+   "repo": "portainer/portainer",
+   "created": "2023-10-16T11:31:27Z",
+   "state": "open",
+   "comments": 12,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NVIDIA/NemoClaw/issues/10007",
+   "title": "Hermes Portable Dockerfile requires BuildKit-only features on Podman",
+   "repo": "NVIDIA/NemoClaw",
+   "created": "2026-08-23T15:18:33Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/airvzxf/ftp-deployment-action/issues/156",
+   "title": "test(integration): Dockerfile.test-server requires BuildKit but Makefile uses plain 'docker build'",
+   "repo": "airvzxf/ftp-deployment-action",
+   "created": "2026-09-03T16:42:32Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nuriel77/goshimmer-playbook/issues/29",
+   "title": "Playbook failed while installing Docker image",
+   "repo": "nuriel77/goshimmer-playbook",
+   "created": "2021-10-01T12:49:21Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Mollomm1/NovetusDocker/issues/2",
+   "title": "container fails to build at step 7/13",
+   "repo": "Mollomm1/NovetusDocker",
+   "created": "2025-07-01T18:26:16Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bmuschko/gradle-docker-plugin/issues/1226",
+   "title": "RUN --mount=type=bind doesn't work",
+   "repo": "bmuschko/gradle-docker-plugin",
+   "created": "2024-11-04T16:38:40Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/night1008/night1008.github.io/issues/71",
+   "title": "mac + colima + docker-cli \u4e0b --mount build \u5931\u8d25",
+   "repo": "night1008/night1008.github.io",
+   "created": "2026-04-21T02:54:20Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Radiergummi/cetacean/issues/89",
+   "title": "Add windows nanoserver container image",
+   "repo": "Radiergummi/cetacean",
+   "created": "2026-07-01T16:30:51Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shakacode/react-on-rails-demo-marketplace-rsc/issues/201",
+   "title": "Follow-up: .controlplane/.dockerignore is never read by docker build",
+   "repo": "shakacode/react-on-rails-demo-marketplace-rsc",
+   "created": "2026-09-02T09:52:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/caretdev/iris-python-faker/issues/1",
+   "title": "Installation error in WSL2",
+   "repo": "caretdev/iris-python-faker",
+   "created": "2022-01-08T15:42:17Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Azure/acr/issues/721",
+   "title": "Allow `buildkit` build in `az acr build`",
+   "repo": "Azure/acr",
+   "created": "2023-09-11T07:28:48Z",
+   "state": "open",
+   "comments": 14,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jojo243/seafile-docker-arm64/issues/19",
+   "title": "Buildkit Error",
+   "repo": "jojo243/seafile-docker-arm64",
+   "created": "2022-01-05T15:57:36Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ptone/scion/issues/1453",
+   "title": "fix(build): enable BuildKit in cloudbuild-omni.yaml for --mount support",
+   "repo": "ptone/scion",
+   "created": "2026-09-07T12:00:19Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dotnet/dotnet-docker/issues/5654",
+   "title": "Consider using Docker custom build outputs (`--output`) for generated Dockerfiles and Readmes",
+   "repo": "dotnet/dotnet-docker",
+   "created": "2024-07-05T19:00:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/o1-labs/submission-updater/issues/6",
+   "title": "Restructure the dual-binary Dockerfile: variant stages + directory COPY",
+   "repo": "o1-labs/submission-updater",
+   "created": "2026-08-31T15:35:12Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moby/moby/issues/46727",
+   "title": "`ADD --checksum` doesn't work with windows builds",
+   "repo": "moby/moby",
+   "created": "2023-10-26T08:06:35Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/paulkokos/project-management-dashboard/issues/93",
+   "title": "Keyboard shortcuts system",
+   "repo": "paulkokos/project-management-dashboard",
+   "created": "2025-11-05T03:49:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/dotnet/Docker.DotNet/issues/635",
+   "title": "Docket.DotNet Build Image has undocumented limitations",
+   "repo": "dotnet/Docker.DotNet",
+   "created": "2023-05-13T21:13:22Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/fabric8io/docker-maven-plugin/issues/1711",
+   "title": "Failed to build the docker image on using \"chmod\" option",
+   "repo": "fabric8io/docker-maven-plugin",
+   "created": "2023-10-05T18:14:50Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/calpaterson/csvbase/issues/126",
+   "title": "Will this run on an ARM64 Raspberry Pi?",
+   "repo": "calpaterson/csvbase",
+   "created": "2024-06-02T15:20:23Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  }
+ ],
+ "precision": 0.9666666666666667,
+ "adjusted": 428
+}

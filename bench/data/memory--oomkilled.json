@@ -1,0 +1,280 @@
+{
+ "category": "memory: OOMKilled",
+ "rule": "resources.memory",
+ "query": "OOMKilled \"exit code 137\" is:issue created:>=2021-01-01",
+ "total": 97607,
+ "sample": [
+  {
+   "url": "https://github.com/devmahmoudi/laravel-todolist/issues/76",
+   "title": "resolve Docker process exit code 137 in GitHub Actions CI/CD pipeline",
+   "repo": "devmahmoudi/laravel-todolist",
+   "created": "2025-11-10T09:13:51Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kestra-io/plugin-kubernetes/issues/339",
+   "title": "io.kestra.plugin.kubernetes.PodCreate Fails with Exit Code 137 Despite Resource Limits",
+   "repo": "kestra-io/plugin-kubernetes",
+   "created": "2025-06-10T09:56:28Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Jersyfi/taktus/issues/29",
+   "title": "The container adapter's memory-kill test is flaky: the engine does not always report OOMKilled",
+   "repo": "Jersyfi/taktus",
+   "created": "2026-09-23T12:52:31Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/apache/airflow/issues/73164",
+   "title": "KubernetesExecutor: Event log says \"Pod failed because of None\" for OOMKilled pods",
+   "repo": "apache/airflow",
+   "created": "2026-09-15T06:42:02Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/KDM-cli/kdm-cli/issues/275",
+   "title": "[v4.0.0] Phase 4: Deterministic Kubernetes/Docker Failure Rule Engine",
+   "repo": "KDM-cli/kdm-cli",
+   "created": "2026-09-10T22:48:57Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/open-telemetry/opentelemetry-demo/issues/3811",
+   "title": "[prometheus] Default Helm memory limit can cause an OOMKilled restart loop",
+   "repo": "open-telemetry/opentelemetry-demo",
+   "created": "2026-08-06T03:21:53Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MaRDI4NFDI/MaRDIRoadmap/issues/235",
+   "title": "qlever-updater OOMKilled crash loop due to insufficient memory limit",
+   "repo": "MaRDI4NFDI/MaRDIRoadmap",
+   "created": "2026-09-17T07:33:09Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/world-federation-of-advertisers/cross-media-measurement/issues/4500",
+   "title": "edp-aggregator API servers are OOMKilled under VID-labeling load, hanging edpa-cloud-test",
+   "repo": "world-federation-of-advertisers/cross-media-measurement",
+   "created": "2026-09-12T14:33:41Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AstrBotDevs/shipyard-neo/issues/32",
+   "title": "Warm Pool \u6b63\u5e38\u8f6e\u6362\u65f6\u5f3a\u5236\u5220\u9664\u8fd0\u884c\u4e2d\u5bb9\u5668\uff0c\u5bfc\u81f4 SIGKILL / Exit Code 137",
+   "repo": "AstrBotDevs/shipyard-neo",
+   "created": "2026-09-05T14:22:46Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/zyra-project/zyra/issues/153",
+   "title": "`visualize-timeseries` crashes with OOM (exit code 137) in headless/Kubernetes environments",
+   "repo": "zyra-project/zyra",
+   "created": "2026-04-27T20:38:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/achourisoufiene/cylmaaaaaaaaa/issues/1",
+   "title": "[Test] OOMKilled error in Docker container",
+   "repo": "achourisoufiene/cylmaaaaaaaaa",
+   "created": "2026-06-08T23:20:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/BarminGeorge/ShuKnow/issues/137",
+   "title": "\u0423\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435: \u0438\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u0444\u043e\u0440\u043c\u0430\u0442 \u043e\u0442\u0432\u0435\u0442\u0430 \u0438\u0438 \u0432 \u0447\u0430\u0442\u0435",
+   "repo": "BarminGeorge/ShuKnow",
+   "created": "2026-04-24T07:33:55Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/ChatLab/ChatLab/issues/137",
+   "title": "\u5916\u90e8\u57df\u540d\u8bf7\u6c42\u5b58\u5728\u5b89\u5168\u98ce\u9669",
+   "repo": "ChatLab/ChatLab",
+   "created": "2026-04-13T12:52:11Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/parkerhancock/patent_client/issues/137",
+   "title": "\"Event Loop is closed\"/Deadlocks for simultaneous requests",
+   "repo": "parkerhancock/patent_client",
+   "created": "2024-01-10T17:10:06Z",
+   "state": "closed",
+   "comments": 4,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/ImAdrenalize/qkd-digital-twin-project/issues/137",
+   "title": "Development environment",
+   "repo": "ImAdrenalize/qkd-digital-twin-project",
+   "created": "2026-04-04T20:30:31Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/modelcontextprotocol/registry/issues/137",
+   "title": "Document convention: server.json presence in package artifact",
+   "repo": "modelcontextprotocol/registry",
+   "created": "2025-06-13T13:09:59Z",
+   "state": "closed",
+   "comments": 6,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/ITU-DevOps2026/ITU-minitwit/issues/137",
+   "title": "Refactor - Function that fetches own timeline is very slow",
+   "repo": "ITU-DevOps2026/ITU-minitwit",
+   "created": "2026-04-11T19:40:12Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/okdevme/DiscordPlugins/issues/137",
+   "title": "ChannelsPreview error with new update",
+   "repo": "okdevme/DiscordPlugins",
+   "created": "2025-09-26T15:45:53Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/knishioka/ib-sec-mcp/issues/137",
+   "title": "bug(validators): validate_isin rejects valid ISINs (Luhn check digit bug)",
+   "repo": "knishioka/ib-sec-mcp",
+   "created": "2026-06-04T06:24:10Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/PRX/The-World-FE-Nextjs/issues/137",
+   "title": "Opt website out of Google FLoC",
+   "repo": "PRX/The-World-FE-Nextjs",
+   "created": "2021-04-29T16:46:50Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/hasherwi/Archipelago-kirbyam/issues/137",
+   "title": "Refactor KirbyAM address schema: separate AP transport mailbox from native game-state flags",
+   "repo": "hasherwi/Archipelago-kirbyam",
+   "created": "2026-03-19T15:50:59Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/margaritauk/home-offer-direct/issues/137",
+   "title": "As a buyer, I want to manually update my offer status when the agent responds so that my dashboard reflects reality",
+   "repo": "margaritauk/home-offer-direct",
+   "created": "2026-06-03T19:10:12Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/gocronx-team/gocron/issues/137",
+   "title": "feat: task template management, script versioning, and code editor",
+   "repo": "gocronx-team/gocron",
+   "created": "2026-04-17T00:45:52Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/ix-infrastructure/Ix/issues/137",
+   "title": "Add R parser support (.r, .R)",
+   "repo": "ix-infrastructure/Ix",
+   "created": "2026-04-03T21:56:12Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/Shaurya1907/PYSCHECARE-main/issues/137",
+   "title": "docs: CODE_OF_CONDUCT.md Missing",
+   "repo": "Shaurya1907/PYSCHECARE-main",
+   "created": "2026-06-05T19:45:18Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/eslint/eslint-github-bot/issues/137",
+   "title": "shorten the text in the comment, to make less annoying",
+   "repo": "eslint/eslint-github-bot",
+   "created": "2021-01-22T03:14:08Z",
+   "state": "closed",
+   "comments": 7,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/robe070/cookbooks/issues/137",
+   "title": "Implement AWS JPN images CI pipelines",
+   "repo": "robe070/cookbooks",
+   "created": "2021-03-30T03:12:15Z",
+   "state": "closed",
+   "comments": 4,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/denoland/denokv/issues/137",
+   "title": "remote: expired metadata token is used without refresh or retry, surfacing auth errors to callers",
+   "repo": "denoland/denokv",
+   "created": "2026-06-05T19:35:13Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/plures/pares-radix/issues/137",
+   "title": "[ci-feedback] Post-merge CI failure at c2cfd14",
+   "repo": "plures/pares-radix",
+   "created": "2026-05-14T22:14:21Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/aliendomain/workable/issues/137",
+   "title": "Remove public id-based system and definition APIs",
+   "repo": "aliendomain/workable",
+   "created": "2026-06-06T23:55:08Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  }
+ ],
+ "precision": 0.36666666666666664,
+ "adjusted": 35789
+}

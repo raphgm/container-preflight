@@ -1,0 +1,280 @@
+{
+ "category": "platform: requested platform mismatch",
+ "rule": "image.platform",
+ "query": "\"does not match the detected host platform\" is:issue created:>=2021-01-01",
+ "total": 3717,
+ "sample": [
+  {
+   "url": "https://github.com/Kanka-CE/kanka-ce-deploy/issues/8",
+   "title": "ARM image",
+   "repo": "Kanka-CE/kanka-ce-deploy",
+   "created": "2026-09-07T10:57:03Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/SteveLTN/https-portal/issues/326",
+   "title": "does not match the detected host platform (linux/s390x)",
+   "repo": "SteveLTN/https-portal",
+   "created": "2022-11-08T01:26:17Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/super-productivity/plainspace/issues/37",
+   "title": "ARM64 Support - Docker Compose",
+   "repo": "super-productivity/plainspace",
+   "created": "2026-08-31T21:37:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/spectrum-finance/ergo-dex-backend/issues/99",
+   "title": "events-tracker image does not match the detected host platform",
+   "repo": "spectrum-finance/ergo-dex-backend",
+   "created": "2024-02-20T03:11:21Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/qusong0627/QuantMind/issues/24",
+   "title": "Mac MINI \u7684 VMware \u91cc\u9762\u4f7f\u7528 Ubuntu \u5b89\u88c5\u62a5\u51fa",
+   "repo": "qusong0627/QuantMind",
+   "created": "2026-09-06T10:36:17Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/maxking/docker-mailman/issues/731",
+   "title": "linux/arm64 - The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8)",
+   "repo": "maxking/docker-mailman",
+   "created": "2024-11-10T17:58:05Z",
+   "state": "open",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/postgis/docker-postgis/issues/371",
+   "title": "RaspberryPi: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested.",
+   "repo": "postgis/docker-postgis",
+   "created": "2023-12-07T21:34:55Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/TomasTomecek/sen/issues/191",
+   "title": "The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8)",
+   "repo": "TomasTomecek/sen",
+   "created": "2026-04-08T14:15:04Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NilsLeo/kcc-cloud/issues/28",
+   "title": "[Feature]: ARM64 image support",
+   "repo": "NilsLeo/kcc-cloud",
+   "created": "2026-09-01T08:30:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hkyutong/Wechat-Claw/issues/1",
+   "title": "The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8)",
+   "repo": "hkyutong/Wechat-Claw",
+   "created": "2026-03-17T02:47:50Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/portainer/helper-reset-password/issues/7",
+   "title": "The requested image's platform (linux/amd64) does not match the detected host platform",
+   "repo": "portainer/helper-reset-password",
+   "created": "2022-09-09T22:12:36Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/TheAppgineer/flatpak-flutter/issues/127",
+   "title": "docker run command isn't working for linux/arm64/v8",
+   "repo": "TheAppgineer/flatpak-flutter",
+   "created": "2026-09-20T09:31:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/logicallyincorrect/onvif2mqtt/issues/57",
+   "title": "The requested image's platform (linux/amd64) does not match the detected host platform",
+   "repo": "logicallyincorrect/onvif2mqtt",
+   "created": "2022-06-20T13:40:43Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moby/buildkit/issues/7110",
+   "title": "BuildKit fails to start container process under Rosetta emulation",
+   "repo": "moby/buildkit",
+   "created": "2026-09-02T18:34:23Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jaegertracing/jaeger-idl/issues/117",
+   "title": "[Bug]: make protocompile command giving error on apple silicon(arm64)",
+   "repo": "jaegertracing/jaeger-idl",
+   "created": "2025-01-15T14:12:20Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rancher-sandbox/rancher-desktop/issues/5577",
+   "title": "platform (linux/amd64) does not match the detected host platform (linux/arm64/v8)",
+   "repo": "rancher-sandbox/rancher-desktop",
+   "created": "2023-09-23T09:35:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lmnr-ai/lmnr/issues/1299",
+   "title": "Doesn't work on Mac Apple Silicon",
+   "repo": "lmnr-ai/lmnr",
+   "created": "2026-03-02T07:34:54Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hei85/vohive-qdc507-nas-docker/issues/1",
+   "title": "\u5927\u4f6c\uff0carm64\u7684\u955c\u50cf\u8981\u600e\u4e48\u505a\u554a\uff1f",
+   "repo": "hei85/vohive-qdc507-nas-docker",
+   "created": "2026-08-02T11:22:59Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/TyrantUT/Qt_Docker/issues/1",
+   "title": " (linux/arm/v7) does not match the detected host platform (linux/amd64/v3)",
+   "repo": "TyrantUT/Qt_Docker",
+   "created": "2023-04-18T13:31:31Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aahnik/tgcf/issues/550",
+   "title": "WARNING: The requested image's platform (linux/amd64) does not match the detected host platform",
+   "repo": "aahnik/tgcf",
+   "created": "2023-12-25T13:17:39Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/silenceboychen/silenceboychen.github.io/issues/50",
+   "title": "docker\u8de8\u5e73\u53f0\u6253\u5305\u95ee\u9898does not match the detected host platform | silenceboychen",
+   "repo": "silenceboychen/silenceboychen.github.io",
+   "created": "2022-06-28T03:19:35Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/google/grr/issues/1133",
+   "title": "ARM missing and hung docker compose deployment",
+   "repo": "google/grr",
+   "created": "2025-04-22T16:47:30Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/timwuthenow/ibamoe-docker-compose/issues/1",
+   "title": "The image's platform (linux/arm64) does not match the detected host platform (linux/amd64/v3)",
+   "repo": "timwuthenow/ibamoe-docker-compose",
+   "created": "2023-06-29T12:44:31Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/illinoisdata/DeepOLA/issues/180",
+   "title": "The requested image's platform (linux/arm64/v8) does not match the detected host platform",
+   "repo": "illinoisdata/DeepOLA",
+   "created": "2023-08-01T17:57:56Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tonistiigi/binfmt/issues/115",
+   "title": "image's platform (linux/arm64/v8) does not match the detected host platform (linux/amd64) ",
+   "repo": "tonistiigi/binfmt",
+   "created": "2022-12-01T06:47:12Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/iboates/osm-utilities-docker/issues/80",
+   "title": "Multi-arch support: please publish linux/arm64 images",
+   "repo": "iboates/osm-utilities-docker",
+   "created": "2026-08-10T10:55:24Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mincong-h/finance-toolkit/issues/46",
+   "title": "The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8)",
+   "repo": "mincong-h/finance-toolkit",
+   "created": "2022-03-20T16:51:27Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sdelrio/rpi-torrent-box/issues/25",
+   "title": "The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm/v7)",
+   "repo": "sdelrio/rpi-torrent-box",
+   "created": "2021-11-18T18:44:44Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/solana-foundation/solana-verifiable-build/issues/312",
+   "title": "Solana verified",
+   "repo": "solana-foundation/solana-verifiable-build",
+   "created": "2026-05-28T18:19:38Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Red5d/docker-autocompose/issues/27",
+   "title": "The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm/v7)",
+   "repo": "Red5d/docker-autocompose",
+   "created": "2021-10-03T08:53:10Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 3717
+}
