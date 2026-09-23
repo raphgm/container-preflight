@@ -53,6 +53,24 @@ container-doctor preflight examples/broken-shop --host examples/hosts/macbook-m2
 container-doctor preflight examples/broken-shop --host examples/hosts/ubuntu-legacy-server.json
 ```
 
+### Learning from real failures
+
+Built-in rules cover common failures. `learn` turns the failures your project actually hits into new rules:
+
+```bash
+container-doctor learn -- docker compose up db
+```
+
+It runs the command and extracts the decisive error line from the output. It turns that line into a signature, with addresses, IDs, paths and numbers generalized. It then records the conditions at the time: image, platform, emulation (QEMU/Rosetta), memory, builder, and which environment variables were set (never their values). The rule goes to `.container-doctor/learned.yaml`; commit it, and preflight predicts the failure for everyone on the team.
+
+Rules improve with evidence:
+
+- **Another failure with the same error** drops the conditions the two runs disagree on, which makes the rule more general.
+- **A working run** (`learn --success -- docker compose up -d`) that satisfies a rule adds the condition that tells it apart from the failures, which makes the rule more specific. If no such condition exists, the rule is marked unreliable and no longer reported.
+- **A failure a built-in rule already predicted** is reported as such and is not learned twice.
+
+Example from a real run: Postgres started without a password failed. `learn` created a rule for `image=postgres`. After a password was added, the successful run refined the rule to `env.POSTGRES_PASSWORD=unset`, and preflight now flags any Compose file that uses Postgres without one.
+
 ### Rules
 
 | Rule | Predicts |

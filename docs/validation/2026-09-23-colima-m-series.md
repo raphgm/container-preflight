@@ -48,3 +48,20 @@ Following the fix started a working daemon. The first `colima start` failed beca
 - Of 11 predictions, 8 identified the real problem (6 word-for-word, 2 with different wording), 1 was a false
   positive, and 2 were imprecise. All three were caused by facts inside the VM that the first version
   could not see; reading the VM kernel fixed them.
+
+## Learning from failures (`learn`)
+
+1. `mongo:7` forced to `linux/amd64` under QEMU was expected to crash for lack of AVX. It ran,
+   because this QEMU emulates AVX. Preflight had only warned about emulation, which was the
+   right severity.
+2. `postgres:16-alpine` without `POSTGRES_PASSWORD`. Preflight predicted nothing, because no
+   rule knew this failure.
+   - `learn -- docker-compose up` extracted
+     `Error: Database is uninitialized and superuser password is not specified.` and created
+     `learned.postgres` with conditions `image=postgres, memory=<2GiB`.
+   - After a password was added, `learn --success -- docker-compose up -d` observed the working
+     run. It added the distinguishing condition `env.POSTGRES_PASSWORD=unset`.
+   - Preflight then reported nothing when the password was set. It predicted the failure when
+     the password was removed on another tag (`postgres:17`).
+   - `memory=<2GiB` remains a spurious condition until a failure on a larger VM generalizes it
+     away. This bias of single-example learning should be discussed in the paper.

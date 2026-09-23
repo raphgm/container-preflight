@@ -14,6 +14,7 @@ import (
 	"github.com/raphgm/container-doctor/internal/executor"
 	"github.com/raphgm/container-doctor/pkg/preflight/fact"
 	"github.com/raphgm/container-doctor/pkg/preflight/host"
+	"github.com/raphgm/container-doctor/pkg/preflight/learn"
 	"github.com/raphgm/container-doctor/pkg/preflight/project"
 	"github.com/raphgm/container-doctor/pkg/preflight/registry"
 	"github.com/raphgm/container-doctor/pkg/preflight/rules"
@@ -67,18 +68,15 @@ func (r *Report) Errors() int {
 	return n
 }
 
-func Run(ctx context.Context, opts Options) (*Report, error) {
-	start := time.Now()
+// Prepare loads the project, profiles the host and resolves images: every
+// input the rules read.
+func Prepare(ctx context.Context, opts Options) (*rules.Env, error) {
 	if opts.Runner == nil {
 		opts.Runner = executor.New()
 	}
 	if opts.Resolver == nil {
 		opts.Resolver = registry.NewRemote()
 	}
-	if opts.Rules == nil {
-		opts.Rules = rules.All()
-	}
-
 	var h *host.Profile
 	facts := fact.NewSet()
 	if opts.Host != nil {
@@ -102,13 +100,36 @@ func Run(ctx context.Context, opts Options) (*Report, error) {
 	} else {
 		env.Images = resolveImages(ctx, opts.Resolver, rules.Pulls(proj, h), facts)
 	}
+	return env, nil
+}
 
+// Run predicts the failures of the project in opts.Dir.
+func Run(ctx context.Context, opts Options) (*Report, error) {
+	start := time.Now()
+	env, err := Prepare(ctx, opts)
+	if err != nil {
+		return nil, err
+	}
+	if opts.Rules == nil {
+		opts.Rules = rules.All()
+		learned, err := learn.Load(env.Project.Dir)
+		if err != nil {
+			return nil, err
+		}
+		opts.Rules = append(opts.Rules, learned.Active()...)
+	}
+	return Evaluate(ctx, env, opts.Rules, opts.Host, start), nil
+}
+
+// Evaluate runs rules against a prepared environment.
+func Evaluate(ctx context.Context, env *rules.Env, rs []rules.Rule, snap *host.Snapshot, start time.Time) *Report {
+	proj, h, facts := env.Project, env.Host, env.Facts
 	rep := &Report{Project: proj.Name, Dir: proj.Dir, Host: h, Timestamp: start}
-	if opts.Host != nil {
-		rep.HostName = opts.Host.Hostname
+	if snap != nil {
+		rep.HostName = snap.Hostname
 	}
 	blocked := map[fact.ID][]string{}
-	for _, r := range opts.Rules {
+	for _, r := range rs {
 		if root, ok := blockingRoot(facts, r.Needs()); ok {
 			blocked[root.Fact] = append(blocked[root.Fact], r.ID())
 			continue
@@ -127,7 +148,7 @@ func Run(ctx context.Context, opts Options) (*Report, error) {
 		return rank(rep.Findings[i].Severity) < rank(rep.Findings[j].Severity)
 	})
 	rep.Duration = time.Since(start)
-	return rep, nil
+	return rep
 }
 
 func blockingRoot(facts *fact.Set, needs []fact.ID) (fact.Failure, bool) {
