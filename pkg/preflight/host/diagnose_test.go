@@ -1,0 +1,63 @@
+package host
+
+import (
+	"strings"
+	"testing"
+)
+
+var colima = engine{"Colima", "/h/.colima/default/docker.sock", "colima start", "colima"}
+
+func TestDiagnoseStaleDesktopContext(t *testing.T) {
+	f := diagnoseDaemon(daemonClues{
+		Context:   "desktop-linux",
+		Endpoint:  "unix:///nonexistent/.docker/run/docker.sock",
+		Err:       "Cannot connect to the Docker daemon",
+		Installed: []engine{colima},
+	})
+	if f.Summary != `Docker context "desktop-linux" still points to Docker Desktop, which is not installed` {
+		t.Errorf("summary = %q", f.Summary)
+	}
+	if f.Fix != "Start Colima: `colima start`, then `docker context use colima`" {
+		t.Errorf("fix = %q", f.Fix)
+	}
+}
+
+func TestDiagnoseRunningEngineUnderOtherContext(t *testing.T) {
+	f := diagnoseDaemon(daemonClues{
+		Context:   "desktop-linux",
+		Endpoint:  "unix:///nonexistent/.docker/run/docker.sock",
+		Installed: []engine{colima},
+		Running:   []engine{colima},
+	})
+	if !strings.Contains(f.Summary, "Colima is running") || f.Fix != "`docker context use colima`" {
+		t.Errorf("got %q / %q", f.Summary, f.Fix)
+	}
+}
+
+func TestDiagnosePermission(t *testing.T) {
+	f := diagnoseDaemon(daemonClues{Endpoint: "unix:///var/run/docker.sock", Err: "dial unix /var/run/docker.sock: connect: permission denied"})
+	if !strings.Contains(f.Fix, "usermod -aG docker") {
+		t.Errorf("fix = %q", f.Fix)
+	}
+}
+
+func TestDiagnoseNothingInstalled(t *testing.T) {
+	f := diagnoseDaemon(daemonClues{Endpoint: "unix:///nonexistent.sock"})
+	if !strings.Contains(f.Fix, "Install a Docker engine") {
+		t.Errorf("fix = %q", f.Fix)
+	}
+}
+
+func TestDiagnoseInstalledButStopped(t *testing.T) {
+	f := diagnoseDaemon(daemonClues{
+		Context:   "colima",
+		Endpoint:  "unix:///nonexistent/.colima/default/docker.sock",
+		Installed: []engine{colima},
+	})
+	if f.Summary != "Colima is installed but not running" && !strings.Contains(f.Summary, "does not exist") {
+		t.Errorf("summary = %q", f.Summary)
+	}
+	if f.Fix != "Start Colima: `colima start`" {
+		t.Errorf("fix = %q", f.Fix)
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "capturedAt": "2026-09-23T00:00:00Z",
+  "hostname": "example: Ubuntu 20.04 server, distro Docker packages",
+  "profile": {
+    "ClientOS": "linux",
+    "ClientArch": "amd64",
+    "ClientMem": 8335405056,
+    "Platform": "linux/amd64",
+    "OperatingSystem": "Ubuntu 20.04.6 LTS",
+    "ServerVersion": "20.10.21",
+    "KernelVersion": "5.4.0-196-generic",
+    "MemTotal": 8335405056,
+    "NCPU": 4,
+    "Runtimes": ["io.containerd.runc.v2", "runc"],
+    "CgroupVersion": "1",
+    "DockerRootDir": "/var/lib/docker",
+    "Endpoint": "unix:///var/run/docker.sock",
+    "DiskFree": 3221225472,
+    "DiskExact": true,
+    "ComposeVersion": "1.29.2",
+    "BuildxInstalled": false,
+    "Sysctls": {"vm.max_map_count": 65530, "net.ipv4.ip_unprivileged_port_start": 1024},
+    "Local": true
+  },
+  "listeningPorts": ["22/tcp", "8080/tcp"]
+}

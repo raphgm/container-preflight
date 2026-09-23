@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "capturedAt": "2026-09-23T00:00:00Z",
+  "hostname": "example: MacBook Air M2, Docker Desktop defaults",
+  "profile": {
+    "ClientOS": "darwin",
+    "ClientArch": "arm64",
+    "ClientMem": 17179869184,
+    "Platform": "linux/arm64",
+    "OperatingSystem": "Docker Desktop",
+    "ServerVersion": "27.2.0",
+    "KernelVersion": "6.10.4-linuxkit",
+    "MemTotal": 4108189696,
+    "NCPU": 8,
+    "Runtimes": ["io.containerd.runc.v2", "runc"],
+    "CgroupVersion": "2",
+    "DockerRootDir": "/var/lib/docker",
+    "Endpoint": "unix:///Users/me/.docker/run/docker.sock",
+    "DiskFree": 48318382080,
+    "ComposeVersion": "2.20.2-desktop.1",
+    "BuildxInstalled": true,
+    "BuildxVersion": "0.12.1-desktop.4",
+    "Emulated": ["linux/amd64"],
+    "Sysctls": {"vm.max_map_count": 262144},
+    "Local": true
+  },
+  "listeningPorts": ["5000/tcp", "7000/tcp"]
+}
