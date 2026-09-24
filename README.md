@@ -1,5 +1,7 @@
 # Container Preflight ✈️
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22941382.svg)](https://doi.org/10.5281/zenodo.22941382)
+
 **Predict container failures before you run, and diagnose them at the root cause when they happen.**
 
 `container-preflight` predicts whether a container project will build and run on a machine **before you run it**, and explains each predicted failure once, at its root cause.
