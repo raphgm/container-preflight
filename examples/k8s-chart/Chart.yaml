@@ -1,0 +1,4 @@
+apiVersion: v2
+name: demo
+description: Small chart with deliberate problems, for trying `container-preflight k8s -`.
+version: 0.1.0

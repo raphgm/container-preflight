@@ -1,0 +1,3 @@
+image: nginx:9.99.99          # tag that does not exist
+memory: 64Gi                  # more than a laptop cluster has
+storageClass: gp3             # AWS class, absent on local clusters

@@ -14,6 +14,7 @@ import (
 	"github.com/raphgm/container-preflight/internal/executor"
 	"github.com/raphgm/container-preflight/pkg/preflight/fact"
 	"github.com/raphgm/container-preflight/pkg/preflight/host"
+	"github.com/raphgm/container-preflight/pkg/preflight/k8s"
 	"github.com/raphgm/container-preflight/pkg/preflight/learn"
 	"github.com/raphgm/container-preflight/pkg/preflight/project"
 	"github.com/raphgm/container-preflight/pkg/preflight/registry"
@@ -48,7 +49,8 @@ type Report struct {
 	Project   string          `json:"project"`
 	Dir       string          `json:"dir"`
 	HostName  string          `json:"hostName,omitempty"`
-	Host      *host.Profile   `json:"host"`
+	Host      *host.Profile   `json:"host,omitempty"`
+	Cluster   *k8s.Cluster    `json:"cluster,omitempty"`
 	Roots     []RootCause     `json:"rootCauses"`
 	Findings  []rules.Finding `json:"findings"`
 	Passed    []string        `json:"passed"`
