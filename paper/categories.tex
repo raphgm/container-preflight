@@ -1,0 +1,43 @@
+\begin{table}[t]
+\centering\scriptsize
+\caption{Failure categories: GitHub issues since 2021 matching each error, precision of the search (share of 30 sampled issues containing the exact error text), and adjusted estimate. Rule ``--'' marks categories \tool{} does not target; $\dagger$ marks a rule added after mining.}
+\label{tab:categories}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Category & Rule & Hits & Precision & Adjusted \\
+\midrule
+memory: OOMKilled & \texttt{resources.memory} & 97,607 & 0.37 & 35,789 \\
+network not found & -- & 18,407 & 0.97 & 17,793 \\
+image: tag/repo not found & \texttt{image.exists} & 7,405 & 0.93 & 6,911 \\
+volume permission denied & \texttt{mounts.permissions}$^\dagger$ & 6,073 & 1.00 & 6,073 \\
+platform: exec format error & \texttt{image.platform} & 5,372 & 0.97 & 5,193 \\
+address already in use & \texttt{ports.host} & 3,792 & 1.00 & 3,792 \\
+image: pull access denied & \texttt{image.exists} & 3,730 & 1.00 & 3,730 \\
+platform: requested platform mismatch & \texttt{image.platform} & 3,717 & 1.00 & 3,717 \\
+OCI runtime exec failed & -- & 3,479 & 1.00 & 3,479 \\
+platform: no matching manifest & \texttt{image.platform} & 2,760 & 1.00 & 2,760 \\
+daemon: cannot connect & (root cause) & 2,712 & 1.00 & 2,712 \\
+compose: variable not set & \texttt{compose.env} & 2,390 & 0.97 & 2,310 \\
+DNS resolution in container & -- & 2,021 & 1.00 & 2,021 \\
+build: COPY source not found & \texttt{build.context} & 1,421 & 1.00 & 1,421 \\
+emulation: qemu crash & \texttt{image.platform} & 1,301 & 1.00 & 1,301 \\
+disk: no space left & \texttt{resources.disk} & 1,241 & 1.00 & 1,241 \\
+port already allocated & \texttt{ports.conflict} & 1,239 & 1.00 & 1,239 \\
+container healthcheck unhealthy & -- & 1,155 & 1.00 & 1,155 \\
+bind: dir onto file & \texttt{mounts.bind} & 707 & 1.00 & 707 \\
+bind: source does not exist & \texttt{mounts.bind} & 544 & 1.00 & 544 \\
+compose: unsupported property & \texttt{compose.version} & 486 & 1.00 & 486 \\
+gpu: no device driver & \texttt{resources.gpu} & 457 & 1.00 & 457 \\
+build: BuildKit required & \texttt{build.buildkit} & 443 & 0.97 & 428 \\
+build: COPY failed legacy & \texttt{build.context} & 417 & 1.00 & 417 \\
+compose: required variable & \texttt{compose.env} & 475 & 0.83 & 396 \\
+kernel: vm.max\_map\_count & \texttt{kernel.sysctl} & 369 & 1.00 & 369 \\
+credentials helper missing & \texttt{registry.credentials} & 260 & 1.00 & 260 \\
+desktop: mounts denied & \texttt{mounts.sharing} & 153 & 1.00 & 153 \\
+app config/env missing at runtime & (learned) & 118 & 1.00 & 118 \\
+build: outside build context & \texttt{build.context} & 65 & 1.00 & 65 \\
+rootless privileged port & \texttt{ports.host} & 39 & 0.87 & 34 \\
+memory: mssql minimum & \texttt{resources.memory} & 4,653 & 0.00 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

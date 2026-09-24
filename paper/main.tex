@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit,backgrounds}
 \usepackage[hidelinks]{hyperref}
 
 \newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
@@ -81,7 +83,38 @@ services:
 \section{Approach}
 \label{sec:approach}
 
-\tool{} builds three views and evaluates rules over their join (Figure~\todo{architecture figure}).
+\tool{} builds three views and evaluates rules over their join (Figure~\ref{fig:arch}).
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  font=\footnotesize,
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=9mm, text width=27mm, fill=white},
+  src/.style={box, fill=gray!8},
+  arr/.style={-{Stealth[length=2mm]}, thick},
+  node distance=5mm and 9mm]
+\node[src] (proj) {Compose file, Dockerfiles,\\ or \texttt{docker run}};
+\node[src, below=of proj] (hostsrc) {Docker CLI and daemon,\\ VM kernel, ports, disk};
+\node[src, below=of hostsrc] (reg) {Container registries};
+\node[box, right=of proj] (req) {Requirements\\ \scriptsize (Docker's own parsers)};
+\node[box, right=of hostsrc] (cap) {Host profile\\ \scriptsize (or snapshot)};
+\node[box, right=of reg] (meta) {Image metadata\\ \scriptsize (no pull)};
+\node[box, right=14mm of cap, text width=30mm, minimum height=24mm, fill=blue!6] (rules) {\textbf{Rules}\\[2pt] 18 built-in\\ + learned rules};
+\node[box, above=of rules, text width=30mm, fill=orange!10] (graph) {Causal fact graph\\ \scriptsize unknown facts $\Rightarrow$ root causes};
+\node[box, right=of rules, text width=27mm, fill=green!8] (rep) {Report\\ \scriptsize root causes, predicted\\ errors with evidence};
+\node[box, below=of rep, text width=27mm, fill=gray!8] (learn) {\texttt{learn}\\ \scriptsize observed failures\\ and successes};
+\draw[arr] (proj) -- (req); \draw[arr] (hostsrc) -- (cap); \draw[arr] (reg) -- (meta);
+\draw[arr] (req.east) -- (rules.155);
+\draw[arr] (cap) -- (rules);
+\draw[arr] (meta.east) -- (rules.205);
+\draw[arr] (cap.north east) -- (graph.south west);
+\draw[arr] (graph) -- (rules);
+\draw[arr] (rules) -- (rep);
+\draw[arr] (learn.west) -| (rules.south);
+\end{tikzpicture}
+\caption{Overview. Requirements, host capabilities and registry metadata are extracted independently and joined by rules. Facts that cannot be established become root causes that block dependent rules. \texttt{learn} adds rules from observed runs.}
+\label{fig:arch}
+\end{figure}
 
 \subsection{Project requirements}
 Compose files are loaded with \texttt{compose-go}, the library Docker Compose uses, so interpolation, \texttt{.env} files, profiles and path resolution behave as in Compose. Dockerfiles are parsed with BuildKit's Dockerfile frontend. For each build, \tool{} computes the set of stages BuildKit will actually build for the requested target (following \texttt{FROM}, \texttt{COPY --from} and \texttt{RUN --mount from=} edges), because problems in unreachable stages do not break builds. From these it extracts: images to pull and the platform each will be requested for; base images of reachable stages; memory limits and reservations times replicas; published ports; bind mounts and their options; \texttt{COPY}/\texttt{ADD} sources, resolved against the build context and \texttt{.dockerignore} with BuildKit's pattern matcher; BuildKit-only syntax; Compose features with minimum versions; interpolated variables; GPU requests; and the container user. Raw YAML is walked separately to keep line numbers for every requirement. Commands such as \texttt{docker run} are parsed into the same model.
@@ -155,7 +188,9 @@ We ask:
 \subsection{RQ1: Failure landscape}
 We defined 32 failure categories by the error text Docker or the image prints, including 7 categories \tool{} does not target, and counted GitHub issues created since 2021 per category. Because issue search matches loosely, we fetched 30 sampled issues per category with their comments and checked for the exact error text, giving a precision estimate and an adjusted count. Precision was at least 0.83 for all but two categories (OOMKilled: 0.37, largely Kubernetes; the SQL Server memory message: 0.0).
 
-Of the 107k adjusted issues, 71\% fall in targeted categories; excluding OOMKilled, which is dominated by Kubernetes, 57\%. The largest targeted categories are platform mismatches (11.7k), missing images (10.6k) and port conflicts (5.1k); the largest untargeted are volume permissions (6.1k, subsequently addressed by \texttt{mounts.permissions}), OCI runtime exec errors (3.5k) and DNS resolution (2.0k). \todo{Table of all categories from bench/data/counts.csv.}
+Of the 107k adjusted issues, 71\% fall in targeted categories; excluding OOMKilled, which is dominated by Kubernetes, 57\%. The largest targeted categories are platform mismatches (11.7k), missing images (10.6k) and port conflicts (5.1k); the largest untargeted are volume permissions (6.1k, subsequently addressed by \texttt{mounts.permissions}), OCI runtime exec errors (3.5k) and DNS resolution (2.0k). Table~\ref{tab:categories} lists all categories.
+
+\input{categories}
 
 \subsection{RQ2: Predictive coverage}
 \paragraph{Protocol} We drew a development sample of 4 verified issues per category (124 issues) and labeled each: whether it is a local Docker failure (not Kubernetes, Podman, application bugs or feature requests), and whether \tool{} would have predicted it before execution given the project files and the host (\emph{yes}), would have addressed its cause only partially (\emph{partial}: a warning where an error resulted, a different input form, a different OS, or only after learning), or not (\emph{no}). We then added rules for misses and froze them (tag \texttt{eval-frozen}). Finally we drew a held-out test sample of 121 issues with a different search ordering, excluding every issue seen before, and labeled it against the frozen rules.
