@@ -25,3 +25,21 @@ the served version (`networking.k8s.io/v1`) instead of suggesting a CRD.
 
 Result: 4 of 5 predictions confirmed, 3 word for word. After the fix the tool's output matches
 what the cluster did.
+
+## Second round: scheduling reasons, snapshots, root cause
+
+| Pod | Predicted | Real `FailedScheduling` event |
+|---|---|---|
+| `wrong-pool` (`nodeSelector: pool=gpu`) | `0/1 nodes are available: 1 node(s) didn't match Pod's node affinity/selector.` | identical ✅ |
+| `wants-gpu` (`nvidia.com/gpu: 1`) | `0/1 nodes are available: 1 Insufficient nvidia.com/gpu.` | identical ✅ |
+| `arm-only-affinity` (required affinity `arch In [amd64]`) | `0/1 nodes are available: 1 node(s) didn't match Pod's node affinity/selector.` | identical ✅ |
+
+- **Snapshot.** `--save-cluster` wrote an 8 KB profile. Checking against it with
+  `--cluster`, and no cluster access, produced the same three predictions.
+- **Unreachable cluster.** A context pointing at an address that does not answer was reported
+  once, as "Kubernetes API server is not reachable (context ghost)", blocking `k8s.api`,
+  `k8s.platform`, `k8s.schedulable` and `k8s.storage`. `k8s.image` still ran because it needs
+  only the registry.
+
+Combined result on minikube: 7 of 8 predictions confirmed word for word. The remaining one is
+the emulation case, fixed above.
