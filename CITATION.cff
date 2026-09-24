@@ -6,6 +6,7 @@ authors:
   - family-names: Gab-Momoh
     given-names: Raphael
     affiliation: Paynautik Limited
+    orcid: "https://orcid.org/0009-0000-9090-7957"
 repository-code: "https://github.com/raphgm/container-preflight"
 license: MIT
 keywords: [containers, Docker, Docker Compose, configuration errors, failure prediction, root cause analysis]
