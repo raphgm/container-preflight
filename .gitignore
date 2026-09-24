@@ -20,3 +20,6 @@ go.work.sum
 
 # env file
 .env
+paper/*.pdf
+paper/*.log
+paper/*.aux
