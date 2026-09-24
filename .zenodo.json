@@ -2,7 +2,20 @@
   "title": "Container Preflight: predicting container deployment failures before execution (software and evaluation data)",
   "upload_type": "software",
   "description": "Container Preflight predicts Docker and Docker Compose build and start-up failures before execution by jointly analyzing project artifacts, the host environment and registry metadata. This archive contains the tool, its rules, the GitHub failure-mining scripts and data, the labeled development and held-out test samples, and the field-validation notes used in the accompanying paper.",
-  "creators": [{"name": "Gab-Momoh, Raphael", "affiliation": "Paynautik Limited"}],
+  "creators": [
+    {
+      "name": "Gab-Momoh, Raphael",
+      "affiliation": "Paynautik Limited",
+      "orcid": "0009-0000-9090-7957"
+    }
+  ],
   "license": "MIT",
-  "keywords": ["containers", "Docker", "Docker Compose", "configuration errors", "failure prediction", "root cause analysis"]
+  "keywords": [
+    "containers",
+    "Docker",
+    "Docker Compose",
+    "configuration errors",
+    "failure prediction",
+    "root cause analysis"
+  ]
 }
