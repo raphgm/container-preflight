@@ -21,9 +21,9 @@ import (
 	"github.com/shirou/gopsutil/v3/disk"
 	"github.com/shirou/gopsutil/v3/mem"
 
-	"github.com/raphgm/container-doctor/internal/executor"
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/registry"
+	"github.com/raphgm/container-preflight/internal/executor"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/registry"
 )
 
 type Profile struct {
@@ -275,7 +275,7 @@ func (p *Profile) probeEndpoint(ctx context.Context, run executor.Runner, facts 
 			Severity: fact.Info,
 			Summary:  "Docker daemon is remote (" + p.Endpoint + ")",
 			Detail:   "Ports, bind-mount paths and kernel settings live on the remote host and cannot be checked from here.",
-			Fix:      "Run container-doctor on the daemon host for full coverage.",
+			Fix:      "Run container-preflight on the daemon host for full coverage.",
 		})
 		return
 	}

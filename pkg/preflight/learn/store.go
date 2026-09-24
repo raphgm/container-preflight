@@ -13,13 +13,13 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/rules"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/rules"
 )
 
 // File is where a project's learned rules live. It is meant to be committed,
 // so a failure one teammate hits is predicted for everyone.
-const File = ".container-doctor/learned.yaml"
+const File = ".container-preflight/learned.yaml"
 
 // relevant lists the features a new rule starts with. Host details that
 // rarely cause failures (engine, Compose version) are recorded but not used
@@ -94,7 +94,7 @@ func (s *Store) Save() error {
 	if err != nil {
 		return err
 	}
-	header := "# Rules learned from real failures by `container-doctor learn`.\n# Commit this file so preflight predicts these failures for everyone.\n"
+	header := "# Rules learned from real failures by `container-preflight learn`.\n# Commit this file so preflight predicts these failures for everyone.\n"
 	return os.WriteFile(s.path, append([]byte(header), b...), 0o644)
 }
 

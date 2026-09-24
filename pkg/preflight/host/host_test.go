@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
 )
 
 type fakeRunner map[string]string

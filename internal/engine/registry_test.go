@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/raphgm/container-doctor/pkg/check"
+	"github.com/raphgm/container-preflight/pkg/check"
 )
 
 // mockProvider implements the provider.Provider interface for testing

@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/project"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/project"
 )
 
 // containerUser returns the user a service's processes start as: the

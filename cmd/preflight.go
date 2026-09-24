@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/raphgm/container-doctor/pkg/preflight"
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/host"
+	"github.com/raphgm/container-preflight/pkg/preflight"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/host"
 )
 
 var (
@@ -22,8 +22,9 @@ var (
 )
 
 var preflightCmd = &cobra.Command{
-	Use:   "preflight [path]",
-	Short: "Predict whether a project will build and run on this machine",
+	Use:     "check [path]",
+	Aliases: []string{"preflight"},
+	Short:   "Predict whether a project will build and run on this machine",
 	Long: `Preflight reads the project's Compose file and Dockerfiles, profiles this
 host (the Docker daemon, its VM, tooling, ports, kernel settings) and queries
 registries for image platforms and sizes. It then predicts the failures
@@ -100,7 +101,7 @@ func renderPreflight(w io.Writer, rep *preflight.Report, color bool) {
 	}
 
 	h := rep.Host
-	fmt.Fprintf(w, "\n%sContainer Doctor · preflight%s  %s%s%s\n", c.bold, c.reset, c.dim, rep.Dir, c.reset)
+	fmt.Fprintf(w, "\n%sContainer Preflight · preflight%s  %s%s%s\n", c.bold, c.reset, c.dim, rep.Dir, c.reset)
 	if rep.HostName != "" {
 		fmt.Fprintf(w, "%sPredicting for snapshot of %s%s\n", c.yellow, rep.HostName, c.reset)
 	}

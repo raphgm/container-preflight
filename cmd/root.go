@@ -11,10 +11,10 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "container-doctor",
-	Short: "Predict and diagnose container failures before they happen",
-	Long: `container-doctor checks whether a container project will build and run
-on a given machine. ` + "`preflight`" + ` joins what the project needs (from its
+	Use:   "container-preflight",
+	Short: "Predict container failures before you run, and diagnose them at the root cause",
+	Long: `container-preflight checks whether a container project will build and run
+on a given machine. ` + "`check`" + ` joins what the project needs (from its
 Compose file and Dockerfiles) with what the host offers and what registries
 publish, and reports each predicted failure once, at its root cause.`,
 	// Uncomment the following line if your bare application
@@ -36,7 +36,7 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 
-	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.container-doctor.yaml)")
+	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.container-preflight.yaml)")
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.

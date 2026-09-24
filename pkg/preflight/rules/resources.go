@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/project"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/project"
 )
 
 const mib = 1024 * 1024

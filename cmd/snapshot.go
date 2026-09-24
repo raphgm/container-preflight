@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/raphgm/container-doctor/internal/executor"
-	"github.com/raphgm/container-doctor/pkg/preflight/host"
+	"github.com/raphgm/container-preflight/internal/executor"
+	"github.com/raphgm/container-preflight/pkg/preflight/host"
 )
 
 var snapshotOut string
@@ -19,7 +19,7 @@ var snapshotCmd = &cobra.Command{
 platform and memory, emulation, tooling versions, kernel settings, local
 images and listening ports. Share the file, then run
 
-  container-doctor preflight --host snapshot.json
+  container-preflight preflight --host snapshot.json
 
 on any machine to predict whether a project will work on this one.`,
 	RunE: func(cmd *cobra.Command, args []string) error {

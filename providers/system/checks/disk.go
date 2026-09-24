@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/shirou/gopsutil/v3/disk"
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 type Disk struct{}

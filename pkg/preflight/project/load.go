@@ -14,7 +14,7 @@ import (
 	"github.com/compose-spec/compose-go/v2/types"
 	"github.com/sirupsen/logrus"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
 )
 
 // composeFileNames is the lookup order Compose itself uses.

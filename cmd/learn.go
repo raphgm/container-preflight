@@ -14,10 +14,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/raphgm/container-doctor/pkg/preflight"
-	"github.com/raphgm/container-doctor/pkg/preflight/learn"
-	"github.com/raphgm/container-doctor/pkg/preflight/project"
-	"github.com/raphgm/container-doctor/pkg/preflight/rules"
+	"github.com/raphgm/container-preflight/pkg/preflight"
+	"github.com/raphgm/container-preflight/pkg/preflight/learn"
+	"github.com/raphgm/container-preflight/pkg/preflight/project"
+	"github.com/raphgm/container-preflight/pkg/preflight/rules"
 )
 
 var (
@@ -41,9 +41,9 @@ A second failure with the same error generalizes the rule (conditions that
 differ are dropped). Recording a working run with --success refines rules it
 contradicts.
 
-  container-doctor learn -- docker compose up db
-  container-doctor learn --log build.log --service web
-  container-doctor learn --success -- docker compose up -d`,
+  container-preflight learn -- docker compose up db
+  container-preflight learn --log build.log --service web
+  container-preflight learn --success -- docker compose up -d`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		output, failed, err := learnInput(args)
 		if err != nil {

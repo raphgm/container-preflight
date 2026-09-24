@@ -1,13 +1,15 @@
-# Container Doctor 🩺
+# Container Preflight ✈️
 
-`container-doctor` predicts whether a container project will build and run on a machine **before you run it**, and explains each predicted failure once, at its root cause.
+**Predict container failures before you run, and diagnose them at the root cause when they happen.**
 
-Linters look only at your Dockerfile. `docker info` looks only at your machine. Most "works on my machine" failures come from the mismatch between the two: an amd64-only image on an Apple silicon laptop, a Compose file that needs more memory than Docker Desktop's VM has, a `COPY` of a file your `.dockerignore` excludes, a port something else already holds. `container-doctor preflight` checks the project and the host together.
+`container-preflight` predicts whether a container project will build and run on a machine **before you run it**, and explains each predicted failure once, at its root cause.
 
-## Preflight
+Linters look only at your Dockerfile. `docker info` looks only at your machine. Most "works on my machine" failures come from the mismatch between the two: an amd64-only image on an Apple silicon laptop, a Compose file that needs more memory than Docker Desktop's VM has, a `COPY` of a file your `.dockerignore` excludes, a port something else already holds. `container-preflight check` checks the project and the host together.
+
+## Check a project
 
 ```bash
-container-doctor preflight .
+container-preflight check .
 ```
 
 Preflight builds three views and joins them:
@@ -40,17 +42,17 @@ ROOT CAUSES
 
 ```bash
 # on the target machine (a teammate's laptop, a CI runner, a server)
-container-doctor snapshot -o ci-runner.json
+container-preflight snapshot -o ci-runner.json
 
 # anywhere
-container-doctor preflight . --host ci-runner.json
+container-preflight check . --host ci-runner.json
 ```
 
 `examples/` contains a deliberately broken project and two example host snapshots. The same project gets different predictions on each:
 
 ```bash
-container-doctor preflight examples/broken-shop --host examples/hosts/macbook-m2-desktop.json
-container-doctor preflight examples/broken-shop --host examples/hosts/ubuntu-legacy-server.json
+container-preflight check examples/broken-shop --host examples/hosts/macbook-m2-desktop.json
+container-preflight check examples/broken-shop --host examples/hosts/ubuntu-legacy-server.json
 ```
 
 ### Learning from real failures
@@ -58,10 +60,10 @@ container-doctor preflight examples/broken-shop --host examples/hosts/ubuntu-leg
 Built-in rules cover common failures. `learn` turns the failures your project actually hits into new rules:
 
 ```bash
-container-doctor learn -- docker compose up db
+container-preflight learn -- docker compose up db
 ```
 
-It runs the command and extracts the decisive error line from the output. It turns that line into a signature, with addresses, IDs, paths and numbers generalized. It then records the conditions at the time: image, platform, emulation (QEMU/Rosetta), memory, builder, and which environment variables were set (never their values). The rule goes to `.container-doctor/learned.yaml`; commit it, and preflight predicts the failure for everyone on the team.
+It runs the command and extracts the decisive error line from the output. It turns that line into a signature, with addresses, IDs, paths and numbers generalized. It then records the conditions at the time: image, platform, emulation (QEMU/Rosetta), memory, builder, and which environment variables were set (never their values). The rule goes to `.container-preflight/learned.yaml`; commit it, and preflight predicts the failure for everyone on the team.
 
 Rules improve with evidence:
 
@@ -96,7 +98,7 @@ Example from a real run: Postgres started without a password failed. `learn` cre
 Containers started without Compose are checked the same way:
 
 ```bash
-container-doctor preflight --run "docker run -p 8080:80 -v ./site:/usr/share/nginx/html nginx:1.27"
+container-preflight check --run "docker run -p 8080:80 -v ./site:/usr/share/nginx/html nginx:1.27"
 ```
 
 Use `--format json` for machine-readable output and `--offline` to skip registry lookups. The exit code is 1 when a blocking problem is predicted.
@@ -116,12 +118,12 @@ Use `--format json` for machine-readable output and `--offline` to skip registry
 ### Using Go
 If you have Go installed, you can install the CLI directly:
 ```bash
-go install github.com/raphgm/container-doctor@latest
+go install github.com/raphgm/container-preflight@latest
 ```
 
 ### From Releases
 Pre-compiled binaries for **macOS**, **Linux**, and **Windows** are automatically generated for every release. 
-Head over to the [Releases page](https://github.com/raphgm/container-doctor/releases) to download the binary for your operating system.
+Head over to the [Releases page](https://github.com/raphgm/container-preflight/releases) to download the binary for your operating system.
 
 ---
 
@@ -130,32 +132,32 @@ Head over to the [Releases page](https://github.com/raphgm/container-doctor/rele
 ### Host health checks
 Run the diagnostic engine to check your environment:
 ```bash
-container-doctor check
+container-preflight host
 ```
 
 You can export the results to different formats using the `--format` flag:
 ```bash
 # JSON Output
-container-doctor check --format json > report.json
+container-preflight host --format json > report.json
 
 # Markdown Output
-container-doctor check --format markdown > report.md
+container-preflight host --format markdown > report.md
 
 # HTML Output (Standalone Webpage)
-container-doctor check --format html > report.html
+container-preflight host --format html > report.html
 ```
 
 ### Inspect a project
 Statically analyze the configuration files in your current directory (or any specified path):
 ```bash
-container-doctor inspect .
+container-preflight inspect .
 ```
 
 ---
 
 ## Architecture & Extensibility
 
-`container-doctor` is built with a highly decoupled, plugin-based architecture. 
+`container-preflight` is built with a highly decoupled, plugin-based architecture. 
 
 - **Engine**: The core `internal/engine` runs the execution loop and aggregates results.
 - **Providers**: Checks are grouped by Providers (e.g., `system`, `docker`, `compose`).

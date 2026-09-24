@@ -9,24 +9,24 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/raphgm/container-doctor/internal/engine"
-	"github.com/raphgm/container-doctor/internal/executor"
-	"github.com/raphgm/container-doctor/internal/renderer"
-	"github.com/raphgm/container-doctor/pkg/report"
-	"github.com/raphgm/container-doctor/providers/buildx"
-	buildxChecks "github.com/raphgm/container-doctor/providers/buildx/checks"
-	"github.com/raphgm/container-doctor/providers/compose"
-	composeChecks "github.com/raphgm/container-doctor/providers/compose/checks"
-	"github.com/raphgm/container-doctor/providers/docker"
-	dockerChecks "github.com/raphgm/container-doctor/providers/docker/checks"
-	"github.com/raphgm/container-doctor/providers/system"
-	systemChecks "github.com/raphgm/container-doctor/providers/system/checks"
+	"github.com/raphgm/container-preflight/internal/engine"
+	"github.com/raphgm/container-preflight/internal/executor"
+	"github.com/raphgm/container-preflight/internal/renderer"
+	"github.com/raphgm/container-preflight/pkg/report"
+	"github.com/raphgm/container-preflight/providers/buildx"
+	buildxChecks "github.com/raphgm/container-preflight/providers/buildx/checks"
+	"github.com/raphgm/container-preflight/providers/compose"
+	composeChecks "github.com/raphgm/container-preflight/providers/compose/checks"
+	"github.com/raphgm/container-preflight/providers/docker"
+	dockerChecks "github.com/raphgm/container-preflight/providers/docker/checks"
+	"github.com/raphgm/container-preflight/providers/system"
+	systemChecks "github.com/raphgm/container-preflight/providers/system/checks"
 )
 
 // checkCmd represents the check command
 var checkCmd = &cobra.Command{
-	Use:   "check",
-	Short: "Run all registered diagnostic checks",
+	Use:   "host",
+	Short: "Check this machine's Docker installation and resources",
 	Long: `Run all diagnostic checks to determine the health of your environment.
 This will query all providers (Docker, Kubernetes, etc.) and generate a report.`,
 	Run: func(cmd *cobra.Command, args []string) {

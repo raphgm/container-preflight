@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/host"
-	"github.com/raphgm/container-doctor/pkg/preflight/registry"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/host"
+	"github.com/raphgm/container-preflight/pkg/preflight/registry"
 )
 
 type daemonDown struct{}

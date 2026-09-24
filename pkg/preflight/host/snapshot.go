@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/raphgm/container-doctor/internal/executor"
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/internal/executor"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
 )
 
 const snapshotVersion = 1
@@ -86,10 +86,10 @@ func LoadSnapshot(path string) (*Snapshot, error) {
 		return nil, fmt.Errorf("%s: %w", path, err)
 	}
 	if s.Profile == nil {
-		return nil, fmt.Errorf("%s: not a container-doctor snapshot", path)
+		return nil, fmt.Errorf("%s: not a container-preflight snapshot", path)
 	}
 	if s.Version > snapshotVersion {
-		return nil, fmt.Errorf("%s: snapshot version %d is newer than this container-doctor supports", path, s.Version)
+		return nil, fmt.Errorf("%s: snapshot version %d is newer than this container-preflight supports", path, s.Version)
 	}
 	return &s, nil
 }

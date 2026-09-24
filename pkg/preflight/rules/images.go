@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/registry"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/registry"
 )
 
 func pullKind(p Pull) string {

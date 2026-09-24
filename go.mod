@@ -1,4 +1,4 @@
-module github.com/raphgm/container-doctor
+module github.com/raphgm/container-preflight
 
 go 1.26.5
 

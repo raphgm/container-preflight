@@ -11,13 +11,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/raphgm/container-doctor/internal/executor"
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
-	"github.com/raphgm/container-doctor/pkg/preflight/host"
-	"github.com/raphgm/container-doctor/pkg/preflight/learn"
-	"github.com/raphgm/container-doctor/pkg/preflight/project"
-	"github.com/raphgm/container-doctor/pkg/preflight/registry"
-	"github.com/raphgm/container-doctor/pkg/preflight/rules"
+	"github.com/raphgm/container-preflight/internal/executor"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/host"
+	"github.com/raphgm/container-preflight/pkg/preflight/learn"
+	"github.com/raphgm/container-preflight/pkg/preflight/project"
+	"github.com/raphgm/container-preflight/pkg/preflight/registry"
+	"github.com/raphgm/container-preflight/pkg/preflight/rules"
 )
 
 type Options struct {

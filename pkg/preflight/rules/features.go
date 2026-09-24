@@ -6,9 +6,9 @@ import (
 
 	"github.com/google/go-containerregistry/pkg/name"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/host"
-	"github.com/raphgm/container-doctor/pkg/preflight/project"
-	"github.com/raphgm/container-doctor/pkg/preflight/registry"
+	"github.com/raphgm/container-preflight/pkg/preflight/host"
+	"github.com/raphgm/container-preflight/pkg/preflight/project"
+	"github.com/raphgm/container-preflight/pkg/preflight/registry"
 )
 
 // Features describes one service on one host as flat key/value pairs.

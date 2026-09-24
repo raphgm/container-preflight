@@ -13,7 +13,7 @@
 \usepackage[hidelinks]{hyperref}
 
 \newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
-\newcommand{\tool}{\textsc{Preflight}}
+\newcommand{\tool}{\textsc{Container Preflight}}
 \lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,frame=single,columns=fullflexible}
 
 \journal{Journal of Systems and Software}
@@ -238,6 +238,8 @@ On Docker Desktop, the same project received different predictions, each confirm
 \section{Related work}
 \label{sec:related}
 
+\paragraph{Container ``preflight'' tools} Red Hat's \texttt{preflight}~\cite{openshiftpreflight} checks operator bundles and container images against OpenShift certification requirements, and \texttt{kubeadm} runs preflight checks on a machine before creating a Kubernetes cluster. Both validate an artifact or a host against fixed policy; neither predicts whether a given project will build and run on a given host.
+
 \paragraph{Dockerfile analysis and repair} Cito et al.~\cite{cito2017docker} characterized the Docker ecosystem on GitHub and its quality issues. Hadolint~\cite{hadolint} and Binnacle~\cite{henkel2020binnacle} check Dockerfiles against rules; Shipwright~\cite{henkel2021shipwright} repairs broken builds; Wu et al.~\cite{wu2020buildfailures} studied Docker build failures. Recent work repairs Dockerfile drift using project context~\cite{drift2026}. All operate on artifacts; none model the host.
 
 \paragraph{Compose} Ibrahim et al.~\cite{ibrahim2021compose} studied how Docker Compose is used to compose multi-component systems; linters validate Compose syntax. They do not relate files to host capabilities.
@@ -251,7 +253,7 @@ On Docker Desktop, the same project received different predictions, each confirm
 Container failures that ``work on my machine'' are relational: they arise between a project and a host. By analyzing both together, grouping unknowns under root causes and learning from observed failures, \tool{} predicted a third of held-out local Docker failures fully and more than half at least partially, before anything ran, and its predictions held up on two real engines. Future work: runtime-oriented checks such as health checks and container DNS, and a study with developers measuring time to a working setup.
 
 \section*{Data availability}
-The tool, rules, mined data, samples, labels and scripts are available at \url{https://github.com/raphgm/container-doctor} \todo{archive with a DOI on Zenodo}.
+The tool, rules, mined data, samples, labels and scripts are available at \url{https://github.com/raphgm/container-preflight} \todo{archive with a DOI on Zenodo}.
 
 \bibliographystyle{elsarticle-num}
 \bibliography{refs}

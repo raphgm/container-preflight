@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/raphgm/container-doctor/pkg/preflight/fact"
+	"github.com/raphgm/container-preflight/pkg/preflight/fact"
 )
 
 func write(t *testing.T, dir string, files map[string]string) {

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 type Engine struct {

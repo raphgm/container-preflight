@@ -10,17 +10,14 @@ import (
 )
 
 // versionCmd represents the version command
+// Version is set at build time with -ldflags "-X github.com/raphgm/container-preflight/cmd.Version=v1.0.0".
+var Version = "dev"
+
 var versionCmd = &cobra.Command{
 	Use:   "version",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Print the container-preflight version",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("version called")
+		fmt.Println("container-preflight", Version)
 	},
 }
 
