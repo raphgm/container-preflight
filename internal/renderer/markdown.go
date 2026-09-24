@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 type Markdown struct {
@@ -19,7 +19,7 @@ func NewMarkdown() *Markdown {
 }
 
 func (m *Markdown) Render(rep report.Report) error {
-	fmt.Fprintln(m.out, "# Container Doctor Diagnostic Report")
+	fmt.Fprintln(m.out, "# Container Preflight Diagnostic Report")
 	fmt.Fprintf(m.out, "\n**Timestamp:** %s\n", rep.Timestamp.Format("2006-01-02 15:04:05 UTC"))
 	fmt.Fprintln(m.out, "\n---")
 

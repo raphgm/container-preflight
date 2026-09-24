@@ -1,0 +1,280 @@
+{
+ "category": "bind: dir onto file",
+ "rule": "mounts.bind",
+ "query": "\"Are you trying to mount a directory onto a file\" is:issue created:>=2021-01-01",
+ "total": 707,
+ "sample": [
+  {
+   "url": "https://github.com/nothingmn/echonotes/issues/2",
+   "title": "summarize-notes.md: not a directory: unknown: Are you trying to mount a directory onto a file",
+   "repo": "nothingmn/echonotes",
+   "created": "2025-07-27T21:18:27Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/portainer/portainer/issues/11023",
+   "title": "Git Compose Deploy Issue - flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file",
+   "repo": "portainer/portainer",
+   "created": "2024-01-27T03:13:20Z",
+   "state": "open",
+   "comments": 13,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/open-webui/oikb/issues/116",
+   "title": "Docker and .oikb.yaml",
+   "repo": "open-webui/oikb",
+   "created": "2026-09-03T06:51:28Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bassmaster187/TeslaLogger/issues/999",
+   "title": "Error after starting docker-compose - Are you trying to mount a directory onto a file (or vice-versa)?",
+   "repo": "bassmaster187/TeslaLogger",
+   "created": "2023-04-29T17:48:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/pneumaticapp/pneumaticworkflow/issues/336",
+   "title": "Docker fails to run: seaweedfs-filer fails to mount filer.toml",
+   "repo": "pneumaticapp/pneumaticworkflow",
+   "created": "2026-08-11T15:08:53Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/GispoCoding/geoviz-notebooks/issues/48",
+   "title": "Restarting server with docker-compose may crash with \"Are you trying to mount a directory onto a file (or vice-versa)?\"",
+   "repo": "GispoCoding/geoviz-notebooks",
+   "created": "2022-01-24T10:49:47Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moesnow/March7thAssistant/issues/1187",
+   "title": "[Bug]:\u4f7f\u7528\u9884\u7f16\u8bd1\u955c\u50cf\u65f6\u5c06config\u6587\u4ef6\u521b\u5efa\u6210\u6587\u4ef6\u5939",
+   "repo": "moesnow/March7thAssistant",
+   "created": "2026-08-19T11:39:52Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NeonGeckoCom/neon-hub-installer/issues/31",
+   "title": "[BUG] Issues in Cloud Deployment docs",
+   "repo": "NeonGeckoCom/neon-hub-installer",
+   "created": "2026-08-19T00:52:21Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bililive-go/bililive-go/issues/811",
+   "title": "\u4f7f\u7528docker-compose\u90e8\u7f72\u65f6\uff0c\u7a0b\u5e8f\u628aconfig.docker.yml\u6587\u4ef6\u521b\u5efa\u6210\u4e86\u540d\u4e3a\u6587\u4ef6\u5939\uff0c\u5bfc\u81f4\u7a0b\u5e8f\u62a5\u9519",
+   "repo": "bililive-go/bililive-go",
+   "created": "2024-11-28T13:56:34Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/RyuKosei/PACEbench/issues/1",
+   "title": "[CORAZA-WAF] Benchmark cannot launch",
+   "repo": "RyuKosei/PACEbench",
+   "created": "2026-09-03T00:10:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/souvikg10/rasa_multi_bot/issues/3",
+   "title": "ERROR: for rasa_multi_bot-master_rasa_fr_1",
+   "repo": "souvikg10/rasa_multi_bot",
+   "created": "2021-01-26T05:11:11Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/qcgzxw/ebook-sender-bot/issues/63",
+   "title": "ERROR: Encountered errors while bringing up the project.",
+   "repo": "qcgzxw/ebook-sender-bot",
+   "created": "2023-01-28T09:07:03Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/robincher/docker-compose-ghost-quickstart/issues/1",
+   "title": "Starting ghost ... error",
+   "repo": "robincher/docker-compose-ghost-quickstart",
+   "created": "2021-07-03T12:36:26Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/linagora/linshare/issues/280",
+   "title": "Some docker container not running during installation ",
+   "repo": "linagora/linshare",
+   "created": "2023-08-18T07:08:56Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shamhi/HamsterKombatBot/issues/1567",
+   "title": "ERROR: for HamsterKombatBot  Cannot start service bot: failed",
+   "repo": "shamhi/HamsterKombatBot",
+   "created": "2024-07-14T11:53:37Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/angristan/feedbin-docker/issues/73",
+   "title": "Can't start Caddy container",
+   "repo": "angristan/feedbin-docker",
+   "created": "2021-06-09T02:14:19Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/setiseta/docker-librenms/issues/44",
+   "title": "Failed to mount volume of maridb",
+   "repo": "setiseta/docker-librenms",
+   "created": "2022-01-14T03:25:59Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/canyanio/janus-gateway-docker/issues/29",
+   "title": "Error running docker compose",
+   "repo": "canyanio/janus-gateway-docker",
+   "created": "2022-03-18T12:04:30Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Open-Location-Stack/open-location-hub/issues/59",
+   "title": "local-hub want to create clickhouse but config files appear as directories",
+   "repo": "Open-Location-Stack/open-location-hub",
+   "created": "2026-06-26T09:10:08Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/winboat-org/winboat/issues/354",
+   "title": "Command failed: docker container start WinBoat -> ventoy (\"Winboat Guest Api offline - Container exiting\")",
+   "repo": "winboat-org/winboat",
+   "created": "2025-10-16T14:13:49Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mariomare22/docker-pihole-unbound/issues/17",
+   "title": "Cannot start service pihole: OCI runtime create failed: (Happening on Pi4)",
+   "repo": "mariomare22/docker-pihole-unbound",
+   "created": "2023-04-28T01:39:07Z",
+   "state": "open",
+   "comments": 15,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/denverdino/lxcfs-admission-webhook/issues/17",
+   "title": "pod \u51fa\u73b0CrashLoopBackOff",
+   "repo": "denverdino/lxcfs-admission-webhook",
+   "created": "2021-04-01T11:35:16Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/exment-git/docker-exment/issues/3",
+   "title": "Docker toolbox \u3067\u306f\u52d5\u304d\u307e\u305b\u3093\u3067\u3057\u305f\u3002",
+   "repo": "exment-git/docker-exment",
+   "created": "2021-12-23T16:08:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/paschmann/changd/issues/3",
+   "title": "Problem starting ui_server",
+   "repo": "paschmann/changd",
+   "created": "2022-01-19T12:35:29Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rancher-sandbox/rancher-desktop/issues/4286",
+   "title": "Failure to start container with file mounts after windows reboot or wsl restart",
+   "repo": "rancher-sandbox/rancher-desktop",
+   "created": "2023-03-27T11:34:01Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/BillyOutlast/rocm-automated/issues/2",
+   "title": "Error while deploying in portainer",
+   "repo": "BillyOutlast/rocm-automated",
+   "created": "2026-02-07T06:03:30Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dwaaan/HRConvert2-Docker/issues/11",
+   "title": "Error: The command failed, on Unraid server, please help!",
+   "repo": "dwaaan/HRConvert2-Docker",
+   "created": "2022-09-20T02:22:00Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/stonier/groot_rocker_extensions/issues/27",
+   "title": "Ssh temporary agents don't persist (conflicts with --persistant)",
+   "repo": "stonier/groot_rocker_extensions",
+   "created": "2021-04-02T16:31:56Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/anse-app/chatgpt-demo/issues/110",
+   "title": "docker: Error response from daemon: failed to create shim task",
+   "repo": "anse-app/chatgpt-demo",
+   "created": "2023-03-05T15:11:35Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Cloud-RF/tak-server/issues/85",
+   "title": "Error during setup",
+   "repo": "Cloud-RF/tak-server",
+   "created": "2026-05-06T14:24:22Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 707
+}

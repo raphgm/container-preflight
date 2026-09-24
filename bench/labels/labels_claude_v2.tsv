@@ -1,0 +1,125 @@
+idx	scope	predict	rule	reason
+0	in	no		nginx inside the container binds a port already used inside its network namespace, not a host publish conflict
+1	in	no		app inside the container (net=host) binds a busy port; not declared in Compose ports
+2	out	no		host app, not a container failure
+3	out	no		app hot-reload bug
+4	out	no		Elixir migration error
+5	in	no		Rancher Desktop port forwarding for a non-standard IP
+6	out	no		deployment tool path collision
+7	in	partial	learned	postgres without POSTGRES_PASSWORD: predicted only after being learned once
+8	in	yes	mounts.bind	config file missing, so Docker created a directory
+9	in	yes	mounts.bind	config files created as directories
+10	in	yes	mounts.bind	entrypoint file missing on the Portainer host
+11	in	yes	mounts.bind	config file missing
+12	in	partial	mounts.bind	/sys/class/powercap absent on this kernel; flagged only for create_host_path=false
+13	in	no		docker run --mount; path hidden from snap/Desktop daemon; not a Compose input
+14	out	no		devcontainer variable
+15	in	partial	mounts.bind	certificate not yet generated; flagged when long syntax disables create_host_path
+16	in	partial	build.buildkit	COPY --chmod through a legacy API client; buildx installed, so not flagged
+17	out	no		Podman
+18	out	no		not a failure report
+19	out	no		remote ACR builder
+20	in	yes	build.context	COPY source missing (not built yet)
+21	in	yes	build.context	COPY source missing
+22	in	yes	build.context	binary must be built first
+23	in	no		COPY source uses an ARG; skipped by design
+24	in	yes	build.context	COPY source missing
+25	in	yes	build.context	COPY source missing
+26	in	yes	build.context	COPY source missing
+27	in	yes	build.context	COPY source missing
+28	in	no		Dockerfile itself outside the context (skaffold); only COPY sources are checked
+29	in	yes	build.context	COPY outside context via Compose
+30	in	yes	build.context	COPY ../.. outside context
+31	in	yes	build.context	COPY outside context via Compose
+32	in	yes	compose.env	required variable missing
+33	in	yes	compose.env	required variable missing
+34	in	yes	compose.env	required variable missing
+35	out	no		compose-go library bug
+36	in	yes	(root cause)	invalid Compose file reported as root cause
+37	out	no		Swarm stack schema via a CI action
+38	out	no		apt error during build
+39	in	yes	compose.version	top-level name now in feature table
+40	in	partial	compose.env	unset-variable warning shown, but the failure was an interrupted pull
+41	in	yes	compose.env	unset variable
+42	in	yes	compose.env	unset variable
+43	out	no		warning unrelated to the reported bug
+44	in	partial	mounts.permissions	Postgres data dir rule fires only when the CLI runs on Windows; WSL shell reads as Linux
+45	in	no		unhealthy container on WSL
+46	in	no		unhealthy redis on Windows
+47	in	no		permission via user: from variables
+48	in	partial	registry.credentials	credential helper resolved from current directory (WSL)
+49	in	no		DNS in Colima VM
+50	in	partial	registry.credentials	credential helper resolved from current directory
+51	in	yes	registry.credentials	credsStore desktop not installed
+52	in	partial	(root cause)	daemon unreachable reported; real cause (virtualization off in BIOS) not named
+53	in	no		container using the Docker socket after daemon upgrade
+54	in	yes	(root cause)	no engine installed
+55	out	no		third-party tool bug
+56	in	partial	mounts.sharing	mounts denied, but via a CLI that runs containers itself
+57	in	no		docker-in-docker path translation
+58	in	yes	mounts.sharing	docker run via --run; Linux Desktop shares home only
+59	in	yes	mounts.sharing	Linux Desktop shares home only
+60	in	yes	image.platform	arm64-only tag on amd64 CI agent
+61	in	no		disk filled at runtime
+62	in	no		inode exhaustion in production
+63	in	no		inode exhaustion during pull; disk rule counts bytes
+64	in	no		DNS inside app container
+65	out	no		Podman
+66	in	no		no internet in device
+67	in	no		service name not resolvable
+68	in	partial	image.platform	QEMU segfault; emulation only warned
+69	in	partial	image.platform	QEMU SIGILL; emulation only warned
+70	out	no		qemu outside Docker
+71	in	partial	image.platform	amd64 image under QEMU via SAM CLI; warned only
+72	in	yes	resources.gpu	no NVIDIA runtime
+73	in	yes	resources.gpu	no NVIDIA runtime
+74	in	yes	resources.gpu	no NVIDIA runtime
+75	in	yes	resources.gpu	no NVIDIA runtime
+76	in	yes	image.exists	image not in registry (expected to be built locally)
+77	in	yes	image.exists	image removed from registry
+78	in	yes	image.exists	image removed from Docker Hub
+79	in	yes	image.exists	docker run via --run
+80	in	yes	image.exists	docker pull via --run (verified live)
+81	in	yes	image.exists	tag not published
+82	in	yes	image.exists	docker pull via --run (verified live)
+83	in	yes	image.exists	docker pull via --run
+84	out	no		configuration example, not a failure
+85	in	yes	kernel.sysctl	vm.max_map_count too low
+86	out	no		LXC script request
+87	in	yes	kernel.sysctl	vm.max_map_count too low
+88	out	no		feature request
+89	out	no		Kubernetes
+90	out	no		Kubernetes
+91	out	no		flaky test
+92	out	no		Docker VMM on Windows
+93	in	no		network name from a different project name
+94	in	no		transient during recreate
+95	in	yes	ports.host	older project's container holds 443
+96	in	no		exec working directory
+97	in	no		CI exec failure
+98	in	no		exec working directory (duplicate report)
+99	in	no		exec working directory (duplicate report)
+100	in	no		image ships a broken binary
+101	in	no		image mislabelled: amd64 binary in arm64 manifest
+102	in	partial	image.platform	cross-build RUN without emulation
+103	in	partial	image.platform	self-built images on aarch64
+104	in	yes	image.platform	no arm64 variant
+105	in	yes	image.platform	no arm64 variant (Lando, Compose based)
+106	in	partial	image.platform	no arm/v7 variant, via Home Assistant
+107	in	yes	image.platform	docker run via --run
+108	in	yes	image.platform	amd64-only image on arm64
+109	in	yes	image.platform	docker run via --run
+110	in	partial	image.platform	s390x build with empty TARGETPLATFORM
+111	in	yes	image.platform	arm64 image built on M1 deployed to amd64 server (preflight --host)
+112	in	yes	ports.host	another project's container holds the port
+113	out	no		Maven plugin
+114	in	no		port allocation race
+115	in	yes	ports.conflict	two services publish the same port
+116	out	no		unrelated tooling
+117	out	no		Podman
+118	in	yes	ports.host	rootless Docker, privileged port 80
+119	in	partial	ports.host	Podman rootless, same condition
+120	out	no		Podman
+121	in	no		build-time mkdir as non-root
+122	in	no		named volume ownership
+123	in	no		anonymous volume ownership

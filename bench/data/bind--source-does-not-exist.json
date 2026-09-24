@@ -1,0 +1,280 @@
+{
+ "category": "bind: source does not exist",
+ "rule": "mounts.bind",
+ "query": "\"bind source path does not exist\" is:issue created:>=2021-01-01",
+ "total": 544,
+ "sample": [
+  {
+   "url": "https://github.com/BenjaminBenetti/fleet-man/issues/241",
+   "title": "macOS: intermittent 'bind source path does not exist' for freshly recreated workspace dirs (Docker Desktop VirtioFS race)",
+   "repo": "BenjaminBenetti/fleet-man",
+   "created": "2026-07-21T18:36:48Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tribut/homeassistant-docker-venv/issues/35",
+   "title": "--mount: \"bind source path does not exist\", but it does",
+   "repo": "tribut/homeassistant-docker-venv",
+   "created": "2024-08-03T07:45:27Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coder/coder/issues/19708",
+   "title": "bug: `coder_devcontainer` fails with \"bind source path does not exist\" for existing directories in Kubernetes deployment",
+   "repo": "coder/coder",
+   "created": "2025-09-04T22:08:23Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/LucienShui/PasteMe/issues/127",
+   "title": "invalid mount config for type \"bind\": bind source path does not exist",
+   "repo": "LucienShui/PasteMe",
+   "created": "2021-10-27T01:45:13Z",
+   "state": "open",
+   "comments": 17,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/common-workflow-language/cwltool/issues/1887",
+   "title": "bind source path does not exist - cwltool keeps waiting / running does not stop",
+   "repo": "common-workflow-language/cwltool",
+   "created": "2023-08-17T13:47:58Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/XedinUnknown/red-acre-test-a-1/issues/4",
+   "title": "invalid mount config for type \"bind\": bind source path does not exist",
+   "repo": "XedinUnknown/red-acre-test-a-1",
+   "created": "2023-07-13T17:13:20Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/derio-net/super-fr/issues/578",
+   "title": "fr isolation up: a failed postCreate leaves worktree + container with no state record",
+   "repo": "derio-net/super-fr",
+   "created": "2026-09-22T23:05:52Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/devcontainers/features/issues/952",
+   "title": "invalid mount config for type \"bind\": bind source path does not exist: /var/run/docker.sock",
+   "repo": "devcontainers/features",
+   "created": "2024-04-17T18:00:03Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MCSManager/MCSManager/issues/2230",
+   "title": "[Bug Report] Docker\u90e8\u7f72MCSM\uff0c\u65e0\u6cd5\u7528\u5bb9\u5668\u5316\u8fd0\u884c\u5e7b\u517d\u5e15\u9c81",
+   "repo": "MCSManager/MCSManager",
+   "created": "2026-07-10T15:21:39Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/devcontainers/cli/issues/613",
+   "title": "Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist",
+   "repo": "devcontainers/cli",
+   "created": "2023-08-08T21:40:32Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/common-workflow-language/cwltool/issues/1433",
+   "title": "docker: Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist",
+   "repo": "common-workflow-language/cwltool",
+   "created": "2021-04-08T13:50:05Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/IMAP-Science-Operations-Center/imap_L3_processing/issues/191",
+   "title": "BUG - GLOWS integration tests fail in CI",
+   "repo": "IMAP-Science-Operations-Center/imap_L3_processing",
+   "created": "2026-09-04T13:22:42Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ResearchDataCom/actions/issues/10",
+   "title": "Testing fails when run via Act due to nested volume mounts",
+   "repo": "ResearchDataCom/actions",
+   "created": "2026-07-30T15:44:39Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/zdeneksvarc/postal-tls/issues/3",
+   "title": "Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist: /opt/postal-tls/caddy-data/caddy/certificates/acme-v02.api.letsencrypt.org-directory/mail.dom/mail.dom.crt",
+   "repo": "zdeneksvarc/postal-tls",
+   "created": "2023-04-27T13:29:27Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/awesome-compose/issues/412",
+   "title": "[fix] Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist: /home/traefik/dockerWork/workpress/wordpress",
+   "repo": "docker/awesome-compose",
+   "created": "2024-01-15T02:38:56Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/harbor-framework/harbor/issues/2097",
+   "title": "\u3010Bug\u3011Docker fails to identiry the local directory",
+   "repo": "harbor-framework/harbor",
+   "created": "2026-06-25T14:36:48Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ospaarmann/exdgraph/issues/30",
+   "title": "Cannot create container for service",
+   "repo": "ospaarmann/exdgraph",
+   "created": "2022-04-20T07:56:07Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DefuzeX-AI/AgentBehaviorBench/issues/116",
+   "title": "[runtime] Docker interceptor temp paths are not mountable from Colima on macOS",
+   "repo": "DefuzeX-AI/AgentBehaviorBench",
+   "created": "2026-09-20T16:48:20Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/cli/issues/7176",
+   "title": "Truncating log lines at 75 characters makes them useless.",
+   "repo": "docker/cli",
+   "created": "2026-08-11T16:53:51Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/arifulhb/laravel-docker-app/issues/2",
+   "title": "Error on Docker-compose up...can't find directory for Volume Mount",
+   "repo": "arifulhb/laravel-docker-app",
+   "created": "2021-12-17T19:31:28Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/circlefin/arc-node/issues/51",
+   "title": "Main issue with prometheus metrics endpoint ports",
+   "repo": "circlefin/arc-node",
+   "created": "2026-05-01T03:37:33Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/fadhilkurnia/xdn/issues/82",
+   "title": "primary-backup service launch livelocks: duplicate pb-init threads race the recorder's bind-mount wipe",
+   "repo": "fadhilkurnia/xdn",
+   "created": "2026-08-20T06:31:28Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/eclipse-enclave/enclave/issues/41",
+   "title": "Deleting disposable cache data can break Enclave sessions",
+   "repo": "eclipse-enclave/enclave",
+   "created": "2026-08-10T23:47:41Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/enclaver-io/enclaver/issues/241",
+   "title": "Docker bind error: : invalid mount config for type \"bind\"",
+   "repo": "enclaver-io/enclaver",
+   "created": "2025-11-08T00:17:48Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bytedance/deer-flow/issues/2207",
+   "title": "\u5728win\u7cfb\u7edfwsl\u4e2d\u4f7f\u7528make docker-start\u542f\u52a8\uff0c\u6c99\u7bb1\u5bb9\u5668\u65e0\u6cd5\u6b63\u5e38\u6302\u8f7d\uff0c\u5bfc\u81f4\u6280\u80fd\u65e0\u6cd5\u4f7f\u7528",
+   "repo": "bytedance/deer-flow",
+   "created": "2026-04-14T02:54:22Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shonansurvivors/laravel-fargate-app/issues/27",
+   "title": "4.23\u3000\u30ef\u30fc\u30af\u30d5\u30ed\u30fc\u306e\u5b9f\u884c",
+   "repo": "shonansurvivors/laravel-fargate-app",
+   "created": "2022-11-08T07:25:23Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hubblo-org/publications/issues/1",
+   "title": "Erreur ",
+   "repo": "hubblo-org/publications",
+   "created": "2021-11-04T14:27:07Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/devcontainers/spec/issues/335",
+   "title": "Proposal: Predefined variables for user's home directory",
+   "repo": "devcontainers/spec",
+   "created": "2023-11-07T23:53:58Z",
+   "state": "open",
+   "comments": 21,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MCSManager/MCSManager/issues/2198",
+   "title": "[Bug Report] \u5728 daemon \u5bb9\u5668\u4e2d\u4ee5\u975e root \u6743\u9650\u8fd0\u884c daemon \uff0c\u542f\u52a8 docker \u5b9e\u4f8b\u65f6\uff0c\u6302\u8f7d\u66f4\u591a\u76ee\u5f55\u4f1a\u51fa\u73b0\u521b\u5efa\u6587\u4ef6\u5939\u5931\u8d25\u7684\u95ee\u9898",
+   "repo": "MCSManager/MCSManager",
+   "created": "2026-06-05T01:37:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tabaresjc/HeadUP/issues/25",
+   "title": "Cannot run the docker...",
+   "repo": "tabaresjc/HeadUP",
+   "created": "2021-01-05T11:19:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 544
+}

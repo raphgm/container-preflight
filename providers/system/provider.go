@@ -1,7 +1,7 @@
 package system
 
 import (
-	"github.com/raphgm/container-doctor/pkg/check"
+	"github.com/raphgm/container-preflight/pkg/check"
 )
 
 type Provider struct {

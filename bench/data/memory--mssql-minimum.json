@@ -1,0 +1,280 @@
+{
+ "category": "memory: mssql minimum",
+ "rule": "resources.memory",
+ "query": "\"requires a machine with at least 2000 megabytes\" is:issue created:>=2021-01-01",
+ "total": 4653,
+ "sample": [
+  {
+   "url": "https://github.com/ultralytics/yolov5/issues/2000",
+   "title": "Live streaming after Cloud Engine",
+   "repo": "ultralytics/yolov5",
+   "created": "2021-01-21T04:46:17Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/ultrabug/py3status/issues/2000",
+   "title": "`window` does not work under sway",
+   "repo": "ultrabug/py3status",
+   "created": "2021-01-18T19:19:09Z",
+   "state": "closed",
+   "comments": 4,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/Waiviogit/waivio/issues/2000",
+   "title": "Remove the intermediate screen waivio when loading the site",
+   "repo": "Waiviogit/waivio",
+   "created": "2021-02-10T09:14:50Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/actesrun/appcenter-alerting-test-int/issues/2000",
+   "title": "Fix System.IO.IOException: Network down in Crash Group # 4054616594u",
+   "repo": "actesrun/appcenter-alerting-test-int",
+   "created": "2021-08-26T10:29:29Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/KadeArchive/Kade-Engine/issues/2000",
+   "title": "Chart Speed Bug",
+   "repo": "KadeArchive/Kade-Engine",
+   "created": "2021-08-26T13:03:09Z",
+   "state": "open",
+   "comments": 2,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/type-challenges/type-challenges/issues/2000",
+   "title": "14 - First of Array",
+   "repo": "type-challenges/type-challenges",
+   "created": "2021-06-28T11:19:30Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/DarkPacks/SkyFactory-4/issues/2000",
+   "title": "SK4 v4.2.2 crashes on SSP world-load ; `IllegalStateException: failed to create a child event loop`",
+   "repo": "DarkPacks/SkyFactory-4",
+   "created": "2021-11-20T10:06:10Z",
+   "state": "open",
+   "comments": 3,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/julia-vscode/julia-vscode/issues/2000",
+   "title": "Use VS-Code integrated terminal insted of VS-Code system terminal",
+   "repo": "julia-vscode/julia-vscode",
+   "created": "2021-03-06T03:30:05Z",
+   "state": "closed",
+   "comments": 9,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/tarantool/doc/issues/2000",
+   "title": "[1pt] Give link from Getting started with Cartridge to the Cartridge docs",
+   "repo": "tarantool/doc",
+   "created": "2021-03-26T08:02:06Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/swig/swig/issues/2000",
+   "title": "Swig go not working with output char * argument",
+   "repo": "swig/swig",
+   "created": "2021-04-22T08:55:28Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/espruino/Espruino/issues/2000",
+   "title": "advertising broken with S140 >= 6.1.0",
+   "repo": "espruino/Espruino",
+   "created": "2021-04-21T22:48:13Z",
+   "state": "closed",
+   "comments": 12,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/wandb/wandb/issues/2000",
+   "title": "[Feature] Add support for running Wandb inside of a celery task",
+   "repo": "wandb/wandb",
+   "created": "2021-03-24T19:40:47Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/mainIine/foe-helfer-extension/issues/2000",
+   "title": "Bug: Menu Content settings with right menu not aligned correctly",
+   "repo": "mainIine/foe-helfer-extension",
+   "created": "2021-05-05T08:30:03Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/bigcommerce/cornerstone/issues/2000",
+   "title": "concat combined with json is returning an object with a string parameter",
+   "repo": "bigcommerce/cornerstone",
+   "created": "2021-02-28T03:39:30Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/airsdk/Adobe-Runtime-Support/issues/2000",
+   "title": "Dealing with emojis \ud83d\ude0c",
+   "repo": "airsdk/Adobe-Runtime-Support",
+   "created": "2022-07-01T11:32:55Z",
+   "state": "open",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/aceblockID/monitoring/issues/2000",
+   "title": "\ud83d\uded1 AceBlock Swagger UI is down",
+   "repo": "aceblockID/monitoring",
+   "created": "2022-07-16T14:27:18Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/dapr/components-contrib/issues/2000",
+   "title": "[redis Configuration Api]The specified redisDB should be supported",
+   "repo": "dapr/components-contrib",
+   "created": "2022-08-23T05:54:53Z",
+   "state": "open",
+   "comments": 7,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/xlwings/xlwings/issues/2000",
+   "title": "pivot_item.visible does not work ",
+   "repo": "xlwings/xlwings",
+   "created": "2022-08-26T06:21:23Z",
+   "state": "closed",
+   "comments": 4,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/kubernetes-sigs/controller-runtime/issues/2000",
+   "title": "Add a util method to recognize if resource in reconcile loop is being deleted",
+   "repo": "kubernetes-sigs/controller-runtime",
+   "created": "2022-09-13T16:06:04Z",
+   "state": "closed",
+   "comments": 7,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/FreezingMoon/AncientBeast/issues/2000",
+   "title": "proper hexagon tile hovering [bounty: 35 XTR]",
+   "repo": "FreezingMoon/AncientBeast",
+   "created": "2022-01-01T04:39:15Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/BetaMasaheft/Documentation/issues/2000",
+   "title": "HTTP ERROR 500 EMML6451",
+   "repo": "BetaMasaheft/Documentation",
+   "created": "2022-03-10T15:58:35Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/TrueBlocks/trueblocks-core/issues/2000",
+   "title": "Names: database doesn't populate",
+   "repo": "TrueBlocks/trueblocks-core",
+   "created": "2022-01-07T20:21:31Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/javisu/monitor/issues/2000",
+   "title": "\ud83d\uded1 Joaquin Bau, 5 is down",
+   "repo": "javisu/monitor",
+   "created": "2022-06-07T19:52:25Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/incubateur-ademe/territoires-en-transitions/issues/2000",
+   "title": "Mettre la partie longue du titre en description CAE 5.1.1.1.3",
+   "repo": "incubateur-ademe/territoires-en-transitions",
+   "created": "2022-05-23T15:39:56Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/glium/glium/issues/2000",
+   "title": "clear_color_srgb(red: 0.0,green: 0.0,blue: 0.0,alpha: 0.0) ot working",
+   "repo": "glium/glium",
+   "created": "2022-03-19T14:46:26Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/apache/hop/issues/2000",
+   "title": "[Task]: Cleanup XML of action Wait for SQL",
+   "repo": "apache/hop",
+   "created": "2022-12-07T11:07:04Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/withfig/fig/issues/2000",
+   "title": "bug: Autocomplete pupup always in top left corner of Alacritty",
+   "repo": "withfig/fig",
+   "created": "2022-11-06T09:17:10Z",
+   "state": "closed",
+   "comments": 12,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/devfsa/vagas/issues/2000",
+   "title": "[Remoto] Frontend Angular Developer na Coodesh",
+   "repo": "devfsa/vagas",
+   "created": "2022-10-28T15:20:19Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/Oleksandra2/QAGreen/issues/2000",
+   "title": "Tutorial Page abap-environment-create-service-consumption-model.md Issue. LOCAL",
+   "repo": "Oleksandra2/QAGreen",
+   "created": "2023-01-19T05:02:00Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/tahowallet/extension/issues/2000",
+   "title": "Gwei gas prices are not updating live on Optimism",
+   "repo": "tahowallet/extension",
+   "created": "2022-08-22T13:45:59Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": false
+  }
+ ],
+ "precision": 0.0,
+ "adjusted": 0
+}

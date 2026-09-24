@@ -1,7 +1,7 @@
 package engine
 
 import (
-	"github.com/raphgm/container-doctor/pkg/provider"
+	"github.com/raphgm/container-preflight/pkg/provider"
 )
 
 type Registry struct {

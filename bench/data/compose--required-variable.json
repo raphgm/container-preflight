@@ -1,0 +1,280 @@
+{
+ "category": "compose: required variable",
+ "rule": "compose.env",
+ "query": "\"required variable\" \"is missing a value\" is:issue created:>=2021-01-01",
+ "total": 475,
+ "sample": [
+  {
+   "url": "https://github.com/rubentalstra/FerroCHART/issues/213",
+   "title": "README quick start fails: the compose file requires FERROCHART_CDR_URL and FERROCHART_TERM_URL even with --profile demo",
+   "repo": "rubentalstra/FerroCHART",
+   "created": "2026-09-12T19:34:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Kralizek/octosmith/issues/49",
+   "title": "Validate required variables and secrets in the active execution context",
+   "repo": "Kralizek/octosmith",
+   "created": "2026-09-23T14:48:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/geekau/mediastack/issues/49",
+   "title": ".restart.sh: variable VPN_USERNAME is missing a value: err",
+   "repo": "geekau/mediastack",
+   "created": "2025-07-23T16:09:08Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/compose-spec/compose-go/issues/934",
+   "title": "`ExtractVariables` does not report a variable used inside a `${VAR:?\u2026}` message",
+   "repo": "compose-spec/compose-go",
+   "created": "2026-09-23T11:50:07Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/42ae/moodle-docker/issues/12",
+   "title": "`compose.yml` is not compatible with `_FILE` environment variables",
+   "repo": "42ae/moodle-docker",
+   "created": "2026-09-16T15:44:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/KeniBeck/MinecraftBedrock/issues/5",
+   "title": "La docuemntacion de la instalacion es incorecta",
+   "repo": "KeniBeck/MinecraftBedrock",
+   "created": "2026-08-20T04:29:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/optimizr-tech/optimizr-actions/issues/265",
+   "title": ":wrench: feat(ci): let _docker-compose-validate accept compose env for required vars",
+   "repo": "optimizr-tech/optimizr-actions",
+   "created": "2026-09-20T05:47:27Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/TAIPANBOX/stack-single/issues/62",
+   "title": "install.sh gives .env no backup path, and a re-run with .env gone regenerates a Postgres password pgdata does not know",
+   "repo": "TAIPANBOX/stack-single",
+   "created": "2026-09-18T13:44:54Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Osmantic/ODS/issues/5633",
+   "title": "test-bootstrap-mode.sh reports 'Invalid compose configuration' on any clean checkout",
+   "repo": "Osmantic/ODS",
+   "created": "2026-09-17T10:59:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/frappe/crm/issues/2230",
+   "title": "SITES_RULE Missing on Production install",
+   "repo": "frappe/crm",
+   "created": "2026-05-28T01:22:37Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/menna-nageh/retroloop-/issues/6",
+   "title": "Configure environment variables",
+   "repo": "menna-nageh/retroloop-",
+   "created": "2026-09-06T13:43:01Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/MrEyratnz/software-factory/issues/344",
+   "title": "[tech-debt][medium] docs/observability.md:94 \u2014 operator docker compose logs/down commands omit --env-file and fail",
+   "repo": "MrEyratnz/software-factory",
+   "created": "2026-07-28T10:21:06Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/stellXpress/backend/issues/39",
+   "title": "Service starts successfully even with missing required environment variables",
+   "repo": "stellXpress/backend",
+   "created": "2026-09-03T17:56:07Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/NuimanLP/srisurart-pos-flutter/issues/2",
+   "title": "Backend phase 1 \u2014 program brief (NestJS multi-tenant server, Architecture A + T1)",
+   "repo": "NuimanLP/srisurart-pos-flutter",
+   "created": "2026-09-04T12:16:52Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/StellarExpress/backend/issues/33",
+   "title": "Service starts successfully even with missing required environment variables",
+   "repo": "StellarExpress/backend",
+   "created": "2026-09-03T18:02:37Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/t59688/arboris-novel/issues/30",
+   "title": "\u660e\u660e\u8bbe\u7f6e\u4e86\u7684\u5b57\u6bb5\uff0c\u5374\u663e\u793a\u6ca1\u6709\u8bbe\u7f6e",
+   "repo": "t59688/arboris-novel",
+   "created": "2025-12-28T13:49:51Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Antropophag/ic/issues/249",
+   "title": "podman-compose 1.6.0 \u043d\u0435 \u043f\u0440\u0438\u043c\u0435\u043d\u044f\u0435\u0442 --env-file \u043f\u0440\u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0435 deployment contracts",
+   "repo": "Antropophag/ic",
+   "created": "2026-08-11T18:30:47Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sakibsadmanshajib/hive/issues/1610",
+   "title": "post-deploy-verify is failing against the demo box",
+   "repo": "sakibsadmanshajib/hive",
+   "created": "2026-08-31T10:05:18Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kreigan/adm-composectl/issues/2",
+   "title": "Having a common \".env\" file ignores stack's \".env\" file",
+   "repo": "kreigan/adm-composectl",
+   "created": "2026-01-04T20:17:59Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/matrixorigin/memoria/issues/18",
+   "title": "[Bug]: docker compose up -d error",
+   "repo": "matrixorigin/memoria",
+   "created": "2026-03-13T19:24:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/frappe/helpdesk/issues/3067",
+   "title": "Getting \"Generating Compose File failed\" error",
+   "repo": "frappe/helpdesk",
+   "created": "2026-02-26T06:38:13Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nathanpond/Auton8/issues/519",
+   "title": "Guard hardening, round 6: the round-8 guards, including one #513 item closed unfixed",
+   "repo": "nathanpond/Auton8",
+   "created": "2026-09-17T15:52:37Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cubrid-lab/cubrid-mcp-server/issues/177",
+   "title": "fix(config): reject empty required connection environment variables",
+   "repo": "cubrid-lab/cubrid-mcp-server",
+   "created": "2026-09-18T12:41:49Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/avnox-com/papermark-self-host/issues/1",
+   "title": ".env values not being picked up",
+   "repo": "avnox-com/papermark-self-host",
+   "created": "2025-11-06T13:51:37Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/project-chip/certification-tool/issues/986",
+   "title": "[Bug] Auto Install Error",
+   "repo": "project-chip/certification-tool",
+   "created": "2026-05-08T22:12:14Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/frappe/lms/issues/2130",
+   "title": "Docker images on ghcr.io are outdated (December 2025) \u2014 critical bug fixes not available in production deployments + easy-install.py bug",
+   "repo": "frappe/lms",
+   "created": "2026-02-25T09:56:49Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/cli/issues/7313",
+   "title": "`docker stack` subcommands: the `:?` interpolation operator and hyphens do not mix",
+   "repo": "docker/cli",
+   "created": "2026-09-17T17:31:09Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/the-deep/deeper/issues/1004",
+   "title": "docker-compose failing",
+   "repo": "the-deep/deeper",
+   "created": "2024-10-21T14:57:24Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/BioMicroCenter/NExtSEEK/issues/112",
+   "title": "A $ in NEO4J_PASSWORD silently breaks compose, and the error blames .env for it",
+   "repo": "BioMicroCenter/NExtSEEK",
+   "created": "2026-08-20T20:41:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nathanpond/Auton8/issues/518",
+   "title": "Requiring AUTONATE_MOUNTS_ROOT broke preflight.sh run by hand and three skill docs",
+   "repo": "nathanpond/Auton8",
+   "created": "2026-09-17T15:52:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 0.8333333333333334,
+ "adjusted": 396
+}

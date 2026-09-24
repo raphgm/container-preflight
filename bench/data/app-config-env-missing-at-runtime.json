@@ -1,0 +1,280 @@
+{
+ "category": "app config/env missing at runtime",
+ "rule": "(learned)",
+ "query": "\"Database is uninitialized and superuser password is not specified\" is:issue created:>=2021-01-01",
+ "total": 118,
+ "sample": [
+  {
+   "url": "https://github.com/attevon-llc/OpenTranscribe/issues/961",
+   "title": "fix(docker): a --fresh stack started from a git worktree fails twice \u2014 no .env, and the second Vite dev server hits EMFILE",
+   "repo": "attevon-llc/OpenTranscribe",
+   "created": "2026-09-20T20:01:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/open-horizon-services/service-postgresql/issues/5",
+   "title": "ERROR: Error message being thrown in docker logs",
+   "repo": "open-horizon-services/service-postgresql",
+   "created": "2025-04-08T15:18:34Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Crivaledaz/Mattermost-LDAP/issues/82",
+   "title": "Database not being created in container?",
+   "repo": "Crivaledaz/Mattermost-LDAP",
+   "created": "2021-11-02T16:00:52Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/qdrtech/self-hosted-ai/issues/3",
+   "title": "Postgress database is uninitilized",
+   "repo": "qdrtech/self-hosted-ai",
+   "created": "2024-12-22T22:48:22Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mattermost/docker/issues/163",
+   "title": "Any support with podman-compose?",
+   "repo": "mattermost/docker",
+   "created": "2025-03-06T06:39:06Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/asc-lab/dotnetcore-microservices-poc/issues/58",
+   "title": "Unable to start Postgres from infra-run.sh file ",
+   "repo": "asc-lab/dotnetcore-microservices-poc",
+   "created": "2023-08-29T13:20:03Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/divio/divio-cli/issues/243",
+   "title": "Database configuration in `divio app setup` not working correctly",
+   "repo": "divio/divio-cli",
+   "created": "2021-10-28T14:01:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker-library/postgres/issues/1339",
+   "title": "Container in Ubuntu aarch64 machine cannot use Docker Secrets feature",
+   "repo": "docker-library/postgres",
+   "created": "2025-05-08T07:36:31Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/satoshipay/docker-stellar-core/issues/33",
+   "title": "Issues with initializing db",
+   "repo": "satoshipay/docker-stellar-core",
+   "created": "2021-06-26T22:39:21Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/delner/docker-training/issues/1",
+   "title": "Postgres needs POSTGRES_PASSWORD at startup",
+   "repo": "delner/docker-training",
+   "created": "2021-01-12T07:58:00Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/akornatskyy/scheduler/issues/815",
+   "title": "Docker Compose instructions are not instructions",
+   "repo": "akornatskyy/scheduler",
+   "created": "2022-12-13T07:45:21Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hashicorp/waypoint/issues/2975",
+   "title": "environment variables in waypoint.hcl not getting passed to the docker deployed container ",
+   "repo": "hashicorp/waypoint",
+   "created": "2022-02-03T04:48:11Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/haswanth13901/Zenoscribe/issues/50",
+   "title": "Document the Dependabot secret store in docs/github-repo-settings.md \u00a72",
+   "repo": "haswanth13901/Zenoscribe",
+   "created": "2026-08-27T07:13:13Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shamedgh/confine/issues/14",
+   "title": "Options in image input file (`images.json`) are not parsed correctly",
+   "repo": "shamedgh/confine",
+   "created": "2023-05-05T19:43:33Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/wtfloris/hestia/issues/80",
+   "title": "Generate reaction message that can be easily copied",
+   "repo": "wtfloris/hestia",
+   "created": "2025-05-06T17:53:11Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dotnet/tye/issues/1255",
+   "title": "Tye on Podman with Postgres couldn't inject environment variables",
+   "repo": "dotnet/tye",
+   "created": "2021-12-30T08:04:02Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/taimg1/shipkit/issues/19",
+   "title": "Only KAMAL_REGISTRY_PASSWORD reaches Kamal: every other declared secret silently resolves to empty",
+   "repo": "taimg1/shipkit",
+   "created": "2026-09-16T17:58:15Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dyne/reflow-os/issues/25",
+   "title": "Initialization fails on MACOS with readme instructions",
+   "repo": "dyne/reflow-os",
+   "created": "2022-01-14T11:54:21Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/metanull/appsec-scout-2/issues/508",
+   "title": "Park the postgres service behind the local-db profile in docker-compose.ghcr.yml",
+   "repo": "metanull/appsec-scout-2",
+   "created": "2026-09-14T15:50:14Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/testcontainers/testcontainers-native/issues/69",
+   "title": "Failed container starts aren't always reported",
+   "repo": "testcontainers/testcontainers-native",
+   "created": "2026-02-02T21:02:34Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rancher-sandbox/rancher-desktop/issues/6760",
+   "title": "Unable to bind to address other than 127.0.0.1 or 0.0.0.0",
+   "repo": "rancher-sandbox/rancher-desktop",
+   "created": "2024-04-23T22:09:35Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/oikawa-d/task_management/issues/481",
+   "title": "[task] CD\u5ec3\u6b62\u65b9\u91dd\u3078\u306e\u5207\u308a\u66ff\u3048\u3068\u5c06\u6765\u306erunner\u624b\u9806\u6574\u7406",
+   "repo": "oikawa-d/task_management",
+   "created": "2026-09-15T06:25:15Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/trydirect/stacker/issues/240",
+   "title": "stacker deploy --target server writes every project to the same remote path, causing real cross-project deployment damage",
+   "repo": "trydirect/stacker",
+   "created": "2026-08-21T11:34:59Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/EnterpriseDB/docs/issues/6920",
+   "title": "Regarding \"Installing PostgreSQL in a Docker container on your local machine\"",
+   "repo": "EnterpriseDB/docs",
+   "created": "2025-07-25T04:49:24Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/clertonraf/satzwerk/issues/315",
+   "title": "Production 'satzwerk' Portainer stack has no DB_PASSWORD/JWT_SECRET configured - backend+postgres have never actually run on 192.168.0.110",
+   "repo": "clertonraf/satzwerk",
+   "created": "2026-09-15T10:09:25Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coollabsio/coolify/issues/9029",
+   "title": "[Bug]: PR Preview: POSTGRES_PASSWORD interpolation fails because DB_PASSWORD is not injected into .env",
+   "repo": "coollabsio/coolify",
+   "created": "2026-03-18T13:37:19Z",
+   "state": "closed",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/projectcaluma/alexandria/issues/421",
+   "title": "Quick start not working",
+   "repo": "projectcaluma/alexandria",
+   "created": "2024-01-18T12:14:33Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/alchemy-run/alchemy/issues/1117",
+   "title": "Docker.Container passes environment names without values",
+   "repo": "alchemy-run/alchemy",
+   "created": "2026-08-06T06:56:24Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rajnathsah/smartflow-engine/issues/8",
+   "title": "Error in starting application using docker compose",
+   "repo": "rajnathsah/smartflow-engine",
+   "created": "2026-06-03T03:17:23Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/s3rius/FastAPI-template/issues/174",
+   "title": "Project starts with Docker error.",
+   "repo": "s3rius/FastAPI-template",
+   "created": "2023-06-22T09:04:10Z",
+   "state": "open",
+   "comments": 23,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 118
+}

@@ -1,0 +1,280 @@
+{
+ "category": "DNS resolution in container",
+ "rule": "",
+ "query": "\"Temporary failure in name resolution\" docker is:issue created:>=2021-01-01",
+ "total": 2021,
+ "sample": [
+  {
+   "url": "https://github.com/langgenius/dify/issues/40601",
+   "title": "http Request   [Errno -3] Temporary failure in name resolution",
+   "repo": "langgenius/dify",
+   "created": "2026-08-12T08:45:54Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/synesthesiam/homeassistant-satellite/issues/79",
+   "title": "Temporary failure in name resolution",
+   "repo": "synesthesiam/homeassistant-satellite",
+   "created": "2023-12-02T18:41:47Z",
+   "state": "open",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/johanmeijer/grott/issues/296",
+   "title": "Temporary failure in name resolution",
+   "repo": "johanmeijer/grott",
+   "created": "2023-02-19T17:31:42Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/octavius64/Gazelle/issues/4",
+   "title": "Temporary failure in name resolution",
+   "repo": "octavius64/Gazelle",
+   "created": "2023-03-18T08:17:44Z",
+   "state": "open",
+   "comments": 12,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/raskitoma/pls_admin/issues/9",
+   "title": "plsworker error: Temporary failure in name resolution...",
+   "repo": "raskitoma/pls_admin",
+   "created": "2024-07-29T11:04:41Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/samply/focus/issues/386",
+   "title": "Startup since 0.24.1",
+   "repo": "samply/focus",
+   "created": "2026-09-21T12:25:50Z",
+   "state": "open",
+   "comments": 20,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/StackStorm/st2-docker/issues/216",
+   "title": "Problem installing or searching pack, temporary failure in name resolution",
+   "repo": "StackStorm/st2-docker",
+   "created": "2021-02-26T00:10:13Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-win/issues/13808",
+   "title": "Error \"Temporary failure in name resolution\" when resolving hosts",
+   "repo": "docker/for-win",
+   "created": "2023-11-24T11:27:14Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Azure/azure-cli/issues/26213",
+   "title": "az login problem: [Errno -3] Temporary failure in name resolution",
+   "repo": "Azure/azure-cli",
+   "created": "2023-04-20T12:16:01Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/schubergphilis/towerlib/issues/108",
+   "title": "CI test failled (Temporary failure in name resolution)",
+   "repo": "schubergphilis/towerlib",
+   "created": "2022-10-04T09:35:59Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aau-zid/BigBlueButton-liveStreaming/issues/170",
+   "title": "Docker Compose Error: Temporary Failure in Name Resolution for BigBlueButton Instance",
+   "repo": "aau-zid/BigBlueButton-liveStreaming",
+   "created": "2023-09-06T13:39:50Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/scylladb/scylladb/issues/11967",
+   "title": "scylla docker scylla_io_setup fails - hostname: Temporary failure in name resolution",
+   "repo": "scylladb/scylladb",
+   "created": "2022-11-14T11:15:20Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MODSetter/SurfSense/issues/1716",
+   "title": "Unable to add OpenAI compatible Local AI providers such as LM Studio or Lemonade",
+   "repo": "MODSetter/SurfSense",
+   "created": "2026-08-25T15:11:19Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/OpenSPG/KAG/issues/535",
+   "title": "[Bug] [Module Name] Bug title java.net.UnknownHostException: mysql: Temporary failure in name resolution",
+   "repo": "OpenSPG/KAG",
+   "created": "2025-05-13T08:46:22Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/UnstoppableMango/the-cluster/issues/4458",
+   "title": "Node resolvers have no upstream fallback, making a two-replica pihole outage unrecoverable",
+   "repo": "UnstoppableMango/the-cluster",
+   "created": "2026-09-20T19:45:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MarkusMcNugen/docker-qBittorrentvpn/issues/121",
+   "title": "docker freezes ",
+   "repo": "MarkusMcNugen/docker-qBittorrentvpn",
+   "created": "2022-02-26T18:40:20Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/midas-research/audino/issues/112",
+   "title": "Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')",
+   "repo": "midas-research/audino",
+   "created": "2023-05-25T05:56:07Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/oracle/graalvm-reachability-metadata/issues/9630",
+   "title": "Bug: transient network outage during the host gate kills the do-work loop permanently",
+   "repo": "oracle/graalvm-reachability-metadata",
+   "created": "2026-08-29T19:11:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/podman-container-tools/podman/issues/24790",
+   "title": "`podman login` works fine and authenticates but `podman pull` fails with `dial tcp: lookup: Temporary failure in name resolution`",
+   "repo": "podman-container-tools/podman",
+   "created": "2024-12-06T19:42:35Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bluerobotics/BlueOS/issues/1695",
+   "title": "bug: No Extensions available.",
+   "repo": "bluerobotics/BlueOS",
+   "created": "2023-05-23T08:02:01Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/infiniflow/ragflow/issues/19117",
+   "title": "[Question]: Getting error when configuring postgres as metadata db",
+   "repo": "infiniflow/ragflow",
+   "created": "2026-09-01T13:03:03Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Bess-Gosling/zaproxy/issues/381",
+   "title": "ZAP error messages when DNS is not working in docker scripts could be more forth coming",
+   "repo": "Bess-Gosling/zaproxy",
+   "created": "2026-09-10T08:54:47Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lnsolspvtltd/propops/issues/76",
+   "title": "Post-deploy propagation steps for PropOps",
+   "repo": "lnsolspvtltd/propops",
+   "created": "2026-08-04T18:50:53Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/podman-container-tools/podman/issues/16342",
+   "title": "No retry on temporary failure in network name resolution",
+   "repo": "podman-container-tools/podman",
+   "created": "2022-10-29T09:46:16Z",
+   "state": "open",
+   "comments": 10,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cooneycw/mcp-second-opinion/issues/5",
+   "title": "Attach aws-secrets-agent sidecar to external mcp-net durably (fixes recurring gemma-bot outages)",
+   "repo": "cooneycw/mcp-second-opinion",
+   "created": "2026-08-02T16:10:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DecaturMakers/equipment-status-board/issues/82",
+   "title": "App fails to boot when Slack is unreachable: init_slack() does a blocking auth.test during create_app()",
+   "repo": "DecaturMakers/equipment-status-board",
+   "created": "2026-08-29T13:26:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/demonsxxxxxx/ai-platform/issues/409",
+   "title": "B2: Docker egress evidence lacks policy-bound deny proof",
+   "repo": "demonsxxxxxx/ai-platform",
+   "created": "2026-07-12T12:38:11Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/farabisina25/echofinder-test/issues/142",
+   "title": "Docker Networking",
+   "repo": "farabisina25/echofinder-test",
+   "created": "2025-12-20T16:44:54Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/farabisina25/echofinder-test/issues/131",
+   "title": "Docker Networking Failure",
+   "repo": "farabisina25/echofinder-test",
+   "created": "2025-12-20T15:54:57Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ramon-victor/freegpt-webui/issues/45",
+   "title": "synology docker enable automatic proxy",
+   "repo": "ramon-victor/freegpt-webui",
+   "created": "2023-07-05T14:01:27Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 2021
+}

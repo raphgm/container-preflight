@@ -1,0 +1,280 @@
+{
+ "category": "image: pull access denied",
+ "rule": "image.exists",
+ "query": "\"pull access denied\" \"may require\" is:issue created:>=2021-01-01",
+ "total": 3730,
+ "sample": [
+  {
+   "url": "https://github.com/PeerDB-io/peerdb/issues/4843",
+   "title": "[Bug]: minio/minio image no longer available on Docker Hub",
+   "repo": "PeerDB-io/peerdb",
+   "created": "2026-09-23T07:54:57Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Dokploy/dokploy/issues/5469",
+   "title": "Docker source: \"Login Succeeded\" then \"pull access denied\" \u2014 Registry URL never reaches the image name",
+   "repo": "Dokploy/dokploy",
+   "created": "2026-09-16T12:45:29Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/confluentinc/demo-siem-optimization/issues/30",
+   "title": "pull access denied for localbuild/zeek-tcpreplay-kafka, repository does not exist or may require 'docker login'",
+   "repo": "confluentinc/demo-siem-optimization",
+   "created": "2026-07-10T04:06:23Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ariadata/qbittorrent-warp/issues/1",
+   "title": "Pull Access Denied",
+   "repo": "ariadata/qbittorrent-warp",
+   "created": "2025-11-17T06:47:50Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/irods/irods_capability_automated_ingest/issues/325",
+   "title": "GitHub Action Workflow cannot pull minio docker image",
+   "repo": "irods/irods_capability_automated_ingest",
+   "created": "2026-09-15T13:54:07Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/EpicGames/lore/issues/208",
+   "title": "Integration tests failed because minio/minio:latest is no longer available",
+   "repo": "EpicGames/lore",
+   "created": "2026-09-15T06:37:53Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aneisch/thermostat_mqtt_docker/issues/1",
+   "title": "pull access denied",
+   "repo": "aneisch/thermostat_mqtt_docker",
+   "created": "2021-08-20T23:19:38Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lg/emugaming/issues/3",
+   "title": "pull access denied ",
+   "repo": "lg/emugaming",
+   "created": "2022-07-04T09:27:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/thorrak/fermentrack/issues/783",
+   "title": "Manual install unable to find an initialized, responsive instance of Fermentrack",
+   "repo": "thorrak/fermentrack",
+   "created": "2026-08-28T00:39:01Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dusty-nv/jetson-containers/issues/1707",
+   "title": "build fails with pull access denied",
+   "repo": "dusty-nv/jetson-containers",
+   "created": "2026-06-09T05:37:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/stump-wtf/cairn/issues/2",
+   "title": "docker-compose.prod.yml: minio/minio:latest is no longer pullable from Docker Hub (use quay.io/minio/minio)",
+   "repo": "stump-wtf/cairn",
+   "created": "2026-09-22T19:44:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/victoradrianjimenez/dockerized-zotero/issues/6",
+   "title": "\"pull access denied for ...\" messages",
+   "repo": "victoradrianjimenez/dockerized-zotero",
+   "created": "2025-11-05T17:16:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/containerd/containerd/issues/11103",
+   "title": "pull access denied, repository does not exist or may require authorization: authorization failed: no basic auth credentials",
+   "repo": "containerd/containerd",
+   "created": "2024-12-05T10:34:19Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coollabsio/coolify/issues/11855",
+   "title": "[Bug]: Supabase deployment/restart fails because minio/mc image cannot be pulled",
+   "repo": "coollabsio/coolify",
+   "created": "2026-09-16T12:08:11Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rustfs/cli/issues/380",
+   "title": "Docker usage fails with \"login required\"",
+   "repo": "rustfs/cli",
+   "created": "2026-09-21T22:19:44Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DBRepo-Project/dbrepo/issues/97",
+   "title": "The install script fails to pull the docker images",
+   "repo": "DBRepo-Project/dbrepo",
+   "created": "2026-08-17T11:48:46Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hcengineering/huly-selfhost/issues/335",
+   "title": "MinIO removed from Docker Huber - can't finish setup",
+   "repo": "hcengineering/huly-selfhost",
+   "created": "2026-09-22T17:35:01Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cies/low-code-backend-dockered/issues/2",
+   "title": "Hasura pull access denied",
+   "repo": "cies/low-code-backend-dockered",
+   "created": "2022-10-19T15:07:41Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/0xPolygon/zkevm-node/issues/3771",
+   "title": "pull access denied zkevm-node",
+   "repo": "0xPolygon/zkevm-node",
+   "created": "2024-08-17T21:21:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sigil-enterprises/ducklake/issues/110",
+   "title": "MinIO images are gone from Docker Hub: scripts/docker-compose.yml must re-point at quay.io",
+   "repo": "sigil-enterprises/ducklake",
+   "created": "2026-09-12T09:17:53Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/epilif1017a/big-data-open-os/issues/2",
+   "title": "pull access denied for hadoop-base",
+   "repo": "epilif1017a/big-data-open-os",
+   "created": "2021-11-16T19:38:57Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/o2ac/o2ac-ur/issues/4",
+   "title": "o2ac-ur pull access denied",
+   "repo": "o2ac/o2ac-ur",
+   "created": "2021-11-18T05:04:11Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nektos/act/issues/2585",
+   "title": "Pull access denied, repository does not exist or may require 'docker login'",
+   "repo": "nektos/act",
+   "created": "2024-12-24T06:18:05Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sidpalas/mern-docker-compose/issues/1",
+   "title": "pull access denied for react-app",
+   "repo": "sidpalas/mern-docker-compose",
+   "created": "2022-12-30T13:38:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/trevezani/kong-consul-springboot/issues/1",
+   "title": "Pull access denied for census-zipcode",
+   "repo": "trevezani/kong-consul-springboot",
+   "created": "2021-02-04T13:18:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/indrz/indrz-be/issues/129",
+   "title": "Pull access denied for indrz/gogse",
+   "repo": "indrz/indrz-be",
+   "created": "2021-09-22T11:51:14Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/OpenSourcePolitics/decidim-ditp/issues/4",
+   "title": "pull access denied for decidim-app",
+   "repo": "OpenSourcePolitics/decidim-ditp",
+   "created": "2022-06-17T12:40:16Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AchimPieters/ESP-HomeKit-SDK-Revised-Installation/issues/1",
+   "title": "pull access denied for esp-sdk",
+   "repo": "AchimPieters/ESP-HomeKit-SDK-Revised-Installation",
+   "created": "2021-10-31T17:21:31Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/HKUDS/AI-Researcher/issues/80",
+   "title": "Bug: Docker image 'tjbtech1/airesearcher:v1' pull access denied",
+   "repo": "HKUDS/AI-Researcher",
+   "created": "2025-12-25T12:29:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/swiftlang/swift-org-website/issues/1346",
+   "title": "Run OpenAPI Tester: Pull access denied for swift-website-builder",
+   "repo": "swiftlang/swift-org-website",
+   "created": "2026-03-06T19:30:21Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 3730
+}

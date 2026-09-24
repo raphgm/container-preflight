@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 type HTML struct {
@@ -24,7 +24,7 @@ func (h *HTML) Render(rep report.Report) error {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Container Doctor Report</title>
+    <title>Container Preflight Report</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
         h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
@@ -43,7 +43,7 @@ func (h *HTML) Render(rep report.Report) error {
     </style>
 </head>
 <body>
-    <h1>Container Doctor Diagnostic Report</h1>
+    <h1>Container Preflight Diagnostic Report</h1>
     <div class="timestamp">Generated at: ` + rep.Timestamp.Format("2006-01-02 15:04:05 UTC") + `</div>`)
 
 	for _, provider := range rep.Providers {

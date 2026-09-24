@@ -1,5 +1,5 @@
 version: 2
-project_name: container-doctor
+project_name: container-preflight
 before:
   hooks:
     - go mod tidy
@@ -16,6 +16,8 @@ builds:
     ignore:
       - goos: windows
         goarch: arm64
+    ldflags:
+      - -s -w -X github.com/raphgm/container-preflight/cmd.Version={{.Version}}
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.

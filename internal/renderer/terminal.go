@@ -3,7 +3,7 @@ package renderer
 import (
 	"fmt"
 
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 type Terminal struct{}
@@ -14,7 +14,7 @@ func NewTerminal() *Terminal {
 
 func (t *Terminal) Render(r report.Report) error {
 	fmt.Println()
-	fmt.Println("Container Doctor")
+	fmt.Println("Container Preflight")
 	fmt.Println()
 
 	for _, provider := range r.Providers {

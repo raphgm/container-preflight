@@ -1,0 +1,33 @@
+category,preflight_rule,raw_hits,sampled,verified,precision,adjusted_estimate
+memory: OOMKilled,resources.memory,97607,30,11,0.37,35789
+image: tag/repo not found,image.exists,7405,30,28,0.93,6911
+network not found,,18407,30,10,0.33,6136
+volume permission denied,,6073,30,30,1.0,6073
+platform: exec format error,image.platform,5372,30,29,0.97,5193
+address already in use,ports.host,3792,30,30,1.0,3792
+image: pull access denied,image.exists,3730,30,30,1.0,3730
+platform: requested platform mismatch,image.platform,3717,30,30,1.0,3717
+OCI runtime exec failed,,3479,30,30,1.0,3479
+platform: no matching manifest,image.platform,2760,29,29,1.0,2760
+daemon: cannot connect,(root cause),2712,30,30,1.0,2712
+compose: variable not set,compose.env,2390,30,29,0.97,2310
+DNS resolution in container,,2021,30,30,1.0,2021
+build: COPY source not found,build.context,1421,30,30,1.0,1421
+emulation: qemu crash,image.platform,1301,30,30,1.0,1301
+disk: no space left,"resources.disk,host.disk",1241,30,30,1.0,1241
+port already allocated,"ports.conflict,ports.host",1239,30,30,1.0,1239
+container healthcheck unhealthy,,1155,30,30,1.0,1155
+bind: dir onto file,mounts.bind,707,30,30,1.0,707
+bind: source does not exist,mounts.bind,544,30,30,1.0,544
+compose: unsupported property,compose.version,486,30,30,1.0,486
+gpu: no device driver,resources.gpu,457,30,30,1.0,457
+build: BuildKit required,build.buildkit,443,30,29,0.97,428
+build: COPY failed legacy,build.context,417,30,30,1.0,417
+compose: required variable,compose.env,475,30,25,0.83,396
+kernel: vm.max_map_count,kernel.sysctl,369,30,30,1.0,369
+credentials helper missing,registry.credentials,260,30,30,1.0,260
+desktop: mounts denied,mounts.sharing,153,30,30,1.0,153
+app config/env missing at runtime,(learned),118,30,30,1.0,118
+build: outside build context,build.context,65,30,30,1.0,65
+rootless privileged port,ports.host,39,30,26,0.87,34
+memory: mssql minimum,resources.memory,4653,30,0,0.0,0

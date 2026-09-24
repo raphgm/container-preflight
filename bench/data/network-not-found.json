@@ -1,0 +1,280 @@
+{
+ "category": "network not found",
+ "rule": "",
+ "query": "docker \"network\" \"not found\" compose is:issue created:>=2021-01-01",
+ "total": 18407,
+ "sample": [
+  {
+   "url": "https://github.com/tmwclaxton/clashofdots/issues/12",
+   "title": "INC: LGS Pipeline deploy recreate \u2014 Compose temp name not found (2026-09-18)",
+   "repo": "tmwclaxton/clashofdots",
+   "created": "2026-09-18T20:22:50Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/tmwclaxton/clashofdots/issues/11",
+   "title": "INC: LGS Pipeline ctr not found after Compose mid-replace rename (2026-09-18)",
+   "repo": "tmwclaxton/clashofdots",
+   "created": "2026-09-18T20:21:23Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/Finsys/dockhand/issues/1493",
+   "title": "[BUG] env file not found with remote host running Hawser",
+   "repo": "Finsys/dockhand",
+   "created": "2026-08-30T06:40:19Z",
+   "state": "open",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/microsoft/vscode/issues/331774",
+   "title": "Git diff fails with GitFileSystemProvider Repository not found on Windows",
+   "repo": "microsoft/vscode",
+   "created": "2026-08-20T10:46:14Z",
+   "state": "open",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/orkestra-cc/orkestra/issues/300",
+   "title": "bug: backup.sh reports rustfs as backed up when the S3 sync fails (network not found)",
+   "repo": "orkestra-cc/orkestra",
+   "created": "2026-08-26T19:27:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/JoeRegnier/retiree-plan/issues/138",
+   "title": "Cannot bootstrap myself using Docker",
+   "repo": "JoeRegnier/retiree-plan",
+   "created": "2026-09-19T14:40:02Z",
+   "state": "open",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/treeseed-ai/deployment/issues/369",
+   "title": "Remove active TreeSeed Compose endpoints before managed networks",
+   "repo": "treeseed-ai/deployment",
+   "created": "2026-09-01T03:29:55Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/cameri/schematics/issues/88",
+   "title": "restrict-docker-api-access: skeleton pins a nonexistent image, tecnativa/restrict-docker-api-access",
+   "repo": "cameri/schematics",
+   "created": "2026-09-20T13:14:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/filippolmt/toolbox/issues/969",
+   "title": "Make the session container's network configurable, and keep local Docker networks off VPN-routed subnets",
+   "repo": "filippolmt/toolbox",
+   "created": "2026-09-09T15:48:43Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/OpenSDLC-Dev/managed-agent-platform/issues/467",
+   "title": "executor: validate SANDBOX_DOCKER_GATE_NETWORK at startup \u2014 a wrong-but-existing gate network fails silently, per session",
+   "repo": "OpenSDLC-Dev/managed-agent-platform",
+   "created": "2026-08-23T04:02:28Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Proaxiom-Cyber/guacamole-saml-sso/issues/30",
+   "title": "Diagnose nginx network loss after port conflict and improve installer recovery",
+   "repo": "Proaxiom-Cyber/guacamole-saml-sso",
+   "created": "2026-09-23T04:51:33Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/petercort/chaotic-ecommerce/issues/2",
+   "title": "[Chaos] S7: JVM Heap Exhaustion \u2014 Docker network not found (stale network name from Java-era compose)",
+   "repo": "petercort/chaotic-ecommerce",
+   "created": "2026-04-22T01:06:12Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/unihosted/unifi-os-server-docker/issues/4",
+   "title": "Network Application not always comming up after host reboot",
+   "repo": "unihosted/unifi-os-server-docker",
+   "created": "2026-07-31T10:01:33Z",
+   "state": "open",
+   "comments": 7,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/Finsys/dockhand/issues/1278",
+   "title": "[BUG] Stack creation from Git fails with external network not found, while local Compose and regular stack creation work",
+   "repo": "Finsys/dockhand",
+   "created": "2026-07-11T13:13:18Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kasmtech/workspaces-issues/issues/673",
+   "title": "[Bug] - network <docker_network> not found",
+   "repo": "kasmtech/workspaces-issues",
+   "created": "2024-12-26T23:11:14Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/desktop-feedback/issues/645",
+   "title": "docker vmm does not use the docker CLI",
+   "repo": "docker/desktop-feedback",
+   "created": "2026-09-01T11:41:13Z",
+   "state": "open",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/groupsky/homy/issues/1559",
+   "title": "ci: subnet-overlap guards check example.env only, so a host whose .env differs is unprotected",
+   "repo": "groupsky/homy",
+   "created": "2026-09-08T21:33:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/vale46n1/immich_duplicate_finder/issues/57",
+   "title": "Network bridge not found",
+   "repo": "vale46n1/immich_duplicate_finder",
+   "created": "2025-01-22T16:30:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/testcontainers/testcontainers-go/issues/2952",
+   "title": "[Bug]: `panic: rootless Docker not found` with Colima on macos",
+   "repo": "testcontainers/testcontainers-go",
+   "created": "2025-01-30T17:18:49Z",
+   "state": "open",
+   "comments": 9,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/goharbor/harbor/issues/23001",
+   "title": "CSRF token not found in request",
+   "repo": "goharbor/harbor",
+   "created": "2026-03-16T14:44:33Z",
+   "state": "open",
+   "comments": 7,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/smokin-salmon/smoked-salmon/issues/426",
+   "title": "Spectrals web server not working; `/spectrals` results in 404 not found; welcome page on `/` is served",
+   "repo": "smokin-salmon/smoked-salmon",
+   "created": "2026-07-15T04:23:36Z",
+   "state": "open",
+   "comments": 3,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/rtCamp/Frappe-Manager/issues/480",
+   "title": "Bench nginx races the frappe container at startup; compose templates define no restart policy, depends_on, or healthchecks",
+   "repo": "rtCamp/Frappe-Manager",
+   "created": "2026-09-20T18:10:19Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/deepfence/ThreatMapper/issues/2425",
+   "title": "Docker Compose Deployment - 404 page not found",
+   "repo": "deepfence/ThreatMapper",
+   "created": "2025-07-19T15:15:37Z",
+   "state": "open",
+   "comments": 8,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/FullStack-AITech/Online-Shop-Microservices/issues/71",
+   "title": "Kafka: create topics from a one-shot init container",
+   "repo": "FullStack-AITech/Online-Shop-Microservices",
+   "created": "2026-09-23T16:10:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/chatwoot/chatwoot/issues/15404",
+   "title": "WhatsApp Cloud API and Dualhook: outbound messages from Chatwoot UI fail with `Not found`, while inbound and direct sends work",
+   "repo": "chatwoot/chatwoot",
+   "created": "2026-08-10T20:16:48Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/R-s0n/ars0n-framework-v2/issues/117",
+   "title": "x8 build stage fails during `docker-compose up --build` \u2014 404 on openssl (stale bullseye-security mirror)",
+   "repo": "R-s0n/ars0n-framework-v2",
+   "created": "2026-09-12T13:45:38Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/moby/moby/issues/44403",
+   "title": "Swarm: network none not found",
+   "repo": "moby/moby",
+   "created": "2022-11-03T11:53:19Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/achimdehnert/platform/issues/2389",
+   "title": "deploy.sh: 'compose run --rm' und 'up -d --force-recreate' konkurrieren um das Projekt-Netz",
+   "repo": "achimdehnert/platform",
+   "created": "2026-08-27T12:41:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/UNITRONIX/BetterDesk/issues/385",
+   "title": "/opt/rustdesk/.admin_credentials credentials do not work on Docker version of BetterDesk (docker-compose.single.yml and docker-compose.quick.yml builds)",
+   "repo": "UNITRONIX/BetterDesk",
+   "created": "2026-08-24T12:30:11Z",
+   "state": "open",
+   "comments": 18,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/PascaleBeier/hitkeep/issues/353",
+   "title": "[Bug]: s3 backup status failing; duckdb httpfs extension loading",
+   "repo": "PascaleBeier/hitkeep",
+   "created": "2026-09-21T18:45:46Z",
+   "state": "open",
+   "comments": 5,
+   "verified": false
+  }
+ ],
+ "precision": 0.3333333333333333,
+ "adjusted": 6136
+}

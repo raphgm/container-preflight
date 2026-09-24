@@ -1,0 +1,280 @@
+{
+ "category": "build: outside build context",
+ "rule": "build.context",
+ "query": "\"forbidden path outside the build context\" is:issue created:>=2021-01-01",
+ "total": 65,
+ "sample": [
+  {
+   "url": "https://github.com/jtfrey/xdmod-container/issues/3",
+   "title": "COPY failed: forbidden path outside the build context: XDMoD-start",
+   "repo": "jtfrey/xdmod-container",
+   "created": "2021-09-22T11:30:45Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aws-samples/iot-network-traffic-control-and-load-testing-simulator/issues/6",
+   "title": "npx cdk deploy IoTFaultInjectionSimulatorStack",
+   "repo": "aws-samples/iot-network-traffic-control-and-load-testing-simulator",
+   "created": "2023-06-27T11:29:13Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/PacktPublishing/Event-Driven-Architecture-in-Golang/issues/9",
+   "title": "Docker build fails",
+   "repo": "PacktPublishing/Event-Driven-Architecture-in-Golang",
+   "created": "2023-08-23T05:01:56Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/myfjdthink/doris-docker-compose/issues/1",
+   "title": "which version of docker-compose and docker used?",
+   "repo": "myfjdthink/doris-docker-compose",
+   "created": "2022-08-15T13:41:07Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/intuinno/conceptvector/issues/25",
+   "title": "docker-compose up throws Error",
+   "repo": "intuinno/conceptvector",
+   "created": "2021-09-27T12:25:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Algorithmic-Battle/algobattle/issues/168",
+   "title": "Allow for shared implementations",
+   "repo": "Algorithmic-Battle/algobattle",
+   "created": "2024-10-19T21:21:49Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/davglass/bambu-farm/issues/4",
+   "title": "Cannot even start it",
+   "repo": "davglass/bambu-farm",
+   "created": "2024-03-27T15:11:31Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/GoogleContainerTools/skaffold/issues/7504",
+   "title": "build can not use dockerfiles out of the docker context",
+   "repo": "GoogleContainerTools/skaffold",
+   "created": "2022-06-05T01:35:46Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/AxonIQ/axon-observability-demo/issues/1",
+   "title": "docker-compose build FAILED",
+   "repo": "AxonIQ/axon-observability-demo",
+   "created": "2022-11-09T13:59:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/david-svitov/HAHA/issues/2",
+   "title": "Edits needed to the Dockerfile",
+   "repo": "david-svitov/HAHA",
+   "created": "2024-04-05T00:14:46Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hashicorp/waypoint/issues/2711",
+   "title": "Docker build: Fails if both 'dockerfile' and 'context' point outside of current dir tree",
+   "repo": "hashicorp/waypoint",
+   "created": "2021-11-10T21:20:28Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moby/buildkit/issues/2130",
+   "title": "BuildKit should provide clear error if files are referenced outside build context",
+   "repo": "moby/buildkit",
+   "created": "2021-05-21T15:50:59Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moby/buildkit/issues/2131",
+   "title": "BuildKit uses wrong path when referencing files outside of build context",
+   "repo": "moby/buildkit",
+   "created": "2021-05-21T15:52:16Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tjmlabs/AgentRun/issues/20",
+   "title": "not executing the python code ; resulting in internal server error",
+   "repo": "tjmlabs/AgentRun",
+   "created": "2025-02-05T02:35:27Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/OktopUSP/oktopus/issues/379",
+   "title": "Build of containers fails due to 'forbidden path outside the build context'",
+   "repo": "OktopUSP/oktopus",
+   "created": "2025-10-28T08:59:21Z",
+   "state": "closed",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/openkruise/agents/issues/269",
+   "title": "[BUG] Deploying and building images on the ARM environment failed.",
+   "repo": "openkruise/agents",
+   "created": "2026-04-13T07:06:59Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/constructorfabric/gears-rust/issues/4798",
+   "title": "Docker: every build-from-source image is broken and make e2e-docker cannot run (no CI job builds images)",
+   "repo": "constructorfabric/gears-rust",
+   "created": "2026-09-14T10:57:58Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/typefly/TypeFly/issues/8",
+   "title": "COPY failed: forbidden path outside the build context: ../.. ()",
+   "repo": "typefly/TypeFly",
+   "created": "2025-03-20T11:58:03Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/SchneiderDaniel/cheasee-pi/issues/1246",
+   "title": "[Bug] Init extractor writes compose files to workdir root, not docker/ \u2014 inconsistent with docker/.env and run-pi.sh",
+   "repo": "SchneiderDaniel/cheasee-pi",
+   "created": "2026-07-14T15:15:03Z",
+   "state": "closed",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/MassonNN/masson-aiogram-template/issues/18",
+   "title": "\u041e\u0448\u0438\u0431\u043a\u0430 \u0441 \u043a\u043e\u043d\u0442\u0435\u043a\u0441\u0442\u043e\u043c \u043f\u0440\u0438 \u0431\u0438\u043b\u0434\u0435 \u043f\u0440\u043e\u0435\u043a\u0442\u0430 (forbidden path outside the build context: ../poetry.lock ())",
+   "repo": "MassonNN/masson-aiogram-template",
+   "created": "2024-01-22T13:31:51Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/APTRS/APTRS/issues/55",
+   "title": "Docker compose fails at Step 9 in Dockerfile_API ",
+   "repo": "APTRS/APTRS",
+   "created": "2024-12-24T19:22:28Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/docs/issues/21827",
+   "title": "ADD/COPY do not strip paths outside of the build context",
+   "repo": "docker/docs",
+   "created": "2025-01-15T19:42:51Z",
+   "state": "closed",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/spider-rs/headless-browser/issues/7",
+   "title": "Docker build",
+   "repo": "spider-rs/headless-browser",
+   "created": "2025-05-21T13:32:35Z",
+   "state": "closed",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/colanode/colanode/issues/32",
+   "title": "Error running docker-compose",
+   "repo": "colanode/colanode",
+   "created": "2025-05-07T06:38:39Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/immich-app/immich/issues/90",
+   "title": "Build does not work",
+   "repo": "immich-app/immich",
+   "created": "2022-03-29T21:50:34Z",
+   "state": "closed",
+   "comments": 27,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jupyterlab/jupyterlab/issues/15709",
+   "title": "Docker run fails to build image",
+   "repo": "jupyterlab/jupyterlab",
+   "created": "2024-01-29T00:24:44Z",
+   "state": "closed",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/The-Alpha-Project/alpha-core/issues/1460",
+   "title": "COPY failed: forbidden path outside the build context: ../../../../requirements.txt ()",
+   "repo": "The-Alpha-Project/alpha-core",
+   "created": "2024-11-13T02:56:10Z",
+   "state": "closed",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/opea-project/GenAIExamples/issues/153",
+   "title": "ChatQnA Megaservice container build issue",
+   "repo": "opea-project/GenAIExamples",
+   "created": "2024-05-17T14:15:57Z",
+   "state": "closed",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/go-nunu/nunu/issues/60",
+   "title": "\u8bf7\u95eemac\u7535\u8111\uff0c\u8fd0\u884c/projectName/deploy/build/Dockerfile\u7684\u811a\u672c\u6253\u955c\u50cf\uff0c\u8001\u662f\u62a5 COPY failed: forbidden path outside the build context: .. ()",
+   "repo": "go-nunu/nunu",
+   "created": "2024-06-03T13:58:10Z",
+   "state": "closed",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/SWE-agent/SWE-agent/issues/68",
+   "title": "Building eval docker failed: COPY failed: forbidden path outside the build context: ../evaluation/evaluation.py ()",
+   "repo": "SWE-agent/SWE-agent",
+   "created": "2024-04-05T09:08:23Z",
+   "state": "closed",
+   "comments": 3,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 65
+}

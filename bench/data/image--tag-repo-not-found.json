@@ -1,0 +1,280 @@
+{
+ "category": "image: tag/repo not found",
+ "rule": "image.exists",
+ "query": "\"manifest unknown\" docker is:issue created:>=2021-01-01",
+ "total": 7405,
+ "sample": [
+  {
+   "url": "https://github.com/openwhistle/OpenWhistle/issues/69",
+   "title": "Docker image - manifest unknown",
+   "repo": "openwhistle/OpenWhistle",
+   "created": "2026-09-22T09:24:54Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/memiiso/debezium-server-iceberg/issues/744",
+   "title": "docker version 1.1.0.Final manifest unknown",
+   "repo": "memiiso/debezium-server-iceberg",
+   "created": "2026-09-10T11:21:09Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/metadatastician/paint-type/issues/88",
+   "title": "Sustainability Analysis (OikosBot): pinned container digest returns manifest unknown",
+   "repo": "metadatastician/paint-type",
+   "created": "2026-09-22T21:57:24Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/decolua/9router/issues/4167",
+   "title": "Docker image decolua/9router:0.5.81 is not available",
+   "repo": "decolua/9router",
+   "created": "2026-09-19T07:06:20Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/wazuh/wazuh/issues/38861",
+   "title": "Wazuh 5.0.0 beta docker manifest unknown - EDIT : wrong image names in docs",
+   "repo": "wazuh/wazuh",
+   "created": "2026-09-03T15:38:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/CoreNovaLabs/CoreNovaLaunch/issues/22",
+   "title": "verify(drawio): unknown FAILED (MANUAL_REQUIRED)",
+   "repo": "CoreNovaLabs/CoreNovaLaunch",
+   "created": "2026-09-23T20:47:49Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/marcopiovanello/yt-dlp-web-ui/issues/379",
+   "title": "v4 Docker images missing",
+   "repo": "marcopiovanello/yt-dlp-web-ui",
+   "created": "2026-07-25T07:05:25Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/CoreNovaLabs/CoreNovaLaunch/issues/10",
+   "title": "verify(ghost): unknown FAILED (MANUAL_REQUIRED)",
+   "repo": "CoreNovaLabs/CoreNovaLaunch",
+   "created": "2026-09-08T20:25:25Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/conversun/fnos-apps/issues/306",
+   "title": "[Bug]",
+   "repo": "conversun/fnos-apps",
+   "created": "2026-09-16T09:58:37Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ublue-os/bazzite/issues/4764",
+   "title": "Rebase to version 44.20260429 fails with \"manifest unknown\" error",
+   "repo": "ublue-os/bazzite",
+   "created": "2026-04-29T08:53:30Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jeremy-albinet/Stitch-Revitalized-For-Roku/issues/152",
+   "title": "Error manifest unknown when pulling ghcr.io/jeremy-albinet/fmp4-demux-proxy:main",
+   "repo": "jeremy-albinet/Stitch-Revitalized-For-Roku",
+   "created": "2026-07-20T21:03:00Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/golusoris/golusoris/issues/563",
+   "title": "build(ai/tiny): publish digest-pinnable Gemma and LiteRT trainer images",
+   "repo": "golusoris/golusoris",
+   "created": "2026-09-19T20:10:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dniku/free-lunch-saliency/issues/1",
+   "title": "Docker Image manifest unknown",
+   "repo": "dniku/free-lunch-saliency",
+   "created": "2022-02-22T21:28:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Softcatala/whisper-ctranslate2/issues/148",
+   "title": "docker image broken?  workaround provided",
+   "repo": "Softcatala/whisper-ctranslate2",
+   "created": "2026-07-30T11:07:33Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/safak/microservices-ecommerce/issues/3",
+   "title": "manifest for bitnami/kafka:latest not found: manifest unknown: manifest unknown",
+   "repo": "safak/microservices-ecommerce",
+   "created": "2025-10-07T13:26:07Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/elfhosted/newtarr/issues/16",
+   "title": "Missing Docker Image",
+   "repo": "elfhosted/newtarr",
+   "created": "2026-07-02T14:40:52Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/k8snetworkplumbingwg/multus-cni/issues/1551",
+   "title": "v4.3.1 thin container image was not published",
+   "repo": "k8snetworkplumbingwg/multus-cni",
+   "created": "2026-09-20T09:48:17Z",
+   "state": "open",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/nextbsd/nextbsd/issues/423",
+   "title": "CI: toolchain dispatches downstream from the amd64 matrix leg, racing the arm64 image push (manifest unknown)",
+   "repo": "nextbsd/nextbsd",
+   "created": "2026-08-27T02:46:58Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/DamianB-BitFlipper/proton-drive-sync/issues/127",
+   "title": "Can't pull docker image",
+   "repo": "DamianB-BitFlipper/proton-drive-sync",
+   "created": "2026-03-07T13:16:45Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bgshih/crnn/issues/159",
+   "title": "manifest unknown -> manifest for kaixhin/cuda-torch:latest not found: manifest unknown: manifest unknown",
+   "repo": "bgshih/crnn",
+   "created": "2021-04-29T08:54:23Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/RedHatQuickCourses/rhdh-idp/issues/7",
+   "title": "Module 2: Build fails: error: build error: failed to pull image: openjdk:17",
+   "repo": "RedHatQuickCourses/rhdh-idp",
+   "created": "2026-09-14T16:49:58Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tuna-os/xfce-linux/issues/145",
+   "title": "[shared-ci] base image ghcr.io/tuna-os/xfce-linux:latest manifest unknown \u2014 breaks E2E on main and PRs",
+   "repo": "tuna-os/xfce-linux",
+   "created": "2026-09-03T04:11:31Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/conversun/fnos-apps/issues/289",
+   "title": "[Bug]",
+   "repo": "conversun/fnos-apps",
+   "created": "2026-09-02T11:37:31Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/conversun/fnos-apps/issues/288",
+   "title": "[Bug]",
+   "repo": "conversun/fnos-apps",
+   "created": "2026-09-02T07:43:40Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ben1234560/k8s_PaaS/issues/52",
+   "title": "Using default tag: latest Error response from daemon: manifest for kubernetes/pause:latest not found: manifest unknown: manifest unknown",
+   "repo": "ben1234560/k8s_PaaS",
+   "created": "2024-08-17T11:57:51Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mehmetgoren/feniks/issues/12",
+   "title": "docker-compose occurs error that manifest unknown",
+   "repo": "mehmetgoren/feniks",
+   "created": "2023-05-04T07:07:47Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/christiaandouma/fronius-auth-proxy/issues/17",
+   "title": "Addon will not install on HA 2026.8.0 - deprecated methods",
+   "repo": "christiaandouma/fronius-auth-proxy",
+   "created": "2026-08-07T16:12:36Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/BreachSAFE/qureddy/issues/540",
+   "title": "docs: consolidate README \u00a71 Docker examples + add Docker Hub rate-limit guidance",
+   "repo": "BreachSAFE/qureddy",
+   "created": "2026-08-31T01:28:37Z",
+   "state": "open",
+   "comments": 1,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/imdingtalk/image-mirror/issues/1854",
+   "title": "kubewatch/kubewatch:2.16.1 (\u5171 1 \u4e2a\u955c\u50cf)",
+   "repo": "imdingtalk/image-mirror",
+   "created": "2026-09-18T07:57:31Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sickcodes/Docker-OSX/issues/889",
+   "title": "Error response from daemon: manifest for sickcodes/docker-osx:naked not found: manifest unknown: manifest unknown",
+   "repo": "sickcodes/Docker-OSX",
+   "created": "2025-06-25T04:07:51Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  }
+ ],
+ "precision": 0.9333333333333333,
+ "adjusted": 6911
+}

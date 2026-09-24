@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/raphgm/container-doctor/pkg/check"
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/pkg/check"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 // mockCheck implements check.Check

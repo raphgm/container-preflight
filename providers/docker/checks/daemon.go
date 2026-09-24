@@ -3,8 +3,8 @@ package checks
 import (
 	"context"
 
-	"github.com/raphgm/container-doctor/internal/executor"
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/internal/executor"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 type Daemon struct {

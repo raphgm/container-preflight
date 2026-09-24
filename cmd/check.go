@@ -1,6 +1,5 @@
 /*
 Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
@@ -10,29 +9,29 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/raphgm/container-doctor/internal/engine"
-	"github.com/raphgm/container-doctor/internal/executor"
-	"github.com/raphgm/container-doctor/internal/renderer"
-	"github.com/raphgm/container-doctor/pkg/report"
-	"github.com/raphgm/container-doctor/providers/docker"
-	dockerChecks "github.com/raphgm/container-doctor/providers/docker/checks"
-	"github.com/raphgm/container-doctor/providers/compose"
-	composeChecks "github.com/raphgm/container-doctor/providers/compose/checks"
-	"github.com/raphgm/container-doctor/providers/buildx"
-	buildxChecks "github.com/raphgm/container-doctor/providers/buildx/checks"
-	"github.com/raphgm/container-doctor/providers/system"
-	systemChecks "github.com/raphgm/container-doctor/providers/system/checks"
+	"github.com/raphgm/container-preflight/internal/engine"
+	"github.com/raphgm/container-preflight/internal/executor"
+	"github.com/raphgm/container-preflight/internal/renderer"
+	"github.com/raphgm/container-preflight/pkg/report"
+	"github.com/raphgm/container-preflight/providers/buildx"
+	buildxChecks "github.com/raphgm/container-preflight/providers/buildx/checks"
+	"github.com/raphgm/container-preflight/providers/compose"
+	composeChecks "github.com/raphgm/container-preflight/providers/compose/checks"
+	"github.com/raphgm/container-preflight/providers/docker"
+	dockerChecks "github.com/raphgm/container-preflight/providers/docker/checks"
+	"github.com/raphgm/container-preflight/providers/system"
+	systemChecks "github.com/raphgm/container-preflight/providers/system/checks"
 )
 
 // checkCmd represents the check command
 var checkCmd = &cobra.Command{
-	Use:   "check",
-	Short: "Run all registered diagnostic checks",
+	Use:   "host",
+	Short: "Check this machine's Docker installation and resources",
 	Long: `Run all diagnostic checks to determine the health of your environment.
 This will query all providers (Docker, Kubernetes, etc.) and generate a report.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		exec := executor.New()
-		
+
 		reg := engine.NewRegistry()
 
 		reg.Register(system.New(
@@ -49,7 +48,7 @@ This will query all providers (Docker, Kubernetes, etc.) and generate a report.`
 			dockerChecks.NewVersion(exec),
 			dockerChecks.NewSocket(exec),
 		))
-		
+
 		reg.Register(compose.New(
 			composeChecks.NewInstalled(exec),
 		))
@@ -57,10 +56,10 @@ This will query all providers (Docker, Kubernetes, etc.) and generate a report.`
 		reg.Register(buildx.New(
 			buildxChecks.NewInstalled(exec),
 		))
-		
+
 		eng := engine.New(reg)
 		rep := eng.Run(cmd.Context())
-		
+
 		var rnd renderer.Renderer
 		switch format {
 		case "json":
@@ -74,12 +73,12 @@ This will query all providers (Docker, Kubernetes, etc.) and generate a report.`
 		default:
 			rnd = renderer.NewTerminal()
 		}
-		
+
 		if err := rnd.Render(rep); err != nil {
 			fmt.Printf("Error rendering report: %v\n", err)
 			os.Exit(1)
 		}
-		
+
 		for _, p := range rep.Providers {
 			for _, r := range p.Results {
 				if r.Status == report.Fail {

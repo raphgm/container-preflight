@@ -1,0 +1,280 @@
+{
+ "category": "port already allocated",
+ "rule": "ports.conflict,ports.host",
+ "query": "\"port is already allocated\" is:issue created:>=2021-01-01",
+ "total": 1239,
+ "sample": [
+  {
+   "url": "https://github.com/cilium/cilium/issues/48950",
+   "title": "CI: ci-conformance-race: K8sAgentPolicyTest: provided port is already allocated",
+   "repo": "cilium/cilium",
+   "created": "2026-09-22T18:10:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/cilium/cilium/issues/45792",
+   "title": "CI: `Invalid value: 31414: provided port is already allocated`",
+   "repo": "cilium/cilium",
+   "created": "2026-05-05T15:01:46Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/open-crs/automatic_exploit_generation/issues/7",
+   "title": "`exploit` command fails with `port is already allocated`",
+   "repo": "open-crs/automatic_exploit_generation",
+   "created": "2026-07-05T22:33:40Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/abbgrade/PsSqlTestServer/issues/13",
+   "title": "Port is already allocated",
+   "repo": "abbgrade/PsSqlTestServer",
+   "created": "2022-04-03T13:32:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kactlabs/error-archive/issues/306",
+   "title": "Port is already allocated",
+   "repo": "kactlabs/error-archive",
+   "created": "2022-09-23T09:09:46Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hkust-nlp/Toolathlon/issues/45",
+   "title": "poste & woocommerce containers fail again (with \"port is already allocated\")",
+   "repo": "hkust-nlp/Toolathlon",
+   "created": "2026-05-29T04:28:42Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/SociallyIneptWeeb/LanguageLeapAI/issues/91",
+   "title": "Error port is already allocated",
+   "repo": "SociallyIneptWeeb/LanguageLeapAI",
+   "created": "2023-03-29T15:30:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/for-mac/issues/7130",
+   "title": "Port is already allocated when trying to start a container",
+   "repo": "docker/for-mac",
+   "created": "2024-01-10T20:44:45Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Liarea/lazyslice/issues/70",
+   "title": "T-0217: internal/discover/provision: drop Force from the failed-attempt container removal, fix the retry count's off-by-one, and keep the daemon's port error when the range is exhausted",
+   "repo": "Liarea/lazyslice",
+   "created": "2026-09-16T19:45:30Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/smartcontractkit/chainlink-node-compose/issues/13",
+   "title": "Bind for 0.0.0.0:6711 failed: port is already allocated",
+   "repo": "smartcontractkit/chainlink-node-compose",
+   "created": "2022-09-29T17:49:40Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/karmada-io/karmada/issues/7823",
+   "title": "Karmada API server unexpectedly assigned nodePort for service",
+   "repo": "karmada-io/karmada",
+   "created": "2026-08-12T09:54:39Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coleam00/ai-agents-masterclass/issues/7",
+   "title": "Bind for 0.0.0.0:5432 failed: port is already allocated",
+   "repo": "coleam00/ai-agents-masterclass",
+   "created": "2024-10-24T06:07:44Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/yohan-work/minidog/issues/25",
+   "title": "Make the Collector's OTLP ports configurable in deploy/compose.yaml",
+   "repo": "yohan-work/minidog",
+   "created": "2026-09-15T07:01:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/balena-os/balena-supervisor/issues/1634",
+   "title": "Device gets stuck in download loop with error `port is already allocated`",
+   "repo": "balena-os/balena-supervisor",
+   "created": "2021-03-29T13:44:19Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ReddyNikhila/payment-gateway/issues/1",
+   "title": "[Peer Review] [Setup Blocker] Docker compose fails to start due to port conflicts and corrupted README instructions",
+   "repo": "ReddyNikhila/payment-gateway",
+   "created": "2026-07-18T06:48:18Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/open-source-labs/Docketeer/issues/178",
+   "title": "Docketeer Docker Extension: Bind for 0.0.0.0:5432 failed: port is already allocated",
+   "repo": "open-source-labs/Docketeer",
+   "created": "2025-01-24T03:54:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/fabric8io/docker-maven-plugin/issues/1874",
+   "title": "Using docker-maven-plugin from two profiles with different ports causes 'port is already allocated' error",
+   "repo": "fabric8io/docker-maven-plugin",
+   "created": "2025-06-23T12:51:44Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ndelangen/dunezone/issues/1055",
+   "title": "The e2e log stops announcing an expected port collision and two expected curl misses",
+   "repo": "ndelangen/dunezone",
+   "created": "2026-09-06T08:59:58Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/trydirect/stacker/issues/241",
+   "title": "Observability: surface the real failure cause instead of generic \"local-exec provisioner error\" / \"paused due to internal error\"",
+   "repo": "trydirect/stacker",
+   "created": "2026-08-22T14:45:18Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jentic/jentic-one/issues/976",
+   "title": "[bug] jenticctl update: a host port already in use (5432) fails the stack half after the CLI is swapped, leaving cli/stack diverged \u2014 and the re-run says \"Up to date\"",
+   "repo": "jentic/jentic-one",
+   "created": "2026-08-06T11:11:51Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kazurayam/VisualInspectionInKatalonStudio_Reborn/issues/14",
+   "title": "How to restort work after \"Bind for 0.0.0.0:3080 failed: port is already allocated.\"",
+   "repo": "kazurayam/VisualInspectionInKatalonStudio_Reborn",
+   "created": "2022-02-21T01:24:13Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/YannicHock/claude-mail-mcp/issues/57",
+   "title": "The integration fixture cannot run in two checkouts at once",
+   "repo": "YannicHock/claude-mail-mcp",
+   "created": "2026-09-09T14:30:33Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sahithi9755/product-catalog-redis-api/issues/1",
+   "title": "[Peer Review] setup-blocker: API container fails because port 8080 is already allocated",
+   "repo": "sahithi9755/product-catalog-redis-api",
+   "created": "2026-06-30T04:37:16Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kljensen/yelukerest/issues/382",
+   "title": "REST test stack: pick free ports instead of failing on 55432/8080/8443",
+   "repo": "kljensen/yelukerest",
+   "created": "2026-09-10T11:21:31Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/velero-io/velero/issues/3419",
+   "title": "Restoring a LoadBalancer type service gives failed to allocate requested HealthCheck NodePort: provided port is already allocated error",
+   "repo": "velero-io/velero",
+   "created": "2021-02-08T16:26:10Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nnn-training/faq/issues/9",
+   "title": "Docker \u306e port is already allocated \u30a8\u30e9\u30fc\u306b\u5bfe\u3059\u308b\u5bfe\u5fdc\u3092\u8ffd\u52a0\u3057\u305f\u3044",
+   "repo": "nnn-training/faq",
+   "created": "2021-12-22T04:15:26Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/watch-wolf/WatchWolf/issues/40",
+   "title": "Starting WatchWolf fails, yet reports ok",
+   "repo": "watch-wolf/WatchWolf",
+   "created": "2026-02-28T13:43:09Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kosson/koha-alpine/issues/2",
+   "title": "problem building and starting Koha stack following production Mode B",
+   "repo": "kosson/koha-alpine",
+   "created": "2026-08-17T19:27:19Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/opensandbox-group/OpenSandbox/issues/1705",
+   "title": "Port allocation race: concurrent sandbox creation fails with \"port is already allocated\"",
+   "repo": "opensandbox-group/OpenSandbox",
+   "created": "2026-09-02T16:25:33Z",
+   "state": "closed",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/yaso09/tengiz/issues/1983",
+   "title": "MEDIUM: old port is freed even when the old container removal fails \u2014 freed-but-bound port breaks the next deploy",
+   "repo": "yaso09/tengiz",
+   "created": "2026-08-10T09:33:34Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 1239
+}

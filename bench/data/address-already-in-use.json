@@ -1,0 +1,280 @@
+{
+ "category": "address already in use",
+ "rule": "ports.host",
+ "query": "\"address already in use\" docker is:issue created:>=2021-01-01",
+ "total": 3792,
+ "sample": [
+  {
+   "url": "https://github.com/NginxProxyManager/nginx-proxy-manager/issues/5852",
+   "title": "Address already in use",
+   "repo": "NginxProxyManager/nginx-proxy-manager",
+   "created": "2026-09-11T17:46:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/overcast-sh/overcast/issues/2005",
+   "title": "test flake: TestRunTask_withDocker_debuggerInspectorAnswersThroughTheProxy fails with 'address already in use' when Docker publishes the debug port",
+   "repo": "overcast-sh/overcast",
+   "created": "2026-09-20T04:29:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tiliondev/fortress/issues/38",
+   "title": "Container self-exits with \"socat ... bind :9222: Address already in use\" after 1-2 requests",
+   "repo": "tiliondev/fortress",
+   "created": "2026-09-17T15:14:06Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/microsoft/aspire/issues/19014",
+   "title": "[CI Failure] Flaky: AzureSqlPrincipalReconciliationTests fail because SqlServerContainerFixture cannot bind port 1433 (address already in use)",
+   "repo": "microsoft/aspire",
+   "created": "2026-08-05T16:15:39Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kavix/why/issues/8",
+   "title": "[Adapter] Docker Diagnostic Adapter: why docker compose up",
+   "repo": "kavix/why",
+   "created": "2026-09-20T03:39:16Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/microsoft/aspire/issues/12247",
+   "title": "`dotnet run` fails with \"address already in use\" for fixed external ports via `.WithEndpoint`",
+   "repo": "microsoft/aspire",
+   "created": "2025-10-21T12:59:06Z",
+   "state": "open",
+   "comments": 7,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/tobychui/zoraxy/issues/1117",
+   "title": "[BUG] Cannot generate certificate from ZeroSSL. listen tcp :56563: bind: address already in use",
+   "repo": "tobychui/zoraxy",
+   "created": "2026-04-14T08:28:51Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moby/moby/issues/47944",
+   "title": "False address already in use",
+   "repo": "moby/moby",
+   "created": "2024-06-10T18:21:41Z",
+   "state": "open",
+   "comments": 10,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/moby/moby/issues/53153",
+   "title": "28->29 Regression: RootlessKit PortManager.AddPort(): listen tcp4 0.0.0.0:32769: bind: address already in use",
+   "repo": "moby/moby",
+   "created": "2026-07-23T15:14:09Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ostis-apps/nika/issues/192",
+   "title": "Error. Address already in use.",
+   "repo": "ostis-apps/nika",
+   "created": "2023-01-04T13:39:22Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aiordache/demos/issues/2",
+   "title": "address already in use",
+   "repo": "aiordache/demos",
+   "created": "2021-06-17T09:20:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/stilliard/docker-pure-ftpd/issues/159",
+   "title": "bind: Address already in use",
+   "repo": "stilliard/docker-pure-ftpd",
+   "created": "2021-04-26T19:03:01Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/EtherealEngine/Digital-Beings/issues/592",
+   "title": "address already in use",
+   "repo": "EtherealEngine/Digital-Beings",
+   "created": "2023-10-14T12:24:56Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aschmelyun/subvert/issues/38",
+   "title": "Docker Install Error: bind: address already in use.",
+   "repo": "aschmelyun/subvert",
+   "created": "2024-06-25T19:14:26Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/JunYupK/CDC-PipeLine-With-Kafka/issues/12",
+   "title": "[Docker] docker oserror: [errno 98] address already in use",
+   "repo": "JunYupK/CDC-PipeLine-With-Kafka",
+   "created": "2025-01-23T00:59:24Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/getumbrel/umbrel/issues/2213",
+   "title": "tailscale serve claims ports with no coordination against app_proxy's Docker port-publish \u2014 causes app containers to fail with \"address already in use\"",
+   "repo": "getumbrel/umbrel",
+   "created": "2026-08-28T18:28:01Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/localagi/gpt-code-ui-docker/issues/1",
+   "title": "Address already in use, Connection refused ",
+   "repo": "localagi/gpt-code-ui-docker",
+   "created": "2023-07-12T08:32:42Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/jasonacox/Powerwall-Dashboard/issues/605",
+   "title": " failed to bind port - address already in use",
+   "repo": "jasonacox/Powerwall-Dashboard",
+   "created": "2025-04-02T23:00:31Z",
+   "state": "open",
+   "comments": 19,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/aden-hive/hive/issues/6968",
+   "title": "[Bug]:error while attempting to bind on address ('127.0.0.1', 8787): address already in use",
+   "repo": "aden-hive/hive",
+   "created": "2026-04-07T05:19:20Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/microsoft/WSL/issues/40984",
+   "title": "[WSL 2.9.3] Docker fails to bind ports with \"address already in use\" when networkingMode=mirrored is enabled",
+   "repo": "microsoft/WSL",
+   "created": "2026-07-02T17:10:09Z",
+   "state": "open",
+   "comments": 28,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hashicorp/vagrant-vmware-desktop/issues/96",
+   "title": "VMWare Utility address already in use",
+   "repo": "hashicorp/vagrant-vmware-desktop",
+   "created": "2021-11-11T07:59:20Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/dmohanja/GT7Monitor/issues/5",
+   "title": "Error Address already in use",
+   "repo": "dmohanja/GT7Monitor",
+   "created": "2025-03-04T03:24:57Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Banh-Canh/docker-FMD2/issues/13",
+   "title": "[errno 98] Address already in use",
+   "repo": "Banh-Canh/docker-FMD2",
+   "created": "2023-11-04T20:50:35Z",
+   "state": "open",
+   "comments": 42,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/canonical/edgex-snap-testing/issues/118",
+   "title": "Bind address already in use",
+   "repo": "canonical/edgex-snap-testing",
+   "created": "2022-08-15T06:58:14Z",
+   "state": "open",
+   "comments": 8,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bigcommerce/stencil-cli/issues/1366",
+   "title": "Docker: will not start, Error: listen EADDRINUSE: address already in use :::3001",
+   "repo": "bigcommerce/stencil-cli",
+   "created": "2026-04-11T18:23:23Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/qdm12/port-checker/issues/13",
+   "title": "Fatal error: starting http server: listen tcp :<port>: bind: address already in use",
+   "repo": "qdm12/port-checker",
+   "created": "2026-01-16T09:04:10Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lgsvl/lanefollowing/issues/17",
+   "title": " what():  bind: Address already in use",
+   "repo": "lgsvl/lanefollowing",
+   "created": "2022-03-03T09:55:22Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lgsvl/simulator/issues/2009",
+   "title": " what():  bind: Address already in use",
+   "repo": "lgsvl/simulator",
+   "created": "2022-03-03T09:55:45Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kata-containers/kata-containers/issues/6427",
+   "title": "error=\"listen unix /run/kata/test/shim-monitor.sock: bind: address already in use",
+   "repo": "kata-containers/kata-containers",
+   "created": "2023-03-08T12:51:40Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/KurtzL/nestjs-temporal/issues/54",
+   "title": "Worker restarts: address already in use",
+   "repo": "KurtzL/nestjs-temporal",
+   "created": "2024-06-10T08:17:37Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 3792
+}

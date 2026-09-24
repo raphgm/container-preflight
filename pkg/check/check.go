@@ -3,7 +3,7 @@ package check
 import (
 	"context"
 
-	"github.com/raphgm/container-doctor/pkg/report"
+	"github.com/raphgm/container-preflight/pkg/report"
 )
 
 type Check interface {

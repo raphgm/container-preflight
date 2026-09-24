@@ -1,0 +1,280 @@
+{
+ "category": "compose: variable not set",
+ "rule": "compose.env",
+ "query": "\"variable is not set. Defaulting to a blank string\" is:issue created:>=2021-01-01",
+ "total": 2390,
+ "sample": [
+  {
+   "url": "https://github.com/bausi2k/bmw-mqtt-bridge/issues/2",
+   "title": "WARN[0000] The \"NP\" variable is not set. Defaulting to a blank string.",
+   "repo": "bausi2k/bmw-mqtt-bridge",
+   "created": "2026-08-08T20:45:09Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/neurobagel/documentation/issues/421",
+   "title": "Cannot run local getting started recipe",
+   "repo": "neurobagel/documentation",
+   "created": "2026-08-11T19:31:25Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ggml-org/llama.cpp/issues/28950",
+   "title": "Misc. bug: llama download -hf repo:model does not download mmproject",
+   "repo": "ggml-org/llama.cpp",
+   "created": "2026-09-15T12:55:39Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/shorin-nikita/lisa/issues/6",
+   "title": "[BUG] \u041e\u0448\u0438\u0431\u043a\u0430 1 \u043f\u0440\u0438 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0435 Supabase",
+   "repo": "shorin-nikita/lisa",
+   "created": "2026-08-16T15:37:43Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NVIDIA-Omniverse-blueprints/digital-twins-for-fluid-simulation/issues/17",
+   "title": "Lite Mode : Still needs access to the NVCR login/ NGC _Key",
+   "repo": "NVIDIA-Omniverse-blueprints/digital-twins-for-fluid-simulation",
+   "created": "2026-08-09T08:41:06Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/firecrawl/firecrawl/issues/4137",
+   "title": "[Self-Host] Building with Podman instead of Docker",
+   "repo": "firecrawl/firecrawl",
+   "created": "2026-07-27T09:52:59Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/langflow-ai/openrag/issues/1411",
+   "title": "[Bug]: opensearch unhealthy",
+   "repo": "langflow-ai/openrag",
+   "created": "2026-04-16T02:21:32Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/YFGaia/dify-plus/issues/122",
+   "title": "setup bug",
+   "repo": "YFGaia/dify-plus",
+   "created": "2026-06-24T13:13:29Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/veerendra2/composeflux/issues/76",
+   "title": "Reconcilation failures",
+   "repo": "veerendra2/composeflux",
+   "created": "2026-09-10T17:08:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hyperledger-archives/sawtooth-core/issues/2438",
+   "title": "The ISOLATION_ID variable is not set. Defaulting to a blank string.",
+   "repo": "hyperledger-archives/sawtooth-core",
+   "created": "2023-02-14T16:03:24Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/transmute-industries/sidetree.js/issues/217",
+   "title": "WARNING: The MNEMONIC variable is not set. Defaulting to a blank string.",
+   "repo": "transmute-industries/sidetree.js",
+   "created": "2021-08-10T11:34:37Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rodrigovp/livro-kafka-connect/issues/1",
+   "title": "[BUG] - The \"PWD\" variable is not set. Defaulting to a blank string. ",
+   "repo": "rodrigovp/livro-kafka-connect",
+   "created": "2024-05-28T16:52:31Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/C4illin/ConvertX/issues/404",
+   "title": "WARN[0000] The \"W\" variable is not set. Defaulting to a blank string.",
+   "repo": "C4illin/ConvertX",
+   "created": "2025-09-13T15:16:41Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/gitcoinco/web/issues/8521",
+   "title": "WARNING: The TEST_MNEMONIC variable is not set. Defaulting to a blank string.",
+   "repo": "gitcoinco/web",
+   "created": "2021-03-09T23:42:07Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/portainer/portainer/issues/6061",
+   "title": "Error: Variable is not set. Defaulting to a blank string - when redeploying stack",
+   "repo": "portainer/portainer",
+   "created": "2021-11-11T17:36:57Z",
+   "state": "open",
+   "comments": 9,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/sugar-org/compose-go/issues/18",
+   "title": "WARN[0000] The \"t\" variable is not set. Defaulting to a blank string. ",
+   "repo": "sugar-org/compose-go",
+   "created": "2023-04-25T18:30:08Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/IliasHad/edit-mind/issues/125",
+   "title": "Warnings when execute docker compose up",
+   "repo": "IliasHad/edit-mind",
+   "created": "2026-04-27T00:18:26Z",
+   "state": "open",
+   "comments": 14,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/obytes/superset-image/issues/4",
+   "title": "WARN[0000] The \"CYPRESS_CONFIG\" variable is not set. Defaulting to a blank string.",
+   "repo": "obytes/superset-image",
+   "created": "2024-01-24T22:39:31Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kanbn/kan/issues/530",
+   "title": "Self Hosting documentation not complete or erroneous",
+   "repo": "kanbn/kan",
+   "created": "2026-07-02T09:23:59Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/kalokaman/huly-selfhost/issues/1",
+   "title": "docker compose up -d",
+   "repo": "kalokaman/huly-selfhost",
+   "created": "2026-07-13T10:08:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/rsdancey/BlueSpice-Multiwiki-Install/issues/1",
+   "title": "Installation failed",
+   "repo": "rsdancey/BlueSpice-Multiwiki-Install",
+   "created": "2025-08-04T09:48:40Z",
+   "state": "open",
+   "comments": 12,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Graham-Williams/km-tracker/issues/69",
+   "title": "docker-compose.access.yml still uses bare ${VAR} \u2014 two compose warnings on every deploy",
+   "repo": "Graham-Williams/km-tracker",
+   "created": "2026-08-05T15:19:32Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Billionmail/BillionMail/issues/337",
+   "title": "WARN[0000] The \"BM_API_KEY\" variable is not set. Defaulting to a blank string. bug Something isn't working",
+   "repo": "Billionmail/BillionMail",
+   "created": "2026-04-14T09:46:21Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/FlowiseAI/Flowise/issues/6030",
+   "title": "Docker Compose setup result in container with \"Error: ENOENT: no such file or directory, mkdir ''\" error",
+   "repo": "FlowiseAI/Flowise",
+   "created": "2026-03-21T16:18:57Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/microservices-patterns/ftgo-consumer-web-ui/issues/13",
+   "title": "WARNING: The FTGO_BACKEND_API_URL variable is not set. Defaulting to a blank string.",
+   "repo": "microservices-patterns/ftgo-consumer-web-ui",
+   "created": "2021-05-25T20:48:44Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/isopen-io/meeshy/issues/5624",
+   "title": "Les hachages d'authentification du .env cessent de fuir dans les journaux",
+   "repo": "isopen-io/meeshy",
+   "created": "2026-09-07T20:32:25Z",
+   "state": "open",
+   "comments": 0,
+   "verified": false
+  },
+  {
+   "url": "https://github.com/videre-project/mtgo-docker/issues/1",
+   "title": "Unable to run on MacOS M1.",
+   "repo": "videre-project/mtgo-docker",
+   "created": "2026-04-14T17:30:45Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/twentyhq/twenty/issues/21035",
+   "title": "Oneline Installer does not work on a fresh install",
+   "repo": "twentyhq/twenty",
+   "created": "2026-05-29T05:04:33Z",
+   "state": "open",
+   "comments": 4,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/mARTin-B78/dgx-spark_lite-llm_llama-swap_vllm_llama-cpp_ollama/issues/12",
+   "title": "PG image interrupted",
+   "repo": "mARTin-B78/dgx-spark_lite-llm_llama-swap_vllm_llama-cpp_ollama",
+   "created": "2026-06-03T14:35:26Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/quadratichq/quadratic-selfhost/issues/102",
+   "title": "not able to setup on local machine on macbook",
+   "repo": "quadratichq/quadratic-selfhost",
+   "created": "2026-07-08T06:52:05Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 0.9666666666666667,
+ "adjusted": 2310
+}

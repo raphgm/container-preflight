@@ -1,0 +1,271 @@
+{
+ "category": "platform: no matching manifest",
+ "rule": "image.platform",
+ "query": "\"no matching manifest for\" is:issue created:>=2021-01-01",
+ "total": 2760,
+ "sample": [
+  {
+   "url": "https://github.com/ggml-org/whisper.cpp/issues/2081",
+   "title": "Docker \"no matching manifest for `linux/arm64`\"",
+   "repo": "ggml-org/whisper.cpp",
+   "created": "2024-04-20T08:19:44Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nextcloud/docker/issues/2601",
+   "title": "35-apache: Pulling from library/nextcloud - no matching manifest for linux/amd64 in the manifest list entries",
+   "repo": "nextcloud/docker",
+   "created": "2026-09-17T05:35:40Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ray-manaloto/dotfiles/issues/985",
+   "title": "`:dev`'s amd64 half is unpullable on a GHA runner: `no matching manifest for linux/amd64`",
+   "repo": "ray-manaloto/dotfiles",
+   "created": "2026-09-09T01:55:15Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/debridmediamanager/debrid-media-manager/issues/146",
+   "title": "ERROR: no matching manifest for linux/amd64 in the manifest list entries",
+   "repo": "debridmediamanager/debrid-media-manager",
+   "created": "2024-12-07T00:08:46Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/NginxProxyManager/nginx-proxy-manager/issues/5379",
+   "title": "docker pull - no matching manifest for linux/arm/v8",
+   "repo": "NginxProxyManager/nginx-proxy-manager",
+   "created": "2026-03-06T06:14:16Z",
+   "state": "open",
+   "comments": 5,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Smeagolworms4/omv2mqtt/issues/4",
+   "title": "no matching manifest for linux/386",
+   "repo": "Smeagolworms4/omv2mqtt",
+   "created": "2026-03-17T15:25:17Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/lando/pantheon/issues/296",
+   "title": "no matching manifest for linux/arm64/v8",
+   "repo": "lando/pantheon",
+   "created": "2025-11-13T21:54:48Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/calcom/docker/issues/208",
+   "title": "no matching manifest for linux/arm64/v8",
+   "repo": "calcom/docker",
+   "created": "2023-01-30T06:21:20Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/GreenFrogSB/LMDS/issues/76",
+   "title": "no matching manifest for linux/arm/v8",
+   "repo": "GreenFrogSB/LMDS",
+   "created": "2023-10-21T18:58:19Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/helingfeng/Docker-LNMP/issues/10",
+   "title": "no matching manifest for linux/arm64/v8",
+   "repo": "helingfeng/Docker-LNMP",
+   "created": "2022-09-09T12:52:19Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/pglombardo/PasswordPusher/issues/4095",
+   "title": "Unable to update: \"no matching manifest for linux/arm64/v8\"",
+   "repo": "pglombardo/PasswordPusher",
+   "created": "2026-01-09T07:57:49Z",
+   "state": "open",
+   "comments": 11,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/hassancs91/PyRunner/issues/3",
+   "title": "no matching manifest for linux/arm64/v8 in the manifest list entries error",
+   "repo": "hassancs91/PyRunner",
+   "created": "2026-05-23T02:13:15Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/coolguy1842/SaveSyncd/issues/13",
+   "title": "Mac arm64 compatibility (no matching manifest for linux/arm64/v8)",
+   "repo": "coolguy1842/SaveSyncd",
+   "created": "2026-02-18T19:57:39Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/papermerge/papermerge-core/issues/590",
+   "title": "Unable to pull papermerge/papermerge:3.4  no matching manifest for linux/arm64/v8 in the manifest list entries",
+   "repo": "papermerge/papermerge-core",
+   "created": "2025-03-06T03:19:24Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/OpenCSGs/csghub/issues/661",
+   "title": "no matching manifest for linux/arm64/v8 in the manifest list entries",
+   "repo": "OpenCSGs/csghub",
+   "created": "2024-09-23T07:51:19Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/SecuritySilverbacks/SAPMAP/issues/47",
+   "title": "[Documentation] pulling the prebuilt Docker image on macOS (Silicon)",
+   "repo": "SecuritySilverbacks/SAPMAP",
+   "created": "2026-09-17T08:20:50Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/naroat/tools-web/issues/16",
+   "title": "\u65e0\u6cd5\u62c9\u53d6Docker compose",
+   "repo": "naroat/tools-web",
+   "created": "2026-09-16T03:04:59Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/linkwarden/linkwarden/issues/273",
+   "title": "no matching manifest for linux/arm/v8 in the manifest list entries",
+   "repo": "linkwarden/linkwarden",
+   "created": "2023-11-03T15:58:04Z",
+   "state": "open",
+   "comments": 6,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/alpinelinux/docker-alpine/issues/426",
+   "title": "no matching manifest for linux/amd64 in the manifest list entries",
+   "repo": "alpinelinux/docker-alpine",
+   "created": "2024-11-18T17:59:44Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/automation-avenue/youtube-39-arr-apps-1-click/issues/5",
+   "title": "no matching manifest for linux/amd64 in the manifest list entries",
+   "repo": "automation-avenue/youtube-39-arr-apps-1-click",
+   "created": "2025-07-23T03:23:05Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/docker/docs/issues/26086",
+   "title": "tutorial example image missing for Pi32",
+   "repo": "docker/docs",
+   "created": "2026-09-13T04:33:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/multiarch/qemu-user-static/issues/215",
+   "title": "docker: no matching manifest for linux/amd64 in the manifest list entries",
+   "repo": "multiarch/qemu-user-static",
+   "created": "2025-10-22T23:37:26Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/Unstructured-IO/unstructured/issues/4028",
+   "title": "bug/no matching manifest for linux/arm64/v8 in the manifest list entries",
+   "repo": "Unstructured-IO/unstructured",
+   "created": "2025-06-19T13:45:28Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/huntingmill/image-nfs/issues/2",
+   "title": "no matching manifest for linux/arm64/v8 in the manifest list entries",
+   "repo": "huntingmill/image-nfs",
+   "created": "2024-12-05T03:43:03Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/bryangerlach/rdgen/issues/121",
+   "title": "no matching manifest for linux/arm64/v8 in the manifest list entries",
+   "repo": "bryangerlach/rdgen",
+   "created": "2025-08-21T14:24:36Z",
+   "state": "open",
+   "comments": 2,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/nicolaka/netshoot/issues/119",
+   "title": "no matching manifest for linux/arm/v7 in the manifest list entries",
+   "repo": "nicolaka/netshoot",
+   "created": "2022-11-08T14:43:33Z",
+   "state": "open",
+   "comments": 3,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/ReverseEngineeringDE/iSmart-Gateway-Home-Assistant-Add-on/issues/15",
+   "title": "no matching manifest for linux/arm/v7 in the manifest list entries",
+   "repo": "ReverseEngineeringDE/iSmart-Gateway-Home-Assistant-Add-on",
+   "created": "2023-09-09T11:56:14Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/apache/rocketmq-docker/issues/92",
+   "title": "no matching manifest for linux/arm64/v8 in the manifest list entries",
+   "repo": "apache/rocketmq-docker",
+   "created": "2023-09-21T02:32:49Z",
+   "state": "open",
+   "comments": 1,
+   "verified": true
+  },
+  {
+   "url": "https://github.com/VKSRC/Github-Monitor/issues/131",
+   "title": "no matching manifest for linux/arm64/v8 in the manifest list entries",
+   "repo": "VKSRC/Github-Monitor",
+   "created": "2022-12-01T10:34:51Z",
+   "state": "open",
+   "comments": 0,
+   "verified": true
+  }
+ ],
+ "precision": 1.0,
+ "adjusted": 2760
+}
