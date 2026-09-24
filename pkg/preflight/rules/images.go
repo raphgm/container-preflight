@@ -40,7 +40,7 @@ var imageExistsRule = rule{
 					Evidence: []string{"registry: " + firstLine(res.Err)},
 					Fix:      "Check the tag on the registry's web page; tags are often renamed or removed.",
 					Location: p.Location.String(),
-					Predicts: "failed to resolve reference \"" + registry.Canonical(p.Ref) + "\": not found",
+					Predicts: "failed to resolve reference \"" + strings.Replace(registry.Canonical(p.Ref), "index.docker.io/", "docker.io/", 1) + "\": not found",
 				})
 			case errors.Is(res.Err, registry.ErrUnauthorized):
 				out = append(out, Finding{

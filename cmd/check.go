@@ -1,6 +1,5 @@
 /*
 Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
@@ -14,12 +13,12 @@ import (
 	"github.com/raphgm/container-doctor/internal/executor"
 	"github.com/raphgm/container-doctor/internal/renderer"
 	"github.com/raphgm/container-doctor/pkg/report"
-	"github.com/raphgm/container-doctor/providers/docker"
-	dockerChecks "github.com/raphgm/container-doctor/providers/docker/checks"
-	"github.com/raphgm/container-doctor/providers/compose"
-	composeChecks "github.com/raphgm/container-doctor/providers/compose/checks"
 	"github.com/raphgm/container-doctor/providers/buildx"
 	buildxChecks "github.com/raphgm/container-doctor/providers/buildx/checks"
+	"github.com/raphgm/container-doctor/providers/compose"
+	composeChecks "github.com/raphgm/container-doctor/providers/compose/checks"
+	"github.com/raphgm/container-doctor/providers/docker"
+	dockerChecks "github.com/raphgm/container-doctor/providers/docker/checks"
 	"github.com/raphgm/container-doctor/providers/system"
 	systemChecks "github.com/raphgm/container-doctor/providers/system/checks"
 )
@@ -32,7 +31,7 @@ var checkCmd = &cobra.Command{
 This will query all providers (Docker, Kubernetes, etc.) and generate a report.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		exec := executor.New()
-		
+
 		reg := engine.NewRegistry()
 
 		reg.Register(system.New(
@@ -49,7 +48,7 @@ This will query all providers (Docker, Kubernetes, etc.) and generate a report.`
 			dockerChecks.NewVersion(exec),
 			dockerChecks.NewSocket(exec),
 		))
-		
+
 		reg.Register(compose.New(
 			composeChecks.NewInstalled(exec),
 		))
@@ -57,10 +56,10 @@ This will query all providers (Docker, Kubernetes, etc.) and generate a report.`
 		reg.Register(buildx.New(
 			buildxChecks.NewInstalled(exec),
 		))
-		
+
 		eng := engine.New(reg)
 		rep := eng.Run(cmd.Context())
-		
+
 		var rnd renderer.Renderer
 		switch format {
 		case "json":
@@ -74,12 +73,12 @@ This will query all providers (Docker, Kubernetes, etc.) and generate a report.`
 		default:
 			rnd = renderer.NewTerminal()
 		}
-		
+
 		if err := rnd.Render(rep); err != nil {
 			fmt.Printf("Error rendering report: %v\n", err)
 			os.Exit(1)
 		}
-		
+
 		for _, p := range rep.Providers {
 			for _, r := range p.Results {
 				if r.Status == report.Fail {

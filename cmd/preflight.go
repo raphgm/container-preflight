@@ -18,6 +18,7 @@ var (
 	preflightFormat  string
 	preflightOffline bool
 	preflightHost    string
+	preflightRun     string
 )
 
 var preflightCmd = &cobra.Command{
@@ -36,7 +37,7 @@ under that root cause instead of being reported as separate failures.`,
 		if len(args) > 0 {
 			dir = args[0]
 		}
-		opts := preflight.Options{Dir: dir, Offline: preflightOffline}
+		opts := preflight.Options{Dir: dir, Offline: preflightOffline, Command: preflightRun}
 		if preflightHost != "" {
 			snap, err := host.LoadSnapshot(preflightHost)
 			if err != nil {
@@ -69,6 +70,7 @@ func init() {
 	rootCmd.AddCommand(preflightCmd)
 	preflightCmd.Flags().StringVarP(&preflightFormat, "format", "f", "term", "Output format (term, json)")
 	preflightCmd.Flags().BoolVar(&preflightOffline, "offline", false, "Skip registry lookups")
+	preflightCmd.Flags().StringVar(&preflightRun, "run", "", "Check a `docker run`, `docker create` or `docker pull` command instead of a Compose project")
 	preflightCmd.Flags().StringVar(&preflightHost, "host", "", "Predict for the machine in this snapshot file instead of this one (see `snapshot`)")
 }
 

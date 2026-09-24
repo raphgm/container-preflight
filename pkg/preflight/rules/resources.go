@@ -316,11 +316,20 @@ var gpuRule = rule{
 				Evidence: evidence,
 				Fix:      fix,
 				Location: svc.Location.String(),
-				Predicts: `could not select device driver "" with capabilities: [[gpu]]`,
+				Predicts: gpuError(h.ServerVersion),
 			})
 		}
 		return out
 	},
+}
+
+// gpuError is the daemon's refusal: Docker 29 resolves GPUs through CDI
+// and words it differently from earlier engines.
+func gpuError(serverVersion string) string {
+	if serverVersion != "" && !versionLess(serverVersion, "29.0.0") {
+		return "failed to discover GPU vendor from CDI: no known GPU vendor found"
+	}
+	return `could not select device driver "" with capabilities: [[gpu]]`
 }
 
 var sysctlRule = rule{

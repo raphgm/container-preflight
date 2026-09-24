@@ -41,6 +41,13 @@ func containerUser(env *Env, svc *project.Service) (user string, uid int) {
 	return user, -1
 }
 
+// strictDataDirs are images that chmod their data directory at start-up
+// and refuse to run when they cannot, which happens on bind mounts from a
+// Windows filesystem.
+var strictDataDirs = []struct{ match, target, predicts string }{
+	{"postgres", "/var/lib/postgresql", `FATAL: data directory "/var/lib/postgresql/data" has invalid permissions`},
+}
+
 var permissionsRule = rule{
 	id:    "mounts.permissions",
 	title: "Containers can write to their bind mounts",
@@ -64,6 +71,24 @@ var permissionsRule = rule{
 						Location: svc.Location.String(),
 						Predicts: "Permission denied",
 					})
+				}
+
+				if h.ClientOS == "windows" && !b.ReadOnly {
+					ref := serviceImage(svc)
+					for _, d := range strictDataDirs {
+						if strings.Contains(ref, d.match) && strings.HasPrefix(b.Target, d.target) {
+							out = append(out, Finding{
+								Rule:     "mounts.permissions",
+								Severity: fact.Error,
+								Service:  svc.Name,
+								Title:    fmt.Sprintf("%s cannot set permissions on data folder %s bind-mounted from Windows", d.match, src),
+								Evidence: []string{"host: Docker on Windows; files bind-mounted from the Windows filesystem ignore chmod", "project: " + b.Target + " is a bind mount"},
+								Fix:      "Use a named volume for the data folder (e.g. `pgdata:" + b.Target + "`), or keep the folder inside the WSL filesystem.",
+								Location: svc.Location.String(),
+								Predicts: d.predicts,
+							})
+						}
+					}
 				}
 
 				if b.ReadOnly || uid == 0 || h.MapsOwnership() {

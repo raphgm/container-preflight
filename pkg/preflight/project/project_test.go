@@ -238,3 +238,35 @@ func TestBuildContextCheck(t *testing.T) {
 		t.Errorf("blocking pattern = %q; want *.env", pattern)
 	}
 }
+
+func TestFromCommand(t *testing.T) {
+	dir := t.TempDir()
+	p, err := FromCommand(`docker run -d --name web -p 127.0.0.1:8080:80 -p 9000-9001:9000/udp -v ./conf/nginx.conf:/etc/nginx/nginx.conf:ro,z -v data:/data --mount type=bind,source=/nope,target=/x --platform linux/amd64 -e A=1 -u 1000 -m 512m --gpus all --network host nginx:1.27 nginx -g "daemon off;"`, dir)
+	if err != nil {
+		t.Fatal(err)
+	}
+	s := p.Services[0]
+	if s.Name != "web" || s.Image != "nginx:1.27" || s.Platform != "linux/amd64" || s.User != "1000" || !s.GPU || s.MemLimit != 512<<20 {
+		t.Fatalf("service = %+v", s)
+	}
+	if len(s.Ports) != 2 || s.Ports[0].HostIP != "127.0.0.1" || s.Ports[1].End != 9001 || s.Ports[1].Protocol != "udp" {
+		t.Errorf("ports = %+v", s.Ports)
+	}
+	if len(s.Binds) != 2 || !s.Binds[0].ReadOnly || s.Binds[0].SELinux != "z" || s.Binds[0].Source != filepath.Join(dir, "conf/nginx.conf") {
+		t.Errorf("binds = %+v", s.Binds)
+	}
+	if s.Binds[1].CreateHostPath {
+		t.Error("--mount does not create missing sources")
+	}
+	if s.Environment["A"] != "1" {
+		t.Errorf("env = %v", s.Environment)
+	}
+
+	p, err = FromCommand("docker pull kubernetes/pause", dir)
+	if err != nil || p.Services[0].Image != "kubernetes/pause" {
+		t.Errorf("pull: %v %+v", err, p)
+	}
+	if _, err := FromCommand("docker build .", dir); err == nil {
+		t.Error("build is not supported")
+	}
+}

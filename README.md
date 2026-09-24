@@ -80,7 +80,7 @@ Example from a real run: Postgres started without a password failed. `learn` cre
 | `registry.credentials` | configured credential helper not installed (`error getting credentials`) |
 | `build.context` | `COPY`/`ADD` sources missing, excluded by `.dockerignore`, or outside the context; bad target or ARG |
 | `build.buildkit` | `RUN --mount`, heredocs, `COPY --chmod/--link` without BuildKit |
-| `compose.version` | Compose features newer than the installed Compose |
+| `compose.version` | Compose features newer than the installed Compose (`include`, `name`, `develop`, hooks, `gpus`, `models`) |
 | `compose.env` | unset variables, required `${VAR:?}` without a value |
 | `resources.memory` | known image minimums and total limits vs Docker's memory |
 | `resources.disk` | image download size ×2.5 vs free disk (the smaller of the VM disk and the host volume it lives on) |
@@ -90,8 +90,14 @@ Example from a real run: Postgres started without a password failed. `learn` cre
 | `ports.conflict` | two services, or several replicas, on one host port |
 | `ports.host` | host port already held by another process or container; privileged ports under rootless Docker |
 | `mounts.bind` | missing bind sources that Docker will turn into directories, stale empty directories |
-| `mounts.permissions` | non-root containers writing to bind mounts Docker creates as root or that another uid owns; SELinux without `:z` |
-| `mounts.sharing` | paths outside Docker Desktop's shared folders |
+| `mounts.permissions` | non-root containers writing to bind mounts Docker creates as root or that another uid owns; SELinux without `:z`; Postgres data folders bind-mounted from Windows |
+| `mounts.sharing` | paths outside Docker Desktop's shared folders (read from the running VM on macOS; home only on Linux) |
+
+Containers started without Compose are checked the same way:
+
+```bash
+container-doctor preflight --run "docker run -p 8080:80 -v ./site:/usr/share/nginx/html nginx:1.27"
+```
 
 Use `--format json` for machine-readable output and `--offline` to skip registry lookups. The exit code is 1 when a blocking problem is predicted.
 

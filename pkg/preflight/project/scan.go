@@ -18,6 +18,7 @@ var composeMinVersions = struct {
 }{
 	topLevel: map[string]string{
 		"include": "2.20.0",
+		"name":    "2.3.3",
 		"models":  "2.38.0",
 	},
 	service: map[string]string{

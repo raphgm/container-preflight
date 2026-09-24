@@ -475,3 +475,36 @@ func TestPermissions(t *testing.T) {
 	selinux.SELinux = true
 	expect(t, run(t, permissionsRule, p, selinux, reg), fact.Error, "SELinux will block access to bind mount conf")
 }
+
+func TestWindowsPostgresDataDir(t *testing.T) {
+	p := load(t, map[string]string{"compose.yaml": `services:
+  db:
+    image: postgres:16
+    volumes: ["./pgdata:/var/lib/postgresql/data", "pgnamed:/var/lib/postgresql/other"]
+volumes: {pgnamed: {}}
+`})
+	win := armDesktop()
+	win.ClientOS = "windows"
+	fs := run(t, permissionsRule, p, win, fakeRegistry{"postgres:16": multiArch})
+	expect(t, fs, fact.Error, "postgres cannot set permissions on data folder pgdata")
+	if len(fs) != 1 {
+		t.Errorf("named volume must not be flagged:\n%s", titles(fs))
+	}
+	expectNone(t, run(t, permissionsRule, p, armDesktop(), fakeRegistry{"postgres:16": multiArch}))
+}
+
+func TestLinuxDesktopSharesOnlyHome(t *testing.T) {
+	p := load(t, map[string]string{"compose.yaml": "services:\n  a: {image: alpine, volumes: [\"/srv/data:/data\", \"/tmp/x:/x\"]}\n"})
+	h := armDesktop()
+	h.ClientOS = "linux"
+	fs := run(t, fileSharingRule, p, h, nil)
+	expect(t, fs, fact.Error, "/srv/data is outside Docker Desktop's shared paths")
+	expect(t, fs, fact.Error, "/tmp/x is outside")
+}
+
+func TestComposeNameNeedsNewerCompose(t *testing.T) {
+	p := load(t, map[string]string{"compose.yaml": "name: shop\nservices:\n  a: {image: alpine}\n"})
+	h := armDesktop()
+	h.ComposeVersion = "2.2.2"
+	expect(t, run(t, composeFeaturesRule, p, h, nil), fact.Error, "`name` needs Compose 2.3.3")
+}

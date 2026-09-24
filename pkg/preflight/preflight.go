@@ -24,6 +24,10 @@ type Options struct {
 	Dir     string
 	Offline bool
 
+	// Command, when set, is a `docker run`/`create`/`pull` command line to
+	// check instead of a Compose project in Dir.
+	Command string
+
 	// Host, when set, replaces probing this machine: preflight predicts
 	// for the machine the snapshot was taken on.
 	Host *host.Snapshot
@@ -82,7 +86,13 @@ func Prepare(ctx context.Context, opts Options) (*rules.Env, error) {
 	if opts.Host != nil {
 		h, facts = opts.Host.Restore()
 	}
-	proj, err := project.Load(ctx, opts.Dir, facts)
+	var proj *project.Project
+	var err error
+	if opts.Command != "" {
+		proj, err = project.FromCommand(opts.Command, opts.Dir)
+	} else {
+		proj, err = project.Load(ctx, opts.Dir, facts)
+	}
 	if err != nil {
 		return nil, err
 	}

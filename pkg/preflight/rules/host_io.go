@@ -180,13 +180,20 @@ var fileSharingRule = rule{
 	needs: []fact.ID{fact.LocalDaemon, fact.ComposeFile},
 	check: func(_ context.Context, env *Env) []Finding {
 		h := env.Host
-		if !h.IsDesktop() || h.ClientOS != "darwin" {
+		if !h.IsDesktop() || (h.ClientOS != "darwin" && h.ClientOS != "linux") {
 			return nil
+		}
+		defaults := desktopSharedPaths
+		if h.ClientOS == "linux" {
+			// Docker Desktop for Linux shares only the home directory.
+			if home, err := os.UserHomeDir(); err == nil {
+				defaults = []string{home}
+			}
 		}
 		var out []Finding
 		for _, svc := range env.Project.Services {
 			for _, b := range svc.Binds {
-				paths, source := desktopSharedPaths, "shares "+strings.Join(desktopSharedPaths, ", ")+" by default"
+				paths, source := defaults, "shares "+strings.Join(defaults, ", ")+" by default"
 				if len(h.SharedPaths) > 0 {
 					paths, source = h.SharedPaths, "shares "+strings.Join(h.SharedPaths, ", ")+" (read from the running VM)"
 				}
