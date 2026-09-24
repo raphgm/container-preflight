@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below."
+title: "Container Preflight: predicting container deployment failures before execution"
+type: software
+authors:
+  - family-names: Gab-Momoh
+    given-names: Raphael
+    affiliation: Paynautik Limited
+repository-code: "https://github.com/raphgm/container-preflight"
+license: MIT
+keywords: [containers, Docker, Docker Compose, configuration errors, failure prediction, root cause analysis]
