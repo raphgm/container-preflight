@@ -253,7 +253,7 @@ On Docker Desktop, the same project received different predictions, each confirm
 Container failures that ``work on my machine'' are relational: they arise between a project and a host. By analyzing both together, grouping unknowns under root causes and learning from observed failures, \tool{} predicted a third of held-out local Docker failures fully and more than half at least partially, before anything ran, and its predictions held up on two real engines. The same join applies to Kubernetes: manifests against a specific cluster's node architectures, allocatable resources, quotas, storage classes, served APIs and admission policies, predicting events such as \texttt{FailedScheduling}, \texttt{ImagePullBackOff} and \texttt{no matches for kind} before deployment, with root-cause grouping and learned rules unchanged. Other future work: runtime-oriented checks such as health checks and container DNS, and a study with developers measuring time to a working setup.
 
 \section*{Data availability}
-The tool, rules, mined data, samples, labels and scripts are available at \url{https://github.com/raphgm/container-preflight} \todo{archive with a DOI on Zenodo}.
+The tool, rules, mined data, samples, labels and scripts are archived on Zenodo at \url{https://doi.org/10.5281/zenodo.22941382} and developed at \url{https://github.com/raphgm/container-preflight}. The rules used for the held-out evaluation are tagged \texttt{eval-frozen}.
 
 \bibliographystyle{elsarticle-num}
 \bibliography{refs}
