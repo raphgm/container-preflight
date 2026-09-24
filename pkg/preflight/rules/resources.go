@@ -179,6 +179,24 @@ const (
 	vmWarnFree = 10 << 30
 )
 
+var installerRule = rule{
+	id:    "host.installer",
+	title: "Docker Desktop runs from Applications",
+	needs: []fact.ID{fact.Daemon},
+	check: func(_ context.Context, env *Env) []Finding {
+		if !env.Host.RunningFromInstaller {
+			return nil
+		}
+		return []Finding{{
+			Rule:     "host.installer",
+			Severity: fact.Warning,
+			Title:    "Docker Desktop is running from its installer disk image",
+			Evidence: []string{"host: the Docker VM was started from /Volumes/…/Docker.app"},
+			Fix:      "Quit Docker Desktop, drag it to Applications, eject the Docker disk and start it from Applications. A copy started from the disk can keep the socket and hang every command.",
+		}}
+	},
+}
+
 var hostDiskRule = rule{
 	id:    "host.disk",
 	title: "This machine has room for Docker's VM",

@@ -186,8 +186,12 @@ var fileSharingRule = rule{
 		var out []Finding
 		for _, svc := range env.Project.Services {
 			for _, b := range svc.Binds {
+				paths, source := desktopSharedPaths, "shares "+strings.Join(desktopSharedPaths, ", ")+" by default"
+				if len(h.SharedPaths) > 0 {
+					paths, source = h.SharedPaths, "shares "+strings.Join(h.SharedPaths, ", ")+" (read from the running VM)"
+				}
 				shared := false
-				for _, p := range desktopSharedPaths {
+				for _, p := range paths {
 					if b.Source == p || strings.HasPrefix(b.Source, p+"/") {
 						shared = true
 					}
@@ -196,12 +200,12 @@ var fileSharingRule = rule{
 					continue
 				}
 				out = append(out, Finding{
-					Rule: "mounts.sharing", Severity: fact.Warning, Service: svc.Name,
-					Title:    "bind source " + b.Source + " is outside Docker Desktop's default shared paths",
-					Evidence: []string{"host: Docker Desktop shares " + strings.Join(desktopSharedPaths, ", ") + " by default"},
+					Rule: "mounts.sharing", Severity: fact.Error, Service: svc.Name,
+					Title:    "bind source " + b.Source + " is outside Docker Desktop's shared paths",
+					Evidence: []string{"host: Docker Desktop " + source},
 					Fix:      "Add the path in Docker Desktop → Settings → Resources → File sharing.",
 					Location: svc.Location.String(),
-					Predicts: "Mounts denied: The path " + b.Source + " is not shared from the host and is not known to Docker.",
+					Predicts: "mounts denied: The path " + b.Source + " is not shared from the host and is not known to Docker.",
 				})
 			}
 		}

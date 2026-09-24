@@ -83,6 +83,7 @@ func All() []Rule {
 		memoryRule,
 		diskRule,
 		hostDiskRule,
+		installerRule,
 		gpuRule,
 		sysctlRule,
 		portConflictRule,

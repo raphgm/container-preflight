@@ -56,7 +56,7 @@ var buildContextRule = rule{
 			// The two builders word a missing COPY source differently.
 			notFound := func(src string) string {
 				if env.Host.BuildxInstalled && !env.Host.BuildKitDisabled {
-					return `failed to compute cache key: "/` + strings.TrimPrefix(src, "/") + `": not found`
+					return `failed to compute cache key: failed to calculate checksum of ref …: "/` + strings.TrimPrefix(src, "/") + `": not found`
 				}
 				return "COPY failed: file not found in build context or excluded by .dockerignore: stat " + strings.TrimPrefix(src, "/") + ": file does not exist"
 			}

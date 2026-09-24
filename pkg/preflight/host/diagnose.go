@@ -28,6 +28,10 @@ type daemonClues struct {
 	Installed []engine
 	Running   []engine
 
+	// FromInstaller is true when Docker Desktop processes run from a
+	// mounted installer disk image.
+	FromInstaller bool
+
 	// DiskFree is free space on this machine; VM engines cannot start
 	// without room for their disk image.
 	DiskFree int64
@@ -50,6 +54,11 @@ func diagnoseDaemon(c daemonClues) fact.Failure {
 	}
 
 	switch {
+	case c.FromInstaller:
+		f.Summary = "Docker Desktop is running from its installer disk image and holds the socket"
+		f.Fix = "Quit it, stop leftover processes (`pkill -f /Volumes/Docker/Docker.app`), eject the Docker disk, then start Docker from Applications."
+		return f
+
 	case strings.Contains(c.Err, "did not answer within"):
 		f.Summary = "Docker daemon accepts connections but does not answer"
 		fix := "Wait for it to finish starting; if it stays stuck, restart it."
@@ -154,6 +163,10 @@ func gatherClues(ctxName, endpoint, errText string, diskFree int64) daemonClues 
 			engine
 			installed func() bool
 		}{engine{"Docker Engine", "/var/run/docker.sock", "sudo systemctl start docker", "default"}, func() bool { return onPath("dockerd") }})
+	}
+
+	if out, err := osexec.Command("pgrep", "-f", "/Volumes/.*/Docker.app/").Output(); err == nil && len(strings.TrimSpace(string(out))) > 0 {
+		c.FromInstaller = true
 	}
 
 	for _, cand := range candidates {

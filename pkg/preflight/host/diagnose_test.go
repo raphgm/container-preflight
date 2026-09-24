@@ -85,3 +85,10 @@ func TestDiagnoseHungDaemonWithTwoVMs(t *testing.T) {
 		t.Errorf("got %q / %q", f.Summary, f.Fix)
 	}
 }
+
+func TestDiagnoseInstallerCopy(t *testing.T) {
+	f := diagnoseDaemon(daemonClues{Endpoint: "unix:///h/.docker/run/docker.sock", Err: "did not answer within 20s", FromInstaller: true})
+	if !strings.Contains(f.Summary, "installer disk image") || !strings.Contains(f.Fix, "eject") {
+		t.Errorf("got %q / %q", f.Summary, f.Fix)
+	}
+}

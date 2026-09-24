@@ -71,6 +71,10 @@ type Profile struct {
 	// "rosetta". Some software runs under Rosetta but crashes under QEMU.
 	Emulators map[string]string
 
+	// SharedPaths are the host folders Docker Desktop shares with its VM,
+	// read from the running VM. Empty when unknown.
+	SharedPaths []string
+
 	// Sysctls holds kernel settings read on a local Linux daemon host.
 	Sysctls map[string]int64
 
@@ -84,6 +88,10 @@ type Profile struct {
 	// PortProbe and Lsof are nil on remote daemons.
 	PortProbe func(ip string, port int, proto string) bool `json:"-"`
 	Lsof      func(port int, proto string) string          `json:"-"`
+
+	// RunningFromInstaller is true when Docker Desktop runs from its
+	// mounted installer disk image instead of /Applications.
+	RunningFromInstaller bool
 
 	// Local is true when the daemon endpoint is on this machine.
 	Local bool
@@ -235,6 +243,7 @@ func (p *Profile) probeDaemon(ctx context.Context, run executor.Runner, facts *f
 		p.Sysctls = map[string]int64{"vm.max_map_count": 262144}
 		p.EmulationKnown = true
 		p.DiskExact = false
+		p.readDesktopVM(ctx, run)
 	} else if shell := p.kernelShell(); shell != nil {
 		p.readKernel(ctx, run, shell)
 	}
@@ -277,6 +286,47 @@ func (p *Profile) probeEndpoint(ctx context.Context, run executor.Runner, facts 
 		if usage, err := disk.UsageWithContext(ctx, home); err == nil {
 			p.DiskFree = int64(usage.Free)
 		}
+	}
+}
+
+// readDesktopVM reads Docker Desktop's VM command line on macOS: it shows
+// whether amd64 runs under Rosetta or QEMU and which folders are shared.
+func (p *Profile) readDesktopVM(ctx context.Context, run executor.Runner) {
+	if p.ClientOS != "darwin" {
+		return
+	}
+	pid, err := run.Run(ctx, "pgrep", "-f", "com.docker.virtualization")
+	if err != nil || pid == "" {
+		return
+	}
+	args, err := run.Run(ctx, "ps", "-o", "args=", "-p", strings.Fields(pid)[0])
+	if err != nil {
+		return
+	}
+	fields := strings.Fields(args)
+	emulator := "qemu"
+	for i, f := range fields {
+		switch f {
+		case "--rosetta":
+			emulator = "rosetta"
+		case "--virtiofs":
+			if i+1 < len(fields) {
+				p.SharedPaths = append(p.SharedPaths, fields[i+1])
+			}
+		}
+	}
+	for _, e := range p.Emulated {
+		if p.Emulators == nil {
+			p.Emulators = map[string]string{}
+		}
+		if e == "linux/amd64" {
+			p.Emulators[e] = emulator
+		} else {
+			p.Emulators[e] = "qemu"
+		}
+	}
+	if strings.Contains(args, "/Volumes/") && strings.Contains(args, "Docker.app") {
+		p.RunningFromInstaller = true
 	}
 }
 

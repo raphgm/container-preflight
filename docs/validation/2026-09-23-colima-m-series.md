@@ -65,3 +65,23 @@ Following the fix started a working daemon. The first `colima start` failed beca
      the password was removed on another tag (`postgres:17`).
    - `memory=<2GiB` remains a spurious condition until a failure on a larger VM generalizes it
      away. This bias of single-example learning should be discussed in the paper.
+
+## Same Mac on Docker Desktop (2026-09-24)
+
+Host: Docker Desktop, engine 29.8.0, VM 3.8 GiB, Rosetta enabled, buildx 0.37.1, Compose 5.5.1.
+The same project (`broken-shop`) got different predictions than it did on Colima, and each
+difference was confirmed:
+
+| Check | Colima prediction | Desktop prediction | Real on Desktop |
+|---|---|---|---|
+| credential helper | error | passes (helper installed) | pulls work |
+| `RUN --mount` | error (no buildx) | passes | builds |
+| mssql | error: crashes under QEMU | warning: Rosetta emulation | `SQL Server is now ready for client connections` ✅ |
+| bind outside shared paths | n/a | error (shared paths read from the VM) | `mounts denied: The path /opt/homebrew/etc is not shared from the host` ✅ exact |
+| missing COPY source | legacy wording | BuildKit wording | `failed to compute cache key: failed to calculate checksum of ref …: "/missing.txt": not found` (text corrected) |
+
+A new failure was found during setup and is now diagnosed. Docker Desktop had been started from
+its installer disk image. That copy kept the socket and hung every command, while the copy in
+/Applications attached to it. Preflight first reported only "accepts connections but does not
+answer". It now names the installer copy as the root cause and adds a `host.installer` warning.
+Probe commands also time out after 20s, where before they hung.
