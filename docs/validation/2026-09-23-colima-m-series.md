@@ -85,3 +85,27 @@ its installer disk image. That copy kept the socket and hung every command, whil
 /Applications attached to it. Preflight first reported only "accepts connections but does not
 answer". It now names the installer copy as the root cause and adds a `host.installer` warning.
 Probe commands also time out after 20s, where before they hung.
+
+## Host disk pressure makes Docker Desktop's filesystem read-only (2026-09-24)
+
+This failure happened on the author's machine and was not staged. Free space on the Mac's home
+volume fell from about 7 GB to 3.6 GB while Docker Desktop ran a minikube cluster. Docker
+Desktop keeps its VM disk as a sparse file on that volume (`Docker.raw`), so the VM's disk can
+only grow as far as the host allows. After that:
+
+1. `minikube stop` failed: `GUEST_STOP_TIMEOUT: Unable to stop VM ... Maximum number of retries (60) exceeded`.
+2. `docker stop` / `docker kill minikube` failed. `docker inspect` reported `status=dead pid=0`
+   while `docker ps` still listed the container as `Up`.
+3. `minikube delete` and `docker rm -f minikube` failed with
+   `write /var/lib/desktop-containerd/daemon/io.containerd.metadata.v1.bolt/meta.db: read-only file system`.
+
+A failed write inside the VM had made its filesystem read-only. Restarting Docker Desktop
+remounted it, after which the container, image (1.8 GB) and volume (790 MB) could be removed.
+Host free space rose from 5.4 GB to 8.4 GB while the VM was stopped.
+
+**Relevance.** None of the three error messages mentions disk space. Each one points at a
+symptom: the VM, the container, the metadata database. The `host.disk` rule targets the
+precondition, a VM-based engine with less than 10 GB free on the host volume, and warns before
+the chain starts. Preflight reported `only 6.7 GiB free on this machine; Docker's VM disk grows
+here` on this machine shortly before the incident. The rule predicts the precondition, not this
+specific chain, so it counts as supporting evidence rather than a confirmed prediction.
