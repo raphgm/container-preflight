@@ -77,6 +77,9 @@ func (f fakeRegistry) Resolve(_ context.Context, ref, platform string) (*registr
 		return nil, fmt.Errorf("%w: %s", registry.ErrUnauthorized, ref)
 	}
 	img := &registry.Image{Ref: ref, Index: true, CompressedSize: 500 << 20}
+	if u, rest, ok := strings.Cut(v, "|user="); ok {
+		v, img.User = u, rest
+	}
 	if s, ok := strings.CutPrefix(v, "single:"); ok {
 		img.Index, v = false, s
 	}
@@ -422,4 +425,53 @@ func TestDiskUsesSmallerOfVMAndHost(t *testing.T) {
 	if !strings.Contains(strings.Join(fs[0].Evidence, " "), "this machine only") {
 		t.Errorf("evidence = %v", fs[0].Evidence)
 	}
+}
+
+func TestPermissions(t *testing.T) {
+	p := load(t, map[string]string{
+		"compose.yaml": `services:
+  grafana:
+    image: grafana/grafana:11
+    volumes: ["./grafana-data:/var/lib/grafana", "./conf:/etc/grafana:ro"]
+  es:
+    image: elasticsearch:8
+    volumes: ["./es-data:/usr/share/elasticsearch/data"]
+  pg:
+    image: postgres:16
+    volumes: ["./pg-data:/var/lib/postgresql/data"]
+  app:
+    image: alpine
+    user: "1000:1000"
+    volumes: ["./shared:/shared"]
+`,
+		"es-data/.keep": "",
+		"shared/.keep":  "",
+	})
+	if err := os.Chmod(filepath.Join(p.Dir, "shared"), 0o777); err != nil {
+		t.Fatal(err)
+	}
+	reg := fakeRegistry{
+		"grafana/grafana:11": multiArch + "|user=472",
+		"elasticsearch:8":    multiArch + "|user=1000:0",
+		"postgres:16":        multiArch,
+		"alpine":             multiArch,
+	}
+	linux := oldLinux()
+	linux.Platform, linux.ClientArch = "linux/amd64", "amd64"
+	fs := run(t, permissionsRule, p, linux, reg)
+	expect(t, fs, fact.Error, "Docker will create grafana-data owned by root, but the container runs as uid 472")
+	if os.Getuid() != 1000 {
+		expect(t, fs, fact.Warning, "es-data is owned by uid")
+	}
+	for _, bad := range []string{"pg-data", "conf", "shared"} {
+		if strings.Contains(titles(fs), bad) {
+			t.Errorf("%s must not be flagged (root image / read-only / world-writable):\n%s", bad, titles(fs))
+		}
+	}
+
+	expectNone(t, run(t, permissionsRule, p, armDesktop(), reg))
+
+	selinux := oldLinux()
+	selinux.SELinux = true
+	expect(t, run(t, permissionsRule, p, selinux, reg), fact.Error, "SELinux will block access to bind mount conf")
 }

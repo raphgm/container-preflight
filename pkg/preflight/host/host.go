@@ -45,6 +45,7 @@ type Profile struct {
 	NCPU            int
 	Runtimes        []string
 	Rootless        bool
+	SELinux         bool
 	CgroupVersion   string
 	DockerRootDir   string
 	Endpoint        string
@@ -101,6 +102,13 @@ type Container struct {
 // this machine and grows as images are pulled.
 func (p *Profile) UsesVM() bool {
 	return p.Local && (p.ClientOS == "darwin" || p.ClientOS == "windows" || p.IsDesktop() || strings.Contains(p.Endpoint, "/.colima/"))
+}
+
+// MapsOwnership reports whether bind-mounted files appear owned by the
+// container user regardless of host ownership: true for the file sharing of
+// Docker Desktop, Colima and OrbStack on macOS and Windows.
+func (p *Profile) MapsOwnership() bool {
+	return p.ClientOS == "darwin" || p.ClientOS == "windows"
 }
 
 // IsDesktop reports whether the daemon runs inside Docker Desktop's VM.
@@ -210,6 +218,9 @@ func (p *Profile) probeDaemon(ctx context.Context, run executor.Runner, facts *f
 	for _, opt := range info.SecurityOptions {
 		if strings.Contains(opt, "name=rootless") {
 			p.Rootless = true
+		}
+		if strings.Contains(opt, "name=selinux") {
+			p.SELinux = true
 		}
 	}
 

@@ -67,6 +67,9 @@ type Service struct {
 
 	GPU bool
 
+	// User is the Compose `user:` value, if any.
+	User string
+
 	Environment map[string]string
 
 	Location Location
@@ -95,6 +98,9 @@ type Bind struct {
 	Source         string
 	Target         string
 	CreateHostPath bool
+	ReadOnly       bool
+	// SELinux is the relabel option: "z", "Z" or "".
+	SELinux string
 }
 
 type Build struct {

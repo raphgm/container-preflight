@@ -141,6 +141,7 @@ func convertService(sc types.ServiceConfig) *Service {
 	svc := &Service{
 		Name:        sc.Name,
 		Platform:    sc.Platform,
+		User:        sc.User,
 		MemLimit:    int64(sc.MemLimit),
 		Replicas:    1,
 		Environment: map[string]string{},
@@ -227,11 +228,11 @@ func convertService(sc types.ServiceConfig) *Service {
 		if v.Type != types.VolumeTypeBind {
 			continue
 		}
-		create := true
+		create, selinux := true, ""
 		if v.Bind != nil {
-			create = bool(v.Bind.CreateHostPath)
+			create, selinux = bool(v.Bind.CreateHostPath), v.Bind.SELinux
 		}
-		svc.Binds = append(svc.Binds, Bind{Source: v.Source, Target: v.Target, CreateHostPath: create})
+		svc.Binds = append(svc.Binds, Bind{Source: v.Source, Target: v.Target, CreateHostPath: create, ReadOnly: v.ReadOnly, SELinux: selinux})
 	}
 	return svc
 }

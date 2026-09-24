@@ -88,6 +88,7 @@ func All() []Rule {
 		portConflictRule,
 		hostPortRule,
 		bindRule,
+		permissionsRule,
 		fileSharingRule,
 	}
 }

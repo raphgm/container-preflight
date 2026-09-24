@@ -34,6 +34,9 @@ type Image struct {
 	// CompressedSize is the download size for the requested platform, or 0
 	// when that platform is not available.
 	CompressedSize int64
+
+	// User is the image's configured USER for the requested platform.
+	User string
 }
 
 var (
@@ -151,6 +154,9 @@ func (r *Remote) resolve(ctx context.Context, ref, platform string) (*Image, err
 		if match != nil {
 			if img, err := idx.Image(match.Digest); err == nil {
 				out.CompressedSize = layerSize(img)
+				if cfg, err := img.ConfigFile(); err == nil {
+					out.User = cfg.Config.User
+				}
 			}
 		}
 		return out, nil
@@ -167,6 +173,7 @@ func (r *Remote) resolve(ctx context.Context, ref, platform string) (*Image, err
 	p := Normalize(cfg.OS + "/" + cfg.Architecture + "/" + cfg.Variant)
 	out.Platforms = []string{p}
 	out.CompressedSize = layerSize(img)
+	out.User = cfg.Config.User
 	return out, nil
 }
 

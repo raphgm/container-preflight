@@ -90,6 +90,7 @@ Example from a real run: Postgres started without a password failed. `learn` cre
 | `ports.conflict` | two services, or several replicas, on one host port |
 | `ports.host` | host port already held by another process or container; privileged ports under rootless Docker |
 | `mounts.bind` | missing bind sources that Docker will turn into directories, stale empty directories |
+| `mounts.permissions` | non-root containers writing to bind mounts Docker creates as root or that another uid owns; SELinux without `:z` |
 | `mounts.sharing` | paths outside Docker Desktop's shared folders |
 
 Use `--format json` for machine-readable output and `--offline` to skip registry lookups. The exit code is 1 when a blocking problem is predicted.
