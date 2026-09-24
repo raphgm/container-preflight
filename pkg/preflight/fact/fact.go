@@ -17,6 +17,13 @@ const (
 	Registry    ID = "registry.network"
 	ComposeFile ID = "project.compose"
 	Dockerfile  ID = "project.dockerfile"
+
+	Kubectl     ID = "k8s.kubectl"
+	Cluster     ID = "k8s.cluster"
+	ClusterAPIs ID = "k8s.apis"
+	Nodes       ID = "k8s.nodes"
+	Storage     ID = "k8s.storage"
+	Manifests   ID = "project.manifests"
 )
 
 // parents encodes the causal edges: a fact cannot be known unless its parent
@@ -28,6 +35,11 @@ var parents = map[ID]ID{
 	LocalDaemon: DockerCLI,
 	Compose:     DockerCLI,
 	Buildx:      DockerCLI,
+
+	Cluster:     Kubectl,
+	ClusterAPIs: Cluster,
+	Nodes:       Cluster,
+	Storage:     Cluster,
 }
 
 // Parent returns the direct causal parent of id, if any.

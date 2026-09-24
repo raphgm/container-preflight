@@ -101,6 +101,9 @@ func renderPreflight(w io.Writer, rep *preflight.Report, color bool) {
 	}
 
 	h := rep.Host
+	if h == nil {
+		h = &host.Profile{}
+	}
 	fmt.Fprintf(w, "\n%sContainer Preflight · preflight%s  %s%s%s\n", c.bold, c.reset, c.dim, rep.Dir, c.reset)
 	if rep.HostName != "" {
 		fmt.Fprintf(w, "%sPredicting for snapshot of %s%s\n", c.yellow, rep.HostName, c.reset)
@@ -114,6 +117,9 @@ func renderPreflight(w io.Writer, rep *preflight.Report, color bool) {
 	}
 	if h.BuildxInstalled {
 		hostBits = append(hostBits, "buildx "+h.BuildxVersion)
+	}
+	if c := rep.Cluster; c != nil && c.ServerVersion != "" {
+		hostBits = append(hostBits, "cluster "+c.Context, "Kubernetes "+c.ServerVersion, fmt.Sprintf("%d node(s): %s", len(c.Nodes), strings.Join(c.Platforms(), ", ")))
 	}
 	if len(hostBits) > 0 {
 		fmt.Fprintf(w, "%sHost: %s%s\n", c.dim, strings.Join(hostBits, " · "), c.reset)
