@@ -6,7 +6,7 @@ prevalence. For every sampled issue, this fetches the body and comments and
 checks for the category's exact error text. precision = verified / sampled,
 and adjusted = total × precision.
 """
-import csv, glob, json, os, subprocess, sys
+import csv, glob, json, os, re, subprocess, sys
 
 # Exact text (lowercase) that must appear for an issue to count.
 MUST = {
@@ -39,7 +39,7 @@ MUST = {
     "volume permission denied": ["permission denied"],
     "DNS resolution in container": ["temporary failure in name resolution"],
     "container healthcheck unhealthy": ["is unhealthy"],
-    "network not found": ["network", "not found"],
+    "network not found": [re.compile(r"network \S+ (not found|declared as external, but could not be found)")],
     "OCI runtime exec failed": ["oci runtime exec failed"],
     "app config/env missing at runtime": ["superuser password is not specified"],
 }
@@ -67,7 +67,7 @@ def main():
         for item in d["sample"]:
             if "verified" not in item:
                 t = text_of(item["url"])
-                item["verified"] = all(m in t for m in must)
+                item["verified"] = all((m.search(t) is not None) if hasattr(m, "search") else (m in t) for m in must)
             verified += item["verified"]
         n = len(d["sample"])
         d["precision"] = verified / n if n else 0

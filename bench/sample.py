@@ -24,7 +24,11 @@ def fetch(url):
 
 def excerpt(text, needle):
     low = text.lower()
-    i = low.find(needle)
+    if hasattr(needle, "search"):
+        m = needle.search(low)
+        i = m.start() if m else -1
+    else:
+        i = low.find(needle)
     if i < 0:
         return text[:WINDOW * 2]
     return text[max(0, i - WINDOW):i + WINDOW]

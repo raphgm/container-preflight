@@ -31,7 +31,7 @@ for cat, rule, phrase in CATEGORIES:
         if picked == N:
             break
         body = text_of(it["html_url"])
-        if not all(m in body for m in MUST[cat]):
+        if not all((m.search(body) is not None) if hasattr(m, "search") else (m in body) for m in MUST[cat]):
             continue
         out.write(json.dumps({"url": it["html_url"], "category": cat, "rule": rule,
                               "title": it["title"], "excerpt": excerpt(body, MUST[cat][0])}) + "\n")

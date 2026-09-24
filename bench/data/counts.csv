@@ -1,7 +1,7 @@
 category,preflight_rule,raw_hits,sampled,verified,precision,adjusted_estimate
 memory: OOMKilled,resources.memory,97607,30,11,0.37,35789
-network not found,,18407,30,29,0.97,17793
 image: tag/repo not found,image.exists,7405,30,28,0.93,6911
+network not found,,18407,30,10,0.33,6136
 volume permission denied,,6073,30,30,1.0,6073
 platform: exec format error,image.platform,5372,30,29,0.97,5193
 address already in use,ports.host,3792,30,30,1.0,3792
