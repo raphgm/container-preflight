@@ -50,6 +50,19 @@ func diagnoseDaemon(c daemonClues) fact.Failure {
 	}
 
 	switch {
+	case strings.Contains(c.Err, "did not answer within"):
+		f.Summary = "Docker daemon accepts connections but does not answer"
+		fix := "Wait for it to finish starting; if it stays stuck, restart it."
+		if len(c.Running) > 1 {
+			var names []string
+			for _, r := range c.Running {
+				names = append(names, r.Name)
+			}
+			fix = "Several Docker VMs are running (" + strings.Join(names, ", ") + ") and compete for memory. Stop all but one, e.g. `colima stop`."
+		}
+		f.Fix = fix
+		return f
+
 	case strings.Contains(c.Err, "permission denied"):
 		f.Summary = "No permission to use the Docker socket " + socket
 		f.Fix = "Add yourself to the docker group (`sudo usermod -aG docker $USER`, then log in again), or use rootless Docker."

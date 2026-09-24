@@ -73,3 +73,15 @@ func TestDiagnoseFullDiskBlocksVMStart(t *testing.T) {
 		t.Errorf("fix = %q", f.Fix)
 	}
 }
+
+func TestDiagnoseHungDaemonWithTwoVMs(t *testing.T) {
+	desktop := engine{"Docker Desktop", "/h/.docker/run/docker.sock", "open -a Docker", "desktop-linux"}
+	f := diagnoseDaemon(daemonClues{
+		Endpoint: "unix:///h/.docker/run/docker.sock",
+		Err:      "`docker info --format {{json .}}` did not answer within 20s (the daemon may still be starting, or be out of memory)",
+		Running:  []engine{colima, desktop},
+	})
+	if f.Summary != "Docker daemon accepts connections but does not answer" || !strings.Contains(f.Fix, "colima stop") {
+		t.Errorf("got %q / %q", f.Summary, f.Fix)
+	}
+}

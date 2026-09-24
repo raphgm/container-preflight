@@ -141,6 +141,7 @@ func (p *Profile) PortHolder(ip string, port int, proto string) (holder string, 
 // Probe inspects the host. Anything it cannot determine is recorded in
 // facts with the reason, so dependent rules report the true root cause.
 func Probe(ctx context.Context, run executor.Runner, facts *fact.Set) *Profile {
+	run = timeoutRunner{run}
 	p := &Profile{
 		ClientOS:       runtime.GOOS,
 		ClientArch:     runtime.GOARCH,
@@ -540,6 +541,22 @@ func missingCredentialHelper() string {
 		}
 	}
 	return ""
+}
+
+// commandTimeout bounds each probe command: a daemon that is starting or
+// starved of memory accepts connections but never answers.
+const commandTimeout = 20 * time.Second
+
+type timeoutRunner struct{ executor.Runner }
+
+func (t timeoutRunner) Run(ctx context.Context, name string, args ...string) (string, error) {
+	cctx, cancel := context.WithTimeout(ctx, commandTimeout)
+	defer cancel()
+	out, err := t.Runner.Run(cctx, name, args...)
+	if err != nil && cctx.Err() == context.DeadlineExceeded {
+		return out, fmt.Errorf("`%s %s` did not answer within %s (the daemon may still be starting, or be out of memory)", name, strings.Join(args, " "), commandTimeout)
+	}
+	return out, err
 }
 
 func errText(err error) string {
