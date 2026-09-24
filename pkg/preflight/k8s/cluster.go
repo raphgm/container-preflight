@@ -23,7 +23,9 @@ type Cluster struct {
 	// Kinds maps "group/Kind" (core group: "/Kind") to true when served.
 	Kinds map[string]bool
 	// Versions lists served group/versions ("v1", "apps/v1", ...).
-	Versions       map[string]bool
+	Versions map[string]bool
+	// Preferred maps a Kind to the apiVersion the cluster prefers for it.
+	Preferred      map[string]string
 	StorageClasses []string
 	DefaultClass   string
 }
@@ -63,7 +65,7 @@ func (t timeoutRunner) Run(ctx context.Context, name string, args ...string) (st
 // of failing individually.
 func Probe(ctx context.Context, run executor.Runner, kubeContext string, facts *fact.Set) *Cluster {
 	run = timeoutRunner{run}
-	c := &Cluster{Kinds: map[string]bool{}, Versions: map[string]bool{}}
+	c := &Cluster{Kinds: map[string]bool{}, Versions: map[string]bool{}, Preferred: map[string]string{}}
 	kc := func(args ...string) []string {
 		if kubeContext != "" {
 			return append([]string{"--context", kubeContext}, args...)
@@ -117,6 +119,9 @@ func Probe(ctx context.Context, run executor.Runner, kubeContext string, facts *
 			// NAME [SHORTNAMES] APIVERSION NAMESPACED KIND
 			gv, kind := f[len(f)-3], f[len(f)-1]
 			c.Kinds[group(gv)+"/"+kind] = true
+			if _, dup := c.Preferred[kind]; !dup {
+				c.Preferred[kind] = gv
+			}
 		}
 	}
 
@@ -195,6 +200,20 @@ func (c *Cluster) parseNodes(out string) error {
 	return nil
 }
 
+// Local reports whether the cluster runs inside a developer's Docker engine
+// (minikube, kind, Docker Desktop, k3d, Rancher Desktop, OrbStack). Their
+// nodes inherit the engine VM's emulation, so foreign-architecture images
+// usually run, slowly; production nodes usually cannot run them at all.
+func (c *Cluster) Local() bool {
+	ctx := strings.ToLower(c.Context)
+	for _, p := range []string{"minikube", "kind-", "docker-desktop", "k3d-", "rancher-desktop", "orbstack", "colima"} {
+		if strings.HasPrefix(ctx, p) {
+			return true
+		}
+	}
+	return false
+}
+
 // Platforms lists the distinct platforms of schedulable nodes.
 func (c *Cluster) Platforms() []string {
 	seen := map[string]bool{}
@@ -211,6 +230,12 @@ func (c *Cluster) Platforms() []string {
 // Serves reports whether apiVersion/kind is available.
 func (c *Cluster) Serves(apiVersion, kind string) (servedKind, servedVersion bool) {
 	return c.Kinds[group(apiVersion)+"/"+kind], c.Versions[apiVersion]
+}
+
+// ServedAs returns the apiVersion under which the cluster serves kind, when
+// a manifest used another group or version for it.
+func (c *Cluster) ServedAs(kind string) string {
+	return c.Preferred[kind]
 }
 
 func group(apiVersion string) string {

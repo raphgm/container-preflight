@@ -49,6 +49,10 @@ var apiRule = Rule{
 			seen[key] = true
 			why := fmt.Sprintf("cluster: %s/%s is not served", o.APIVersion, o.Kind)
 			fix := "Install the CRD or operator that provides " + o.Kind + " before applying."
+			if alt := env.Cluster.ServedAs(o.Kind); alt != "" {
+				why = fmt.Sprintf("cluster: %s is served as %s, not %s", o.Kind, alt, o.APIVersion)
+				fix = "Change apiVersion to " + alt + "."
+			}
 			if kind {
 				why = fmt.Sprintf("cluster: %s is served, but not in version %s", o.Kind, o.APIVersion)
 				fix = "Use an API version this cluster serves (`kubectl api-resources | grep " + o.Kind + "`)."
@@ -154,7 +158,13 @@ var platformRule = Rule{
 					predicts = "ErrImagePull: no matching manifest for the node's platform"
 				}
 				f.Predicts = predicts
-				if len(good) == 0 {
+				if len(good) == 0 && env.Cluster.Local() {
+					f.Severity = fact.Warning
+					f.Title = fmt.Sprintf("image %s has no build for this cluster's nodes and will only run under emulation", c.Image)
+					f.Evidence = append(f.Evidence, "cluster: "+env.Cluster.Context+" is a local cluster; its nodes usually inherit the Docker VM's amd64/arm64 emulation")
+					f.Fix = "Expect it to be slow here, and to fail on real clusters without emulation. Publish a multi-arch image."
+					f.Predicts = "runs under emulation here; exec format error on nodes without it"
+				} else if len(good) == 0 {
 					f.Severity = fact.Error
 					f.Title = fmt.Sprintf("image %s cannot run on any node this pod can be scheduled to", c.Image)
 					f.Fix = "Build a multi-arch image (docker buildx build --platform …) or add nodes of a supported architecture."

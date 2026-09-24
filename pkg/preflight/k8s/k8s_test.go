@@ -44,7 +44,7 @@ const nodesJSON = `{"items":[
 func liveCluster() fakeKubectl {
 	return fakeKubectl{
 		"version --client":       `{"clientVersion":{}}`,
-		"config current-context": "kind-mixed",
+		"config current-context": "prod-eks",
 		"version -o json":        `{"serverVersion":{"gitVersion":"v1.31.0"}}`,
 		"api-versions":           "v1\napps/v1\nbatch/v1\nnetworking.k8s.io/v1",
 		"api-resources":          "pods po v1 true Pod\ndeployments deploy apps/v1 true Deployment\nstatefulsets sts apps/v1 true StatefulSet\njobs batch/v1 true Job\ningresses ing networking.k8s.io/v1 true Ingress\npersistentvolumeclaims pvc v1 true PersistentVolumeClaim\nservices svc v1 true Service",
@@ -198,6 +198,9 @@ func TestLoadManifests(t *testing.T) {
 func TestAPIRule(t *testing.T) {
 	fs := apiRule.Check(context.Background(), setup(t))
 	f := expect(t, fs, fact.Error, "Ingress/old: extensions/v1beta1 Ingress is not available")
+	if f.Fix != "Change apiVersion to networking.k8s.io/v1." {
+		t.Errorf("fix %q", f.Fix)
+	}
 	if f.Predicts != `no matches for kind "Ingress" in version "extensions/v1beta1"` {
 		t.Errorf("predicts %q", f.Predicts)
 	}
@@ -222,6 +225,10 @@ func TestPlatformRule(t *testing.T) {
 		t.Errorf("evidence should name the arm node: %v", f.Evidence)
 	}
 	expect(t, fs, fact.Error, "Deployment/pinned: image acme/web-amd64:1 cannot run on any node")
+
+	local := setup(t)
+	local.Cluster.Context = "minikube"
+	expect(t, platformRule.Check(context.Background(), local), fact.Warning, "Deployment/pinned: image acme/web-amd64:1 has no build for this cluster's nodes and will only run under emulation")
 	if strings.Contains(titles(fs), "trainer") || strings.Contains(titles(fs), "huge") {
 		t.Errorf("GPU pod is unschedulable (reported elsewhere); multi-arch nginx fits:\n%s", titles(fs))
 	}
