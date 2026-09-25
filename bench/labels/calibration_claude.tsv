@@ -1,0 +1,11 @@
+idx	scope	predict	reason
+7	out	no	Q1.2: podman-compose (Podman)
+8	in	yes	mounts.bind: config file missing, Docker created a directory
+16	in	partial	build.buildkit covers --chmod, but the build goes through a legacy API client preflight cannot see
+20	in	yes	build.context: COPY source not built yet
+36	out	no	Q1.1: documentation correction request, not a failure report
+44	in	partial	mounts.permissions covers Postgres data dirs on Windows; reporter's CLI runs in WSL (Linux)
+46	in	no	container unhealthy on Windows; health checks are not a rule
+60	in	yes	image.platform: arm64-only tag pulled on amd64 agent
+113	in	no	Maven Docker plugin; port clash between profiles, cause not shown
+118	in	yes	ports.host: rootless Docker cannot publish port 80
