@@ -1,0 +1,41 @@
+n	idx	scope	predict	seconds	note
+0	0	in	yes	163	
+1	1	in	yes	64	
+2	2	out	no	94	
+3	3	in	yes	67	
+4	6	in	yes	67	
+5	8	out	no	261	
+6	10	out	no	35	
+7	13	out	no	78	
+8	17	in	partial	38	
+9	21	out	no	42	
+10	28	in	yes	35	
+11	30	in	yes	45	
+12	31	in	yes	55	
+13	34	in	no	26	
+14	37	in	no	36	
+15	39	in	yes	33	
+16	42	in	yes	48	
+17	46	out	no	67	
+18	48	in	no	19	This scenario involves mount binding which the preflight would not have predicted
+19	54	in	yes	80	
+20	55	in	yes	68	
+21	57	out	no	73	
+22	58	in	yes	64	
+23	60	out	no	45	
+24	65	in	yes	82	
+25	75	out	no	30	
+26	79	out	no	60	
+27	81	out	no	57	
+28	87	out	no	26	
+29	88	out	no	36	
+30	98	in	yes	49	
+31	100	in	no	46	
+32	101	out	no	43	
+33	105	in	yes	22	
+34	106	in	yes	25	
+35	108	out	no	22	
+36	109	in	yes	30	
+37	117	out	no	15	This seems to be a database issue for postgres and not within the scope of contaner preflight
+38	118	out	no	41	
+39	120	in	partial	53	
